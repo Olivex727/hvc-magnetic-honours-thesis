@@ -10,7 +10,7 @@
   \caption{A rough flowchart of the data analysis method. A neater version of this flowchart will appear in future iterations of the report as a visual representation of the methodology.}
 \end{figure*}
 
-Figure~\ref{fig:flowchart} represents the rough outline of the pipeline of data analysis. As per the three objectives listed in \ref{sec:objectives}, the flowchart includes an expansion into the process of these objectives.
+Figure~\ref{fig:flowchart} represents the rough outline of the pipeline of data analysis as per the three objectives listed in \ref{sec:objectives}.
 
 The first point of data reduction is to convert the raw POSSUM data, i.e. stokes parameters in the field, to rotation measures. A component of research, revision, and programming will be dedicated to doing this. POSSUM as a survey has already condensed the stokes parameters into rotation measures. The purpose of doing it again is purely for pedagogical reasons - so that a better understanding about the nature of RMs is achieved. Purposefully, this part of the data reduction will only appear in perhaps a few sentences in the mid-term and final report, discussing how the POSSUM data was obtained.
 
@@ -19,8 +19,6 @@ Smith Cloud and Leading Arm HVC data will be obtained from a secondary source ou
 After the program is developed to convert rotation measures into magnetic fields, data from the non-active components of the halo itself are then fed through the same algorithm. This will act as a control variable, providing a measure of base magnetisation for the Galactic Halo as well as pointing to a default ionisation state of the halo, which can support HVCs.
 
 The halo control test will also help in the removal of background and foreground sources of Faraday rotation. The light used to measure polarisation comes from extragalactic synchrotron radiation, which is initially unpolarised. However, this radiation will have to travel a far distance before reaching us, at which point it can polarise from any sort of ionised gas in the Universe. HVCs will also be ionised in some manner, and it might be necessary to rely on spectroscopic observations of these HVCs to determine how much they will interfere with incoming light.
-
-The region of interest is very specifically directly outside the HVC in a predicted magnetic envelope. After which, it must travel through the rest of the halo and the ISM before it reaches us.
 
 All these sources of interference can make it extremely difficult to determine the actual rotation measures in question. A background control run and analysis of the HVC can prevent this issue. RM interference is an active part of the process in radio astronomy, with aforementioned research that aims to tackle this problem. With a larger data set, however, there is more reliability simply because of the scope of data. In previous examples, as mentioned, HVCs in the leading arm can be obscured, which is a way HVCs in the halo can also experience faulty RMs. With more data comes more confidence and a better ability at eliminating outliers.
 
@@ -42,7 +40,7 @@ Once these tests have been performed, it will be possible to assess if our resul
   \label{tab:timeline}
 \end{table*}
 
-Table~\ref{tab:timeline} displays a rough timeline of planned events over the year. The table displays a schedule of both honours program milestones and self-assigned objectives.
+Table~\ref{tab:timeline} displays a rough timeline of both honours program milestones and self-assigned objectives.
 
 As a general summary, the first half of the first semester will be focused on initialising the project and starting the process of research and planning. The second half will focus on primarily completing objective 1, in which 14 weeks sounds like a realistic timeframe. The midterm report will be worked on as the tasks of objective 1 start winding down, with all the new research discovered over those months being compiled into the incomplete skeleton of the report.
 
@@ -50,6 +48,14 @@ Objective 2 will require less time, and hence only will take the former half of 
 
 I do not actually know, according to the honours guidelines, if I am allowed to submit theses for formal publishing after the marking and reviewing of the report internally. At the very least, whether it happens or not, the potential for it to be published will act as a large personal motivator.
 
+There will inevitably be disruptions to the timeline of planned events, in order to account for these several contingency measures are employed:
+\begin{enumerate}
+\item Starting work on tasks 1-2 weeks before their allocated time
+\item Spending a portion of the 20 hrs/week on non-focused tasks (i.e. reading for 3 hrs while working on objective 1)
+\item Slightly overestimating the time it takes to complete each aspect of the project, to allow room for slow progress
+\item Using a flowchart model of progression, so if one aspect of the project cannot be completed, only future contingencies are hindered
+\item Regular and premature testing of programs
+\end{enumerate}
 
 %%% Local Variables: 
 %%% mode: latex
