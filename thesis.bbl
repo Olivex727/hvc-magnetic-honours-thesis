@@ -7,10 +7,14 @@
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
 
-\bibitem[{Lieberman and Hewitt(1983)}]{LH:83}
-\textsc{Lieberman, H. and Hewitt, C.}, (1983).
-\newblock A real-time garbage collector based on the lifetimes of objects.
-\newblock \emph{Communications of the ACM}, 26(6), 419--429.
-\newblock \doi{10.1145/358141.358147}.
+\bibitem[{Grønnow et~al.(2022)Grønnow, Tepper-García, Bland-Hawthorn, and
+  Fraternali}]{ID33}
+\textsc{Grønnow, A., Tepper-García, T., Bland-Hawthorn, J., and Fraternali,
+  F.}, (2022).
+\newblock The role of the halo magnetic field on accretion through
+  high-velocity clouds.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society}, 509(4),
+  5756–5770.
+\newblock \doi{10.1093/mnras/stab3452}.
 
 \end{thebibliography}

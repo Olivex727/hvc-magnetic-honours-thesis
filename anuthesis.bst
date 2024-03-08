@@ -354,14 +354,14 @@ FUNCTION {format.names}
       nameptr #1 >
         {
           namesleft #1 >
-            { "; " * t * }
+            { ", " * t * }
             {
               s nameptr "{ll}" format.name$ duplicate$ "others" =
                 { 't := }
                 { pop$ }
               if$
               numnames #2 >
-                { ";" * }
+                { "," * }
                 'skip$
               if$
               t "others" =
@@ -407,14 +407,14 @@ FUNCTION {format.names.ed}
       nameptr #1 >
         {
           namesleft #1 >
-            { "; " * t * }
+            { ", " * t * }
             {
               s nameptr "{ll}" format.name$ duplicate$ "others" =
                 { 't := }
                 { pop$ }
               if$
               numnames #2 >
-                { ";" * }
+                { "," * }
                 'skip$
               if$
               t "others" =
