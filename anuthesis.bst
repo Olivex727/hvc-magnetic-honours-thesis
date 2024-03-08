@@ -658,6 +658,7 @@ FUNCTION {format.date}
     'skip$
   if$
   extra.label *
+  "(" swap$ * ")" *
 }
 FUNCTION{format.year}
 { year "year" bibinfo.check duplicate$ empty$
@@ -806,17 +807,17 @@ FUNCTION {format.vol.num.pages}
         'skip$
       if$
       swap$
-      ", " swap$ * " " *
+      "(" swap$ * ")" *
     }
   if$ *
   year empty$ 'skip$
    {
-      month empty$ 
-      { " (" }
-      { " (" month " " * * }
-     if$
-     year ")" * * *
-   }
+  %    month empty$ 
+  %    { " (" }
+  %    { " (" month " " * * }
+  %   if$
+  %   year ")" * * *
+    }
   if$
   eid empty$
     { format.journal.pages }

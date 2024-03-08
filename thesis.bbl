@@ -8,9 +8,9 @@
   \urlstyle{rm}\Url}\fi
 
 \bibitem[{Lieberman and Hewitt(1983)}]{LH:83}
-\textsc{Lieberman, H. and Hewitt, C.}, 1983.
+\textsc{Lieberman, H. and Hewitt, C.}, (1983).
 \newblock A real-time garbage collector based on the lifetimes of objects.
-\newblock \emph{Communications of the ACM}, 26, 6  (Jun. 1983), 419--429.
+\newblock \emph{Communications of the ACM}, 26(6), 419--429.
 \newblock \doi{10.1145/358141.358147}.
 
 \end{thebibliography}
