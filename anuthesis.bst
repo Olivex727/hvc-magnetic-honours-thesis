@@ -261,6 +261,9 @@ FUNCTION {bbl.chapter}
 FUNCTION {bbl.techrep}
 { "Technical Report" }
 
+FUNCTION {bbl.hthesis}
+{ "Honour's thesis" }
+
 FUNCTION {bbl.mthesis}
 { "Master's thesis" }
 
@@ -1155,6 +1158,26 @@ FUNCTION {manual}
   organization "organization" bibinfo.check output
   address "address" bibinfo.check output
   format.edition output
+  format.doi output
+  new.block
+  format.url output
+  new.block
+  format.note output
+  fin.entry
+}
+
+FUNCTION {honoursthesis}
+{ output.bibitem
+  format.authors "author" output.check
+  author format.key output
+  format.date "year" output.check
+  date.block
+  format.btitle
+  "title" output.check
+  new.block
+  bbl.hthesis format.thesis.type output.nonnull
+  school "school" bibinfo.warn output
+  address "address" bibinfo.check output
   format.doi output
   new.block
   format.url output

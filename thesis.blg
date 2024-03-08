@@ -5,12 +5,22 @@ Reallocating 'name_of_file' (item size: 1) to 10 items.
 The style file: anuthesis.bst
 Reallocating 'name_of_file' (item size: 1) to 7 items.
 Reallocating 'name_of_file' (item size: 1) to 7 items.
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+mastersthesis is already a type "wizard-defined" function name
+---line 1189 of file anuthesis.bst
+ : function {mastersthesis
+ :                        }
 Database file #1: thesis.bib
 Database file #2: batch1.bib
+Database file #3: batch1additional.bib
+Illegal end of database file---line 31 of file batch1additional.bib
+ : @
+ :  
+I'm skipping whatever remains of this entry
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 You've used 1 entry,
-            3081 wiz_defined-function locations,
-            594 strings with 4659 characters,
+            3083 wiz_defined-function locations,
+            601 strings with 4758 characters,
 and the built_in function-call counts, 785 in all, are:
 = -- 56
 > -- 36
@@ -49,3 +59,4 @@ warning$ -- 0
 while$ -- 4
 width$ -- 0
 write$ -- 23
+(There were 2 error messages)
