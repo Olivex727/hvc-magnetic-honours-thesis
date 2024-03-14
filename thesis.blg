@@ -6,57 +6,48 @@ The style file: anuthesis.bst
 Reallocating 'name_of_file' (item size: 1) to 7 items.
 Reallocating 'name_of_file' (item size: 1) to 7 items.
 Reallocating 'name_of_file' (item size: 1) to 17 items.
-mastersthesis is already a type "wizard-defined" function name
----line 1189 of file anuthesis.bst
- : function {mastersthesis
- :                        }
 Database file #1: thesis.bib
 Database file #2: batch1.bib
 Database file #3: batch1additional.bib
-Illegal end of database file---line 31 of file batch1additional.bib
- : @
- :  
-I'm skipping whatever remains of this entry
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-You've used 1 entry,
-            3083 wiz_defined-function locations,
-            601 strings with 4758 characters,
-and the built_in function-call counts, 785 in all, are:
-= -- 56
-> -- 36
-< -- 0
-+ -- 15
-- -- 12
-* -- 69
-:= -- 119
-add.period$ -- 4
-call.type$ -- 1
-change.case$ -- 9
-chr.to.int$ -- 1
-cite$ -- 1
-duplicate$ -- 52
-empty$ -- 58
-format.name$ -- 15
-if$ -- 147
+You've used 36 entries,
+            3119 wiz_defined-function locations,
+            872 strings with 11488 characters,
+and the built_in function-call counts, 25664 in all, are:
+= -- 1852
+> -- 1410
+< -- 15
++ -- 546
+- -- 480
+* -- 2182
+:= -- 3918
+add.period$ -- 141
+call.type$ -- 36
+change.case$ -- 340
+chr.to.int$ -- 36
+cite$ -- 36
+duplicate$ -- 1857
+empty$ -- 1801
+format.name$ -- 588
+if$ -- 4928
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 12
-newline$ -- 15
-num.names$ -- 4
-pop$ -- 20
+missing$ -- 437
+newline$ -- 222
+num.names$ -- 144
+pop$ -- 749
 preamble$ -- 1
-purify$ -- 8
+purify$ -- 304
 quote$ -- 0
-skip$ -- 13
+skip$ -- 478
 stack$ -- 0
-substring$ -- 46
-swap$ -- 33
-text.length$ -- 0
+substring$ -- 986
+swap$ -- 1164
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 9
+type$ -- 321
 warning$ -- 0
-while$ -- 4
+while$ -- 149
 width$ -- 0
-write$ -- 23
-(There were 2 error messages)
+write$ -- 540
