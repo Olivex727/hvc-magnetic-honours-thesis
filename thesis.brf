@@ -21,7 +21,7 @@
 \backcite {ID5}{{1}{[section][1][1]1.1}{section.1.1}}
 \backcite {ID30}{{1}{[section][1][1]1.1}{section.1.1}}
 \backcite {ID26}{{1}{[section][1][1]1.1}{section.1.1}}
-\backcite {ID34}{{1}{[section][2][1]1.2}{section.1.2}}
+\backcite {ID34}{{2}{[section][2][1]1.2}{section.1.2}}
 \backcite {ID13}{{2}{[section][2][1]1.2}{section.1.2}}
 \backcite {ID19}{{2}{[section][2][1]1.2}{section.1.2}}
 \backcite {ID46}{{2}{[section][2][1]1.2}{section.1.2}}
@@ -43,8 +43,8 @@
 \backcite {ID28}{{2}{[section][2][1]1.2}{section.1.2}}
 \backcite {ID28}{{2}{[section][2][1]1.2}{section.1.2}}
 \backcite {ID35}{{2}{[section][2][1]1.2}{section.1.2}}
-\backcite {ID48}{{2}{[section][2][1]1.2}{section.1.2}}
-\backcite {ID49}{{2}{[section][2][1]1.2}{section.1.2}}
+\backcite {ID48}{{3}{[section][2][1]1.2}{section.1.2}}
+\backcite {ID49}{{3}{[section][2][1]1.2}{section.1.2}}
 \backcite {ID5}{{3}{[section][2][1]1.2}{section.1.2}}
 \backcite {ID26}{{3}{[section][2][1]1.2}{section.1.2}}
 \backcite {ID30}{{3}{[section][2][1]1.2}{section.1.2}}
@@ -68,7 +68,7 @@
 \backcite {ID3}{{3}{[section][3][1]1.3}{section.1.3}}
 \backcite {ID28}{{3}{[section][3][1]1.3}{section.1.3}}
 \backcite {ID1}{{3}{[section][3][1]1.3}{section.1.3}}
-\backcite {ID18}{{3}{[section][3][1]1.3}{section.1.3}}
+\backcite {ID18}{{4}{[section][3][1]1.3}{section.1.3}}
 \backcite {ID2}{{4}{[section][4][1]1.4}{Item.3}}
 \backcite {ID5}{{4}{[section][4][1]1.4}{Item.3}}
 \backcite {ID23}{{4}{[section][4][1]1.4}{Item.3}}
@@ -78,7 +78,7 @@
 \backcite {ID5}{{4}{[section][4][1]1.4}{Item.3}}
 \backcite {ID26}{{4}{[section][4][1]1.4}{Item.3}}
 \backcite {ID30}{{4}{[section][4][1]1.4}{Item.3}}
-\backcite {ID1}{{7}{[section][1][2]2.1}{figure.2.1}}
+\backcite {ID1}{{6}{[section][1][2]2.1}{figure.2.1}}
 \backcite {ID18}{{7}{[section][1][2]2.1}{figure.2.1}}
 \backcite {ID26}{{7}{[section][1][2]2.1}{figure.2.1}}
 \backcite {ID28}{{7}{[section][1][2]2.1}{figure.2.1}}
