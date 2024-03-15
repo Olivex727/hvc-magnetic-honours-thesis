@@ -1,4 +1,4 @@
-\begin{thebibliography}{36}
+\begin{thebibliography}{37}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -50,6 +50,12 @@
 \newblock A full-sky h$\alpha$ template for microwave foreground prediction.
 \newblock \emph{The Astrophysial Journal}, 146(2), 407.
 \newblock \doi{10.1086/374411}.
+
+\bibitem[{Gaensler et~al.(2010)Gaensler, Landecker, and Taylor}]{ID52}
+\textsc{Gaensler, B.~M., Landecker, T.~L., and Taylor, A.~R.}, (2010).
+\newblock Survey science with askap: Polarisation sky survey of the universes's
+  magnetism (possum).
+\newblock In \emph{Bulletin of the American Astronomical Society}.
 
 \bibitem[{Grønnow et~al.(2018)Grønnow, Tepper-García, and
   Bland-Hawthorn}]{ID24}
