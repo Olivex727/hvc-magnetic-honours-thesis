@@ -261,6 +261,9 @@ FUNCTION {bbl.chapter}
 FUNCTION {bbl.techrep}
 { "Technical Report" }
 
+FUNCTION {bbl.hthesis}
+{ "Honour's thesis" }
+
 FUNCTION {bbl.mthesis}
 { "Master's thesis" }
 
@@ -354,14 +357,14 @@ FUNCTION {format.names}
       nameptr #1 >
         {
           namesleft #1 >
-            { "; " * t * }
+            { ", " * t * }
             {
               s nameptr "{ll}" format.name$ duplicate$ "others" =
                 { 't := }
                 { pop$ }
               if$
               numnames #2 >
-                { ";" * }
+                { "," * }
                 'skip$
               if$
               t "others" =
@@ -407,14 +410,14 @@ FUNCTION {format.names.ed}
       nameptr #1 >
         {
           namesleft #1 >
-            { "; " * t * }
+            { ", " * t * }
             {
               s nameptr "{ll}" format.name$ duplicate$ "others" =
                 { 't := }
                 { pop$ }
               if$
               numnames #2 >
-                { ";" * }
+                { "," * }
                 'skip$
               if$
               t "others" =
@@ -658,6 +661,7 @@ FUNCTION {format.date}
     'skip$
   if$
   extra.label *
+  "(" swap$ * ")" *
 }
 FUNCTION{format.year}
 { year "year" bibinfo.check duplicate$ empty$
@@ -806,17 +810,17 @@ FUNCTION {format.vol.num.pages}
         'skip$
       if$
       swap$
-      ", " swap$ * " " *
+      "(" swap$ * ")" *
     }
   if$ *
   year empty$ 'skip$
    {
-      month empty$ 
-      { " (" }
-      { " (" month " " * * }
-     if$
-     year ")" * * *
-   }
+  %    month empty$ 
+  %    { " (" }
+  %    { " (" month " " * * }
+  %   if$
+  %   year ")" * * *
+    }
   if$
   eid empty$
     { format.journal.pages }
@@ -1154,6 +1158,26 @@ FUNCTION {manual}
   organization "organization" bibinfo.check output
   address "address" bibinfo.check output
   format.edition output
+  format.doi output
+  new.block
+  format.url output
+  new.block
+  format.note output
+  fin.entry
+}
+
+FUNCTION {honoursthesis}
+{ output.bibitem
+  format.authors "author" output.check
+  author format.key output
+  format.date "year" output.check
+  date.block
+  format.btitle
+  "title" output.check
+  new.block
+  bbl.hthesis format.thesis.type output.nonnull
+  school "school" bibinfo.warn output
+  address "address" bibinfo.check output
   format.doi output
   new.block
   format.url output

@@ -1,5 +1,9 @@
-\documentclass[12pt, a4paper]{book} 
+\documentclass[12pt, a4paper, oneside]{book} 
 \usepackage{svn-multi}
+\usepackage{makecell}
+
+\tolerance=10000
+\vfuzz=8pt
 
 \usepackage{lipsum}
 
@@ -11,10 +15,11 @@
 \svnid{$Id$}
 \usepackage{prelim2e}
 \renewcommand{\PrelimWords}{Draft Copy \svnkw{Id}}
+
 %%\newcommand*{\mysvnrev}{\svnrev}
 \usepackage[hyperindex=true,
 			bookmarks=true,
-            pdftitle={}, pdfauthor={Xi Yang},
+            pdftitle={}, pdfauthor={Olivia Walters},
             colorlinks=false,
             pdfborder=0,
             pagebackref=false,
@@ -28,6 +33,7 @@
 \usepackage{afterpage}
 \usepackage{graphicx}
 \usepackage{thesis}
+\usepackage{textcomp}
 \usepackage[square]{natbib}
 \usepackage[normalem]{ulem}
 \usepackage[table]{xcolor}
@@ -36,7 +42,7 @@
 \usepackage[centerlast]{caption2}
 \usepackage{float}
 \urlstyle{sf}
-\renewcommand{\sfdefault}{uop}
+\renewcommand{\sfdefault}{cmr}
 \usepackage[T1]{fontenc}
 \usepackage[scaled]{beramono}
 
@@ -60,8 +66,8 @@
 \input{macros}            
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Preamble
-\title{Title Is Hererere}
-\author{Author Name}
+\title{Magnetic fields in circumgalactic high velocity clouds}
+\author{Olivia Walters}
 \date{\today}
 
 \renewcommand{\thepage}{\roman{page}}
@@ -84,9 +90,9 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Dedication
-\cleardoublepage
-\pagestyle{empty}
-\input{dedication}
+%\cleardoublepage
+%\pagestyle{empty}
+%\input{dedication}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Acknowledgements
@@ -117,21 +123,22 @@
 \input{intro}
 
 %% Chapters
-\input{background}
-\input{design}
+
+%\input{design}
 \input{methodology}
 \input{results}
+\input{discussion}
 \input{conclusion}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Here begins the end matter
 
-%%\input{appendix}
+\input{appendix}
 
 \backmatter
 
 \bibliographystyle{anuthesis}
-\bibliography{thesis}
+\bibliography{thesis, batch1, batch1additional}
 
 \printindex
 
