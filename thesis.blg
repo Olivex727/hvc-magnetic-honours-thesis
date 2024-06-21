@@ -6,48 +6,52 @@ The style file: anuthesis.bst
 Reallocating 'name_of_file' (item size: 1) to 7 items.
 Reallocating 'name_of_file' (item size: 1) to 7 items.
 Reallocating 'name_of_file' (item size: 1) to 17 items.
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: thesis.bib
 Database file #2: batch1.bib
 Database file #3: batch1additional.bib
+Database file #4: batch2rand.bib
+Database file #5: obstech.bib
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-You've used 37 entries,
+You've used 38 entries,
             3119 wiz_defined-function locations,
-            878 strings with 11709 characters,
-and the built_in function-call counts, 26234 in all, are:
-= -- 1893
-> -- 1438
-< -- 15
-+ -- 556
-- -- 489
-* -- 2226
-:= -- 4006
-add.period$ -- 144
-call.type$ -- 37
-change.case$ -- 350
-chr.to.int$ -- 37
-cite$ -- 37
-duplicate$ -- 1901
-empty$ -- 1847
-format.name$ -- 600
-if$ -- 5040
+            893 strings with 11997 characters,
+and the built_in function-call counts, 26906 in all, are:
+= -- 1942
+> -- 1450
+< -- 16
++ -- 558
+- -- 492
+* -- 2282
+:= -- 4096
+add.period$ -- 153
+call.type$ -- 38
+change.case$ -- 356
+chr.to.int$ -- 38
+cite$ -- 38
+duplicate$ -- 1966
+empty$ -- 1916
+format.name$ -- 608
+if$ -- 5185
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 446
-newline$ -- 227
-num.names$ -- 148
-pop$ -- 773
+missing$ -- 460
+newline$ -- 238
+num.names$ -- 152
+pop$ -- 785
 preamble$ -- 1
-purify$ -- 311
+purify$ -- 316
 quote$ -- 0
-skip$ -- 494
+skip$ -- 510
 stack$ -- 0
-substring$ -- 997
-swap$ -- 1184
+substring$ -- 1008
+swap$ -- 1228
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 330
+type$ -- 339
 warning$ -- 0
-while$ -- 152
+while$ -- 155
 width$ -- 0
-write$ -- 552
+write$ -- 577

@@ -1,65 +1,155 @@
 \chapter{Introduction}
 \label{cha:introduction}
 
-\section{Motivation}
-\label{sec:motivation}
-High Velocity Clouds (HVCs) are a possible explanation for gas in-fall into galaxies \cite{ID7}, fuelling continual star formation. This is primarily due to their high velocities (approx. 70-90 $\mathrm{kms}^{-1}$) being a result of tidal stripping of satellite galaxies like the Magellanic system \cite{ID7, ID8}. However, HVCs face a different issue that can prevent them from colliding with galactic disks. When a cloud of gas moves at such speeds, the expectation is that it will dissapate due to Kelvin-Helmholtz instabilities and ram pressure stripping \cite{ID23, ID33, ID11}, preventing it from reaching the halo.
+The question of galactic gas accretion is a puzzle that has perplexed Astronomers for decades. Due to the complexities in the structures of star-forming galaxies, there are many factors and potential sources of accretion. What Astronomers do know, at least, is that star-forming galaxies require a continuous supply of fresh gas to continue their star formation.
 
-The Galactic halo is magnetised to some degree \cite{ID30}. It is hypothesised that HVCs, as they travel through the Galactic halo, will accumulate magnetic fields, which may protect them from collapse \cite{ID10, ID11, ID13, ID23, ID24, ID34}; "magnetic draping" prevents clouds from dissapating.However, there has not been substantial evidence to demonstrate that this hypothesis is true. The best method to measuring magnetic field strength is by quantifying Faraday rotation, something which researchers have only recently been  capable of doing due to: a past lack of rotation measure (RM) cataloguing; lower-density RM grid measurements; and foreground obstructions \cite{ID2, ID18, ID36}. A majority of past research, instead, has been focused on data collection, and the development of magnetic field derivation techniques that allow modern research to begin testing the "magnetic draping" hypothesis \cite{ID18, ID1, ID3, ID6, ID5, ID30, ID26}.
 
-This project aims to use RM grid measurements from the ASKAP Polarisation Sky Survey of the Universe's Magnetism (POSSUM), ancillary legacy data, past simulations, and magnetic field derivation techniques to produce the first high-quality measurement of magnetic draping phenomena in circumgalactic HVCs - a pivotal turning point in the progression of research.
+Due to observational constrains, Astronomers are required to attempt to answer this question by examining the behaviours of our own Milky Way and Local Group environment. This is under the expectation that the Milky Way is typical of a star-forming galaxy.
 
-\section{Literature Review}
-\label{sec:lit-review}
 
-HVCs are generally shaped like comets, with a large central gas cloud (approx. 500 pc in diameter), and a long tail of material that has been stripped from the cloud (which accounts for one eighth the total mass of the cloud) \cite{ID34, ID13}. When HVCs collide with the Galactic disk, they generally leave evidence of long trails behind \cite{ID19}. HVCs contain hydrogen and helium, however, they can also contain trace amounts of metals \cite{ID46}, and non-metals like nitrogen, oxygen, and sulfur \cite{ID48, ID49}. The relative metallicity and alpha abundance in HVCs do have an impact on the ability for HVCs to survive as they travel through the medium e.g. \citep{ID24} predicts that high-density metal-rich clouds, and low-density metal-poor clouds are generally more unstable. While HVCs can contain heavier elements, \citep{ID46} finds that the concentrations are low enough that HVCs can remain viable candidates for fuelling star-formation.
+A major factor to consider when answering this question is where fresh pristine gas comes from, and by what mechanism it takes to enter the disks of star-forming galaxies. The intention of this paper is to continue the examination of one explanation for galactic gas accretion – High Velocity Clouds (HVCs). 
 
-Simulations conducted by \citep{ID23, ID24, ID33}, provide the most detailed insight on how magnetic draping protects HVCs against collapse, in addition to previous work by \citep{ID11, ID13, ID25}. It is generally shown that magnetic fields around 0.3 - 1 {\textmu}G are enough to provide stability. Magnetic fields larger than 1 {\textmu}G produce enough pressure to both slow down HVCs and accelerate Rayleigh–Taylor instabilities. This depends on the size of the HVC.
 
-Determining the magnetic field strength required for a HVC to survive can be done by balancing magnetic pressure with ram pressure \cite{ID13}, however it is much harder to find a mathematical formulation to determine how high magnetic field strengths affect instabilities. Without any magnetic draping, HVCs with masses under $10^{4.5} \mathrm{M}_{\odot}$ will fully disperse within 10 kpc of halo travel \cite{ID25}.
+\section{High Velocity Clouds}
+\label{sec:hvcs}
 
-The morphology of magnetic field lines matters \cite{ID24}. While it is possible to draw conclusions on the survivability of HVCs by analysing the strength of the magnetic field alone, modelling is needed to confirm those conclusions' accuracy's \cite{ID5}.
+HVCs are clouds of gas found in the Milky Way's Circumgalactic Medium (CGM) and Galactic Halo and are notable primarily for their high peculiar velocity relative to the Galactic Frame of Rest (GSR), typically 70-90 $\mathrm{km s^{-1}}$ \citep{ID7, ID8, ID66}. This increased speed, as will be shown in section \ref{ssec:draping}, is hypothesized to allow the HVC to survive as it travels through the CGM and halo and reach the Galactic disk and Interstellar Medium (ISM) of the Milky Way.
 
-The Smith Cloud is a larger HVC that, in previous research, has had its magnetic field analysed, both in strength and morphology. Simulations from \citep{ID23} and observations from \citep{ID28} agree on the magnetic field strength of the Smith Cloud being approx. 8 {\textmu}G. This value exceeds the "Goldilocks" zone of stable magnetic fields, acting as an example of how size affects stability. The Smith Cloud is an exceptionally large HVC that has already partially collided with the Galactic disk \cite{ID28, ID35}. This points to the Smith Cloud being an outlier in regard to most HVCs.
 
-From nitrogen spectral analysis, HVCs are typically at an equilibrium temperature of 8000 - 12000 K, with HVCs at higher Galactic latitudes being on-average hotter than at lower latitudes \cite{ID48, ID49}. These temperatures allow HVCs to be HI and H-alpha emitters. Temperature is an important component of determining the emission measure of a HVC \cite{ID5, ID26, ID30}, needed in the later derivation of the magnetic field strength.
+The origin of HVCs is still unknown, with a few hypothesises as to where they originate. \cite{ID66} suggests that HVCs originate from the Intergalactic Medium (IGM) surrounding the local group. However, there is also a belief that some HVCs likely 'tore off' from satellites like the Magellanic Clouds, due to the presence of their own dark matter subhaloes, and the existence of HVCs in the Magellanic Stream and Leading Arm \cite{ID27, ID2}.
 
-To stabilise a HVC, a weakly-magnetised halo of approx. 0.3 - 3 {\textmu}G is needed, to have magnetic fields to sweep up \cite{ID13}. There is a very broad range of measured halo field strengths reported in the literature, ranging from 0.1 - 5 {\textmu}G \cite{ID4, ID16, ID21, ID30, ID37, ID42}. This suggests that there is not enough data to conclusively determine the halo magnetic field strength, or that the halo is heterogeneous in magnetic field strength, or both. This primarily is due the difficulty in removing foreground contributions, preventing proper measurement of the base halo strength. What is known is that the Galactic halo has an asymmetry in its magnetic field strength as a function of Galactic latitude \cite{ID16, ID30, ID21}.
 
-Therefore, the subtraction of foreground objects is an important step in the process of determining RMs. For more see section \ref{sec:method}. \citep{ID36} demonstrates the difficulty of this procedure, by challenging the results of \citep{ID2} on the basis that there was a foreground object manipulating the RM data.
+HVCs typically have a neutral mass gas content of $3\times10^7 M_{\odot}$ and a dark matter content of $3\times10^8 M_{\odot}$. They are generally shaped like comets, with a primary bulb that is approximately 0.5-25 kpc in diameter - a value that is highly dependent on distance to the Galactic midplane with the lower bound corresponding to approx. 50 kpc and an upper bound of approx. 1 Mpc \citep{ID66, ID13}. Furthermore, HVCs have tail-like structures that account for one eighth the baryonic mass of the HVC \citep{ID13}. These tails leave behind long streams of gas that remain after collision with the Galactic disk \citep{ID19}. This high distance dependence on size, comet-like structure, and long streaming tails suggest quite conclusively that HVCs shed a lot of material as they make their journey to the ISM.
 
-\section{Data Sources}
-\label{sec:sources}
 
-The primary source and focus of the project will be with POSSUM. RMs will be taken for the whole southern hemisphere in \citep{ID52}, however, as the survey is set to take place over the next 4 years, only 20\% of the data will be used. Because \citep{ID52} is still in preparation, the reference used for data formatting comes from \citep{ID1}. POSSUM also includes the Smith Cloud in its field.
+Figure \ref{fig:hvc_example} is from \citep{ID13}, which provides a typical example of what a HVC looks like in HI, specifically using the example of HVC125+41-207.
 
-HI emission is used in the location of HVCs, as they are opaque at the 21 cm line. Adjacent to POSSUM is the Galactic All Sky Survey (GASS) and the NRAO VLA Sky Survey (NVSS), in which \citep{ID3, ID6} provides a broad southern sky catalog of HI emission with \citep{ID3} locating points of interest for closer analysis.
+\begin{figure}
+    \includegraphics[width=10cm]{"Konz_2002.png"}
+    \centering
+    \caption{From \citep{ID13}, figure 2. An example of a typical HVC shape and structure, specifically that of HVC125+41-207. The contour lines and shading indicate $N_{HI}$ column density.}
+    \label{fig:hvc_example}
+\end{figure}
 
-The scientific investigation will require additional ancillary data to complete its objectives. Firstly, foreground obstructions, which act as the primary culprit of invalid measurement, have been catalogued by \citep{ID44, ID45}. H-alpha emission is required to determine electron density. \citep{ID43} provides combined whole-sky survey of H-alpha measurements.
+\subsection{Chemical Properites and Emission}
+\label{ssec:chem}
 
-Legacy data is utilised to test the magnetic field derivation algorithm. Meaning that HI emission, H-alpha emission, foreground obstructions, and RM grids will be needed for the Smith Cloud in specific. While all the above surveys and papers already catalogue the Smith Cloud. Legacy data needs to be used, as all past data was derived using the lower-resolution RM grid measurements. \citep{ID28} provides HI emission for the Smith Cloud specifically. \citep{ID18} provides data on the Smith Cloud rotation measures.
+HVCs have several characteristics that allow them to be both detected and analysed. Due to their hypothesised extragalactic source, HVCs contain mostly neutral gas such as HI, which can be seen with 21 cm emission \citep{ID7, ID8, ID6}. HVCs also typically contain molecular gas that emits H-alpha, however due to extinction effects, it is difficult to observe H-alpha emission correctly \citep{ID9, ID43}. Another difficulty for H-alpha analysis is that HVCs typically do not contain CO in significant quantities \citep{ID66}.
 
-\section{Objectives, novelty, and expected outcomes}
-\label{sec:objectives}
 
-The main objectives of this honours thesis is to:
-\begin{enumerate}
-\item Detect magnetic fields surrounding circumgalactic HVCs using RMs collected from POSSUM
-\item Determine if these magnetic fields, from a “rough estimation” (i.e. is the number in the "Goldilocks zone"), can allow a HVC to travel through a halo relatively undisturbed
-\item (if there is time) More in-depth modelling surrounding the specific structure of magnetic fields surrounding HVCs and if this structure is preventing the formation of Kelvin-Helmholtz instabilities
-\end{enumerate}
+Despite HVCs supposed gas purity, there is evidence that HVCs can contain alpha group elements. \cite{ID49, ID48} found the presence of [NII] 6583{\AA}, [SII] 6716{\AA}, and [OIII] 5007{\AA} emission lines – with a conclusion that Nitrogen abundance is 0.15-0.44 times solar abundance levels. The observation of these emission lines can help constrain the metallicity of any HVC  \citep{ID49}. Metallicity is important in both answering the capacity for HVCs to supply fresh gas for star formation, and the mechanism by which HVCs can survive \citep{ID24}; more on the latter in section \ref{ssec:draping}. While HVCs can contain heavier elements \cite{ID46} finds that these concentrations are low enough that HVCs can remain as viable candidates for fuelling star formation via gas accretion.
 
-While previous reports exist that have measured magnetic fields surrounding circumgalactic HVCs, most of this data is from HVCs in the Smith Cloud \cite{ID2, ID5, ID23, ID26}. So far there has not been a substantial analysis of HVC magnetic fields  across the entire southern hemisphere. This is important, as it could be the case that the Smith Cloud is exceptional compared to the relatively homogeneous Galactic halo.
 
-Novelty comes in the scope of the analysis, as a broad measuring of HVCs in the southern hemisphere means a much larger data set for future researchers to draw on, both for simulation creation and understanding galactic evolution. This report takes advantage of the fact that only recently has POSSUM catalogued enough data to perform this investigation.
+HVCs additionally have a temperature relationship. With an average HVC temperature of 10000 K and a range of temperatures ranging from 8000 – 12000 K \citep{ID49, ID48}. The temperature of a HVC is just around the region in which atomic hydrogen transitions from neutral (HI) to ionised (HII), suggesting that HVCs may be partly ionised \citep{ID49, ID48, ID68}. This temperature relationship is dependent on their position to the Galactic midplane, with HVCs closer to the midplane generally being cooler \citep{ID48}.
 
-The RM Grid analysis is of a higher sensitivity with POSSUM, with 30 reliable measurements per square degree compared to previous surveys only having 1 measurement per square degree \cite{ID18, ID1}. This makes the RM grid data significantly higher in resolution.
+\section{Magnetic Fields}
+\label{sec:bfields}
 
-Of course, the report will rely on previous data, as a means of confirming the validity of the reduction pipeline. Previous location and spectral analysis of HVCs, in the measurement of HI and H-alpha emission, is used to not only know where the HVCs are, but also to determine important factors like emission measure \cite{ID5, ID26, ID30}.
+The primary issue facing HVCs as an explanation for gas accretion is its capacity to survive as it travels through the CGM and Galactic halo. As discussed, in section \ref{sec:hvcs}, HVCs can loose a lot of size and mass as it approaches towards the Galactic disk, with the long trails it leaves behind being evidence for ram-pressure stripping as the HVC collides with the gas present in the halo \citep{ID11, ID23, ID33}. \cite{ID25} demonstrates that without anything to counter this effect, HVCs with masses under $10^{4.5} M_{\odot}$ would completely disperse within 10 kpc of halo travel.
 
-Because this report is one of the first to measure magnetic fields surrounding numerous HVCs, there are a few potential outcomes that this report needs to anticipate:
-\begin{itemize}
-\item There are magnetic fields that are strong enough to support HVCs. This would mean that HVCs can act as a substantial explanation for how galaxies take in external gas, to ultimately fuel star formation. Future research from this would involve more in-depth modelling on magnetic fields, the setup of a northern hemisphere equivalent to POSSUM, investigation of extragalactic HVCs, or determining if the gas content in HVCs can fully account for the fuel demands of star-forming galaxies.
-\item Magnetic fields exist surrounding HVCs in the halo, however they are only strong enough to partially explain HVC transport. The report can then estimate to what degree magnetic fields can support HVCs. Future research would involve investigating other possible sources of stability for HVCs or attempting to find a different method for how gas enters galactic disks.
-\item The magnetic fields are either non-existent or too weak to support HVCs i.e. accepting the null hypothesis. This potentially eliminates HVCs as an explanation for gas in-fall, meaning that we are back at square one. Future research would involve checking to confirm if the result of the report is correct, or if there is any remaining room in the data to apply magnetic draping to other HVCs in the Milky Way. It may also involve completely abandoning HVCs as a candidate for gas in-fall after more careful analysis is done.
-\end{itemize}
+
+Additionally, HVCs are subject to Kelvin-Helmholtz (K-H) instabilities, which is triggered by the nature of the HVC being a cloud of warm gas travelling at high speeds through a medium. These K-H instabilities are a significant factor that would lead a to HVCs collapsing before it reaches the Galactic disk \citep{ID11, ID23, ID33}.
+
+
+\subsection{Draping}
+\label{ssec:draping}
+
+The proposed solution to handle this problem is magnetic fields. The Galactic halo is magnetised to some degree in a generally turbulent manner \citep{ID30}. It is hypothesised that these magnetic fields accumulate the existing magnetic fields and ionised gas in the Galactic halo, causing them to coax the HVC with a shield that protects against ram pressure stripping and supresses K-H instabilities \citep{ID10, ID11, ID13, ID23, ID24, ID34}. This phenomenon is referred to as 'magnetic draping'.
+
+
+However, there is not enough evidence to support the magnetic draping hypothesis beyond simulations. As most of the past research, instead, was focused on: technological improvements to surveys \citep{ID52, ID1, ID3, ID6, ID18, ID43, ID44, ID45}; the analysis of physical phenomena such as ram pressure stripping \citep{ID11, ID23, ID33}; the development of magnetic field derivation techniques \citep{ID5, ID23, ID30, ID11, ID26, ID21}; and simulations of HVCs \citep{ID13, ID23, ID24, ID33, ID34} – all of which lay the groundwork for a proper investigation of magnetic draping.
+
+
+Previous and recent simulations involve reports produced by \cite{ID23, ID24, ID33} (henceforth referred to as the “Grønnow simulations”) that provide detailed insight onto how a magnetic draping protects HVCs from collapse, complementing earlier work by \cite{ID13, ID11}. It is shown from the Grønnow simulations that magnetic fields of about 0.3-1 {\textmu}G can provide stability to HVCs.
+
+
+However, increasing magnetic field strength beyond a certain threshold can result in more instability; magnetic fields can accelerate the effects of Rayleigh-Taylor (R-T) instabilities and the magnetic pressure applied by the draped fields can also slow down a HVC to the point that it no longer is fast enough to sweep up these magnetic fields. From the Grønnow simulations, the upper threshold where these effects start increasing instability is about 1 {\textmu}G, thus HVCs should ideally have a “Goldilocks” magnetic field strengths on the order of magnitude of 0.1{\textmu}G, with 1{\textmu}G being too high, and 0.01{\textmu}G being too low.
+
+
+The effectiveness of magnetic draping is affected by the morphology of these fields and the physical properties of the HVC. The Grønnow simulations state that both the orientation of the magnetic field with respect to the direction of motion of the HVC, and where the magnetic field is located are important considerations. It is expected that not the entire HVC is to be covered in a magnetic field, only the part that is front facing in the direction of travel. While it is possible to draw conclusions about the survivability of a HVC from the strength of the magnetic field, modelling is required to confirm the accuracy of such conclusions \citep{ID5}. The Grønnow simulations also predict that metallicity can affect the HVC's survivability, with high-density metal-rich clouds and low-density metal-poor clouds being more unstable than their counterparts.
+
+
+\subsection{Faraday Rotation}
+\label{ssec:faraday}
+
+Magnetic fields cannot directly be imaged by a telescope. Instead, researchers can use the phenomenon of Faraday Rotation to quantify the line-of-sight magnetic field strength. Low-frequency polarised radiation tends to rotate as it travels through a medium with a magnetic field present. Thus, by recording the stokes parameters of incoming light from distant radio sources, one can derive the Rotation Measure (RM) of incoming radiation, which is a statistical quantifier of Faraday Rotation \citep{ID1, ID14}. The polarisation angle can be derived from the two orthogonal linear stokes parameters, Q and U, and where $\phi$ is the polarisation angle:
+
+\begin{equation}
+\phi = \frac{1}{2} \arctan{\left(\frac{Q}{U}\right)}
+\label{eq:stokes}
+\end{equation}
+
+
+\cite{ID1} describes the method by which this report's main source, the Polarisation Sky Survey of the Universe's Magnetism (POSSUM), obtained it's RMs from raw stokes parameters. The value of the RM is derived by establishing a linear relationship between the polarisation angle, $\delta \phi$, and the square of the wavelength of passing radiation, $\lambda$, shown in Equation \ref{eq:polarisation}:
+
+
+\begin{equation}
+    \delta \phi = \mathrm{RM}\lambda^2
+    \label{eq:polarisation}
+\end{equation}
+
+
+There is a direct connection between RM and line-of-sight magnetic field strength, quantified by the below equation \citep{ID5, ID1, ID26, ID27, ID30}.
+
+
+\begin{equation}
+    \mathrm{RM} = 0.812 \int_{s_{\mathrm{observer}}}^{s_{\mathrm{source}}}{\frac{n_e(s)}{\mathrm{cm^{-2}}}\frac{B_{\parallel}}{\mu\mathrm{G}}\frac{ds}{\mathrm{pc}}} \mathrm{rad m^{-2}}
+    \label{eq:rm_integral}
+\end{equation}
+
+
+In which, $B_{\parallel}$ is the magnetic field strength, $\mathrm{RM}$ is the Faraday Depth a.k.a. the value of the RM, and $n_e$ is the electron density of the medium as a function of line-of-sight distance $s$. The analysis of this equation, its solutions, and the use of it in calculating the magnitude of draped magnetic fields is discussed in section \ref{cha:derivation}.
+
+
+Faraday Rotation also occurs in the ISM, due to the slight magnetisation of the ISM \citep{ID37, ID30, ID21}. In addition to this there are many smaller sources of Faraday Rotation that can cause interference with the desired object observations being made. Hence it is also important to remove the foreground from RM observations.
+
+
+\subsubsection{Noise Interference}
+\label{sssec:SNR}
+
+When making radio observations of RMs, a principal factor to consider is signal to noise ratio and detector sensitivity. Radio sources tend to appear in the field after high exposure times, and when they do, they appear as point-like sources. These point-like sources are then collated into an “RM grid” which has a particular density measured in sample points per square degree. The sensitivity of a detector is related to the number of grid points as seen in figure \ref{fig:loi} \citep{ID59}. At grid densities that are too high, RM sources can bleed into each other, leading to confusion noise. However, no modern radio telescope can reach the confusion limit \citep{ID59}.
+
+\begin{figure}
+    \includegraphics[width=10cm]{"Loi_2019.png"}
+    \centering
+    \caption{From \citep{ID59}, figure 4. A graph of the relationship between the 1.4 GHz sensitivity of a radio detector array (x-axis) and the mimumum number of RM sample points per square degree (y-axis). The black points are not relevant to the report, but the purple line and equation describe the determined relationship.}
+    \label{fig:loi}
+\end{figure}
+
+Signal to noise is of primary concern when measuring the effect of Faraday Rotation. At low enough signal-to-noise ratios, it is possible to encounter 'phantom RMs' which do not accurately represent the real RM \citep{ID60}. Figure \ref{fig:snr} gives a visual illustration of this phenomenon. The issue in question is that any observation of RM grids is going to dip below the signal-to-noise threshold of approx. 6, which can introduce an intrinsic scatter in collected RM grid data. There is not much that can be done outside of avoiding regions where the signal-to-noise is likely to be lower (i.e. the Galactic midplane), or to account for it with statistical methods more resistant to large errors.
+
+\begin{figure}
+    \includegraphics[width=10cm]{"Macquart_2012.jpg"}
+    \centering
+    \caption{From \citep{ID60}, figure 1. A graph displaying the effect of observational (stokes parameters) signal-to-noise ratio the resultant faraday depth on a sample set of observations.}
+    \label{fig:snr}
+\end{figure}
+
+\section{Smith Cloud}
+\label{sec:sc}
+
+The Smith Cloud is a large HVC that is in the process of colliding with the Galactic disk \citep{ID28, ID64, ID35}. Unlike most HVCs it is quite large in both mass (at least $10^6 M_{\odot}$ in HI mass) and angular size \citep{ID28, ID64, ID35}. It has a predicted physical size of 3 square kpc, which is large for a HVC close to the Galactic disk \citep{ID28}. Due to its proximity and size, the Smith Cloud has been used as a source point of analysis for most of the properties already discussed. For example, metallicity tracers and alpha-group elements in \cite{ID48, ID49} were determined by analysing the Smith Cloud. Figure \ref{fig:sc} provides an image of the Smith Cloud in HI from \cite{ID28}.
+
+\begin{figure}
+    \includegraphics[width=10cm]{"Lockman_2008.jpeg"}
+    \centering
+    \caption{From \citep{ID28}, figure 1. A HI image of the Smith Cloud taken from the Green Bank Telescope at a local standard of velocity rest of 100 $\mathrm{kms^{-1}}$. The purpose of the arrows are not meaningful to this paper.}
+    \label{fig:sc}
+\end{figure}
+
+
+The Smith Cloud has additionally already had its magnetic draping effect analysed. Simulations by \citep{ID23} and observations by \citep{ID26} both agree on an effective magnetic field of $\sim$8 {\textmu}G. Note that this number is well above the Goldilocks zone mentioned in section \ref{ssec:draping} – indicating the exceptionality of the Smith Cloud.
+
+
+While there are other HVCs that have been sampled in the past, the Smith Cloud has been the main source of HVC information. This is a problem, as the Smith Cloud is an outlier amongst most HVCs – evidenced by its unusual size and magnetic field strength, both factors being related. There is a necessity to analyse more typical nearby HVCs to gain an understanding of the effects of magnetic fields.
+
+\section{Report Outline and Objectives}
+\label{sec:outline}
+
+The primary objective of this report is to (a) construct a rudimentary algorithm for calculating arbitrary HVCs found in the CGM and halo and, (b) use this base algorithm to come up with a \textit{very} rough estimate for the magnetic field strength surrounding typical HVCs. The primary source of data will be POSSUM, which will be used to obtain the primary outcome of the report. Due to the previous lack of robust RM grid data, along with other periphery data and a large level of required assumptions, it is not possible to come up with an accurate estimate of field strength for any HVC. The best-case scenario is an estimate that is accurate within a single order of magnitude. Hence, why the aim of this report is to lay the foundations for a future, more detailed analysis, of HVCs i.e. it is easier to modify a derivation pipeline than to create one from scratch.
+
+
+A secondary objective report is integral to completing the primary objective and in future research for all observations of Faraday Rotation: that of foreground removal. Past research, specifically within the analysis of HVCs, has relied on the technique of interpolation to obtain a RM foreground to use in corrections \citep{ID21, ID3, ID26}. However, as researchers move onto measurements of magnetism that demand more accuracy, foreground removal needs to equally match that that growing need for accuracy – thus this report also aims to investigate avenues for improving foreground subtraction techniques.
+
+
+This report is split into eight sections. Section \ref{cha:data} describes the process of how and which data was obtained to achieve the research question, and how this data was collated together. Section \ref{cha:FR} summarises the investigation into foreground removal, which is the secondary aim of the research. Section \ref{cha:derivation} describes how the magnetic fields for HVCs were derived, and the level to which morphology was involved in the analysis. Section \ref{cha:results} provides the results of the scientific investigation and data analysis. Section \ref{cha:discussion} discusses the viability of the methods described in the report, along with broader scientific and statistical considerations. Lastly section \ref{cha:conclusion} concludes and outlines the many possible directions for future research. Appendix A (\ref{sec:appendixA}) lists information on how to obtain the program data and algorithms used in research.
