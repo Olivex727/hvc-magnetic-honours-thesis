@@ -1,4 +1,4 @@
-\begin{thebibliography}{38}
+\begin{thebibliography}{43}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -6,6 +6,15 @@
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
+
+\bibitem[{Beck et~al.(2012)Beck, Lesch, Dolag, Kotarba, Geng, and
+  Stasyszyn}]{ID42}
+\textsc{Beck, A.~M., Lesch, H., Dolag, K., Kotarba, H., Geng, A., and
+  Stasyszyn, F.~A.}, (2012).
+\newblock Origin of strong magnetic fields in milky way-like galactic haloes.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society}, 422(3),
+  2152–2163.
+\newblock \doi{10.1111/j.1365-2966.2012.20759.x}.
 
 \bibitem[{Betti et~al.(2019)Betti, Hill, Mao, Gaensler, Lockman,
   McClure-Griffiths, and Benjamin}]{ID5}
@@ -89,6 +98,13 @@
 \newblock \emph{The Astrophysial Journal}, 845(1), 69.
 \newblock \doi{10.3847/1538-4357/aa7ed2}.
 
+\bibitem[{Han and Qiao(1994)}]{ID16}
+\textsc{Han, J.~L. and Qiao, G.~J.}, (1994).
+\newblock The magnetic field in the disk of our galaxy.
+\newblock \emph{Astronomy {\&} Astrophysics}, 288, 759--772.
+\newblock
+  \urlprefix\url{https://ui.adsabs.harvard.edu/abs/1994AnA...288..759H}.
+
 \bibitem[{Hayakawa and Fukui(2024)}]{ID46}
 \textsc{Hayakawa, T. and Fukui, Y.}, (2024).
 \newblock Dust-to-neutral gas ratio of the intermediate- and high-velocity h i
@@ -125,6 +141,16 @@
 \newblock Magnetized gas in the smith high velocity cloud.
 \newblock \emph{The Astrophysial Journal}, 777(1), 55.
 \newblock \doi{10.1088/0004-637X/777/1/55}.
+
+\bibitem[{Hotan et~al.(2021)Hotan, Bunton, Chippendale, Whiting, Tuthill, Moss,
+  McConnell, Amy, Huynh, Allison, and et~al.}]{ID61}
+\textsc{Hotan, A.~W., Bunton, J.~D., Chippendale, A.~P., Whiting, M., Tuthill,
+  J., Moss, V.~A., McConnell, D., Amy, S.~W., Huynh, M.~T., Allison, J.~R., and
+  et~al.}, (2021).
+\newblock Australian square kilometre array pathfinder: I. system description.
+\newblock \emph{Publications of the Astronomical Society of Australia}, 38,
+  e009.
+\newblock \doi{10.1017/pasa.2021.1}.
 
 \bibitem[{Hutschenreuter et~al.(2022)Hutschenreuter, Anderson, Betti, Bower,
   Brown, Brüggen, Carretti, Clarke, Clegg, Costa, Croft, Eck, Gaensler,
@@ -165,6 +191,14 @@
   4161–4180.
 \newblock \doi{10.1093/mnras/stad1236}.
 
+\bibitem[{Jung et~al.(2023)Jung, McClure-Griffiths, Pakmor, Ma, Hill, Eck, and
+  Anderson}]{ID4}
+\textsc{Jung, S.~L., McClure-Griffiths, N.~M., Pakmor, R., Ma, Y.~K., Hill,
+  A.~S., Eck, C. L.~V., and Anderson, C.~S.}, (2023).
+\newblock Sampling the faraday rotation sky of tng50: Imprint of the magnetised
+  circumgalactic medium around milky way-like galaxies.
+\newblock Accepted to MNRAS.
+
 \bibitem[{Kaczmarek et~al.(2017)Kaczmarek, Purcell, Gaensler,
   McClure-Griffiths, and Stevens}]{ID27}
 \textsc{Kaczmarek, J.~F., Purcell, C.~R., Gaensler, B.~M., McClure-Griffiths,
@@ -180,6 +214,14 @@
 \newblock On the excitation and ionization temperature of the hydrogen in the
   chromosphere.
 \newblock \emph{Publications of the Astronomical Society of Japan}, 4, 131.
+
+\bibitem[{Khadir et~al.(2024)Khadir, Pandhi, Hutschenreuter, Gaensler,
+  Vanderwoude, West, and O'Sullivan}]{ID58}
+\textsc{Khadir, A., Pandhi, A., Hutschenreuter, S., Gaensler, B.~M.,
+  Vanderwoude, S., West, J.~L., and O'Sullivan, S.~P.}, (2024).
+\newblock Choosing interpolation techniques for reconstructing galactic faraday
+  rotation.
+\newblock Submitted to {ApJ}.
 
 \bibitem[{Konz et~al.(2002)Konz, Brüns, and Birk}]{ID13}
 \textsc{Konz, C., Brüns, C., and Birk, G.~T.}, (2002).
