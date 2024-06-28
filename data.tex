@@ -15,7 +15,14 @@ POSSUM is an ongoing project using ASKAP with the aim of measuring the RM southe
 Additionally, POSSUM is set to cover a region of the southern sky that has seldom been recorded properly in previous RM grid surveys, primarily due to the lack of RM radio astronomy in the southern sky \citep{ID44, ID45, ID52}. This allows for the analysis of HVCs which otherwise would not be analysed under legacy data.
 
 
-Generally, \cite{ID52} is the reference for current POSSUM data. The POSSUM grid data used in this report was obtained in May 2024, with a total RM source count of 188842. Figure [FIG] represents the entire sample on an Aitoff projection.
+Generally, \cite{ID52} is the reference for current POSSUM data. All POSSUM data is recorded using the ASKAP radio frequency band 1 at 880-1088 MHz \citep{ID1, ID52}. The POSSUM grid data used in this report was obtained in May 2024, with a total RM source count of 188842. Figure \ref{fig:rm_map} represents the entire sample on an Aitoff projection.
+
+\begin{figure}
+    \includegraphics[width=12cm]{"POSSUM_RMs_Aitoff_more_detail.jpg"}
+    \centering
+    \caption{An Aitoff projection of all portions of the RM sky observed by ASKAP for the POSSUM survey. The map is up to date as of May 2024 and all RMs in this map are used in the production of this report. The faraday depth of these RMs are listed in the colourmap.}
+    \label{fig:rm_map}
+\end{figure}
 
 \section{Observational Data}
 \label{sec:data}
@@ -39,7 +46,14 @@ The HI sky was taken from the HI4PI 21 cm survey, with modifications done by \ci
 The H-alpha sky was taken from \cite{ID43}, which was a collage of three smaller H-alpha surveys. Unfortunately, this map is also limited by the same problems as the Hutschenreuter map, with a notable lack of coverage near the terrestrial south pole. It was decided that the H-alpha map would be included in the process of collation for the purposes of future research potential, even despite the extreme extinction of H-alpha emissions acting as a barrier to proper use in analysis.
 
 
-Both maps, the Hutschenreuter map, and their respective error maps are displayed in figure [FIG]. The only exception being the HI error, which is only altered by a scalar. All data sources collected were first converted to a FITS file under the cartesian projection. Due to the linearity of all RM-specific calculation processes, the use of the cartesian projection will not cause significant or notable distortions in the results.
+Both maps, the Hutschenreuter map, and their respective error maps are displayed in figure \ref{fig:maps}. The only exception being the HI error, which is only altered by a scalar. All data sources collected were first converted to a FITS file under the cartesian projection. Due to the linearity of all RM-specific calculation processes, the use of the cartesian projection will not cause significant or notable distortions in the results.
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{"Cartesian_Plots.png"}
+    \centering
+    \caption{Cartesian plots of peripheral data maps: the HI sky from the \cite{ID6} modification of the HI4PI survey; the H-alpha sky from \citep{ID43}; and the Hutschenreuter map from \cite{ID44, ID45}. Uncertainty maps for H-alpha and the interpolation are displayed respectively. The HI uncertainty is not displayed due to it simply being a scalar multiple of the HI map.}
+    \label{fig:maps}
+\end{figure}
 
 \section{HVC Selection and Elimination}
 \label{sec:hvc_sel}
@@ -53,7 +67,14 @@ The Moss catalogue includes a total of 1693 HVCs, of which most are not viable c
 Other considerations made when filtering HVCs were their overlap with the current POSSUM RM grids. Not every HVC is properly covered by the current RM grid. HVCs were filtered out if their centres (obtained from the Moss catalogue) were more than one degree separated from the nearest RM sampling point. This further reduced the sample size to 26 HVCs.
 
 
-Lastly, there is a major increase in scatter with POSSUM RMs and interpolated RMs closer to the galactic midplane \citep{ID21}. This is explored in later sections; however, figure [FIG] represents this scatter. Because of this, HVCs close to the galactic midplane must be eliminated to reduce scatter – specifically HVCs located with Galactic Latitudes $|b|<20^{\circ}$ were excluded. This reduces the final sample size to 15.
+Lastly, there is a major increase in scatter with POSSUM RMs and interpolated RMs closer to the galactic midplane \citep{ID21}. This is explored in later sections; however, figure \ref{fig:rm_scatter} represents this scatter. Because of this, HVCs close to the galactic midplane must be eliminated to reduce scatter – specifically HVCs located with Galactic Latitudes $|b|<20^{\circ}$ were excluded. This reduces the final sample size to 15.
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{"RM_whole_scatter.png"}
+    \centering
+    \caption{(Left) A graph of all $\sim$180000 RMs plotted against their corresponding galactic lattitude; (Right) The corresponding graph of all interpolated faraday depths matched to the POSSUM RMs. Both graphs represent a significant level of scatter present in RMs collected near the galactic midplane.}
+    \label{fig:rm_scatter}
+\end{figure}
 
 \section{Data Collation}
 \label{sec:collation}
@@ -66,7 +87,14 @@ Once the data was obtained, calculations were done using the \verb|astropy.wcs| 
 For each HVC, the HI, H-alpha, interpolation, and RM grid was 'cropped' according to a field twice the size of the maximum HVC source x and y extents. This is to allow for analysis of both RMs in the HVC and surrounding the HVC.
 
 
-Figure [FIG] presents HI images of all 15 HVCs, the overlapping RM grids, and the cropped HI fields.
+Figure \ref{fig:all_hvcs} presents HI images of all 15 HVCs, the overlapping RM grids, and the cropped HI fields. The filtered Moss catalogue, including all 15 HVCs is displayed in \ref{sec:appendixB}.
+
+\begin{figure}
+    \includegraphics[width=10cm]{"Selected_HVCs.png"}
+    \centering
+    \caption{All 15 HVCs used in the analyis of the primary outcome. The HI column density is represented using a greyscale image background. The RMs are represented by circular markers, their size equal to the magnitude and the colour representative of their sign with Red being positive. The black circle is the maximum-extent HVC area and the black 'x' indicates the centre of the HVC.}
+    \label{fig:all_hvcs}
+\end{figure}
 
 %%% Local Variables: 
 %%% mode: latex
