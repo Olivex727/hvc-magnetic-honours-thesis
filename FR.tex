@@ -1,15 +1,15 @@
 \chapter{Foreground Subtraction}
 \label{cha:FR}
 
-Foreground subtraction remains an open question in the field of RM radio astronomy. Due to the inherent magnetisation of the Galactic halo and the ISM, as discussed in sections [SECREF] and [SECREF], there are significant contributions to observed RMs from the Galactic foreground across the entire sky. To correctly determine the magnetic field surrounding objects of interest, one must first remove this source of systematic error.
+Foreground subtraction remains an open question in the field of RM radio astronomy. Due to the inherent magnetisation of the Galactic halo and the ISM, as discussed in sections \ref{ssec:draping} and \ref{ssec:faraday}, there are significant contributions to observed RMs from the Galactic foreground across the entire sky. To correctly determine the magnetic field surrounding objects of interest, one must first remove this source of systematic error.
 
 
-A prime example of the consequences of not correctly accounting for foreground RM contributions is the paper by [SOURCE], which attempted to estimate the magnetic field strength surrounding HVCs in the Leading Arm. However, as from [SOURCE], this result is possibly erroneous due to the obstruction of the nearby Antila supernova remnant region. While the analysis of multiple HVCs is more likely to prevent these errors from compounding to invalidate the conclusions of the report, it is still useful to account for these contributions as much as possible.
+A prime example of the consequences of not correctly accounting for foreground RM contributions is the paper by \cite{ID3}, which attempted to estimate the magnetic field strength surrounding HVCs in the Leading Arm. However, as from \cite{ID36}, this result is possibly erroneous due to the obstruction of the nearby Antila supernova remnant region. While the analysis of multiple HVCs is more likely to prevent these errors from compounding to invalidate the conclusions of the report, it is still useful to account for these contributions as much as possible.
 
 \section{Interpolation}
 \label{sec:intp}
 
-All previous work on magnetic field analysis of HVCs involve the use of interpolation [SOURCE]. Interpolations are very beneficial due to its ability to convert a discrete distribution of RM grid points into a continuous distribution of the RM sky. Interpolations also benefit from a 'smoothing' effect; that interpolated maps can smooth out small-scale imperfections in the RM grid that may not correspond to actual foreground objects [SOURCE]. This smoothing can occur because of the interpolation algorithm itself, or the lack of RM grid density to resolve objects on a particular scale.
+All previous work on magnetic field analysis of HVCs involve the use of interpolation \citep{ID3, ID5, ID6, ID26}. Interpolations are very beneficial due to its ability to convert a discrete distribution of RM grid points into a continuous distribution of the RM sky. Interpolations also benefit from a 'smoothing' effect; that interpolated maps can smooth out small-scale imperfections in the RM grid that may not correspond to actual foreground objects \citep{ID44, ID45, ID58}. This smoothing can occur because of the interpolation algorithm itself, or the lack of RM grid density to resolve objects on a particular scale.
 
 
 The primary issue with interpolation is that they are too effective a technique at reconstructing the RM foreground. Despite the smoothing effects that they can provide, there is no way one can generally confirm that the RM sky has not included objects of interest as well; in other words, an interpolated RM sky could contain the profiles of objects of interest. This has the effect of making interpolated maps sourced from high-density RM grids redundant, as the original intention of interpolation is to subtract out foreground contributors to RMs – not the objects of interest themselves.
@@ -24,42 +24,46 @@ The immediate alternative is annulus subtraction. This is a method employed acro
 
 There are two sub-methods to consider when performing annulus subtraction: fixed-size annulus subtraction and fixed-sampling annulus subtraction. Fixed-size annulus subtraction involves defining an annulus with a constant inner and outer radius and averaging the RMs exclusively within this radial range. Fixed-sampling annulus subtraction involves defining an inner radius and then selecting a fixed amount of RM grid points that are closest to the central point, but still outside the inner radius. Assuming a constant grid density everywhere in the field, a relationship between the two methods can be quantified, in the following equation:
 
+\begin{equation}
+    \begin{split}
+        R = \sqrt{r^2 + \frac{N}{\pi n}} \\
+        N = \pi n \left( R^2 - r^2 \right)
+    \end{split}
+    \label{eq:annulus}
+\end{equation}
 
-[EQ]
-
-
-Where [UNIT] is the RM grid density, r is the inner radius of the annulus, R is the outer radius of the annulus (which is directly fixed under the fixed-size regime), and N is the number of RM grid points used (which is directly fixed under the fixed-sampling regime). This means that under a constant RM grid density, these two methods should be approximately equivalent.
+Where n is the RM grid density in $\mathrm{deg}^{-2}$, r is the inner radius of the annulus in degrees, R is the outer radius of the annulus in degrees (which is directly fixed under the fixed-size regime), and N is the number of RM grid points used (which is directly fixed under the fixed-sampling regime) and is unitless. This means that under a constant RM grid density, these two methods should be approximately equivalent.
 
 
 There are benefits to both methods. On one hand, fixed-size methods can be described mathematically as convolutions, making them linear. However, they can run into measurement and calculation errors when there is a low amount of RM grid points surrounding the central RM. On the other hand, fixed-sampling methods guarantee a consistent uncertainty and the existence of an average. However, this method is both non-linear and prone to including RM grid points very far away from the central point.
 
 
-The primary issue with annulus subtraction is determining the size of the annulus, or the amount of RM sampling points to select i.e. what counts as the “foreground”. This issue is what leads to many of the above-mentioned errors in both methods. The logical response is either to select a large annulus that completely removes the objects' RM contributions (in the case of HVCs this would correspond to an annulus of 1-[NUM] degrees in radius), or to select a small radius with numerous RM points to capture the foreground contributions both overlapping the object and isolated in the field. Both methods will be analysed in this paper, with the former being discussed in section [SECREF] and the latter being shown in figure [FIG] [FOOTNOTE]. The specific choice of parameters in the latter method being an inner radius of 0.4” and a sample size of 50 grid points – corresponding to an outer radius of approx. [NUM].
+The primary issue with annulus subtraction is determining the size of the annulus, or the amount of RM sampling points to select i.e. what counts as the “foreground”. This issue is what leads to many of the above-mentioned errors in both methods. The logical response is either to select a large annulus that completely removes the objects' RM contributions (in the case of HVCs this would correspond to an annulus of $1-\pi$ degrees in radius), or to select a small radius with numerous RM points to capture the foreground contributions both overlapping the object and isolated in the field. Both methods will be analysed in this paper, with the former being discussed in section \ref{ssec:kernel} and the latter being shown in figure [FIG] \footnote{The fixed-sampling annulus subtraction was proprietary data collected from the supervisor. However, the quantitative and qualitative analysis of the viability of this method is my own work.}. The specific choice of parameters in the latter method being an inner radius of 0.4” and a sample size of 50 grid points – corresponding to an outer radius of approx. $0.728^{\circ}$.
 
 \section{Fast Fourier Transforms (FFTs)}
 \label{sec:ffts}
 
-Many of the methods for foreground subtraction beyond interpolation appear to have a common intersection point in the form of image-based signal processing. Thus, the introduction of Fourier Transforms (FTs) may be a very useful direction for analysis. The benefit of FTs is their linearity, which has several benefits including: the trivialisation uncertainty calculations (quantified in equation [EQREF]); the linear combination of several kernel techniques; signal processing in separate orthogonal dimensions; and consistent scaling relationships. FTs also can utilise both convolutional blurring and bandpassing as separately, with convolutions already being discussed with annulus subtractions.
+Many of the methods for foreground subtraction beyond interpolation appear to have a common intersection point in the form of image-based signal processing. Thus, the introduction of Fourier Transforms (FTs) may be a very useful direction for analysis. The benefit of FTs is their linearity, which has several benefits including: the trivialisation uncertainty calculations (quantified in equation \ref{eq:ft_unc}); the linear combination of several kernel techniques; signal processing in separate orthogonal dimensions; and consistent scaling relationships. FTs also can utilise both convolutional blurring and bandpassing as separately, with convolutions already being discussed with annulus subtractions.
 
 
-FFTs extend the benefits of FTs by providing a fast algorithm of [NUM] complexity and allowing FTs to be performed over discrete sets of data [SOURCE]. This allows for the analysis of high-definition pixellated images, which is not unlike the standard format and use-case of a FITS file, especially when using a cartesian projection of the sky. Thus, by applying 2-dimensional FFTs to provided interpolated RM sky images, it is possible to solve the problem introduced by interpolated high-density RM grids.
+FFTs extend the benefits of FTs by providing a fast algorithm of $O(N\mathrm{log}N)$ complexity and allowing FTs to be performed over discrete sets of data. This allows for the analysis of high-definition pixellated images, which is not unlike the standard format and use-case of a FITS file, especially when using a cartesian projection of the sky. Thus, by applying 2-dimensional FFTs to provided interpolated RM sky images, it is possible to solve the problem introduced by interpolated high-density RM grids.
 
 \subsection{Non-Uniform Fast Fourier Transforms (NUFFTs)}
 \label{ssec:nuffts}
 
-FFTs can further be extended to the analysis of non-uniform data sets. Standard FFTs rely on the assumption that the grid of sampling points is uniform, and resultantly output uniform-density frequency distributions. NUFFTs do not require the assumption of uniformity, nor do they need to output uniform-density frequency distributions [SOURCE]. This means that instead of relying on interpolations at all, FTs can be applied directly to the RM grid itself. The primary sources for NUFFTs used in this paper are [SOURCE], with heavy reliance on the python module [CODE].
+FFTs can further be extended to the analysis of non-uniform data sets. Standard FFTs rely on the assumption that the grid of sampling points is uniform, and resultantly output uniform-density frequency distributions. NUFFTs do not require the assumption of uniformity, nor do they need to output uniform-density frequency distributions \citep{ID55, ID57}. This means that instead of relying on interpolations at all, FTs can be applied directly to the RM grid itself. The primary sources for NUFFTs used in this paper are \cite{ID55, ID57}, with heavy reliance on the python module \verb|PyNUFFT| (see appendix \ref{sec:appendixD} for more).
 
 
-There are three types of NUFFT: Forward, Adjoint, and “True” [FOOTNOTE]. The forward and adjoint types are inverses of each other – forward NUFFTs take a uniform image and a set of sampling points and return a non-uniform frequency distribution and adjoint NUFFTs reverses that process. True NUFFTs take a non-uniform distribution and output a non-uniform frequency distribution. True NUFFTs are not generally useful for the purposes of this report.
+There are three types of NUFFT: Forward, Adjoint, and "True" \footnote{There is no generally accepted nomenclature for type 3 NUFFTs that align with the single-adjective terminology. So "True" is used because it is an accurate descriptor for the type, involving both non-uniform x and k spaces.}. The forward and adjoint types are inverses of each other – forward NUFFTs take a uniform image and a set of sampling points and return a non-uniform frequency distribution and adjoint NUFFTs reverses that process. True NUFFTs take a non-uniform distribution and output a non-uniform frequency distribution. True NUFFTs are not generally useful for the purposes of this report.
 
 
 Applying a forward and then an adjoint NUFFT to a set of RM grid sampling points should perform the same task as creating an interpolation. From there, the intermediary step of a bandpass or kernel can be applied to the frequency distribution to produce an interpolation with objects of a particular scale removed from the field.
 
 
-The important first step in determining if this method is useful is to attempt creating an interpolation. First, an image was selected, specifically a grayscale and cropped image of the Cosmic Microwave Background (CMB) from the Planck mission (see appendix [SECREF] for more). This was chosen as the test image due to the CMB being able to replicate a noisy and 'blobby' structure, the CMB has also been analysed using FFTs for unrelated cosmological purposes.
+The important first step in determining if this method is useful is to attempt creating an interpolation. First, an image was selected, specifically a grayscale and cropped image of the Cosmic Microwave Background (CMB) from the Planck mission (see appendix \ref{sec:appendixC} for more). This was chosen as the test image due to the CMB being able to replicate a noisy and 'blobby' structure, the CMB has also been analysed using FFTs for unrelated cosmological purposes.
 
 
-Then, a random set of sampling points were selected and treated as the 'mock RMs', with the colour of the background corresponding to the intensity of the RM at that point. The image and the sampling points were then given to the [CODE] module and transformed in and out of the frequency domain. Figure [FIG] represents the outcomes of this analysis, performed on a sample of simulated RM grids with size [NUM]. Ignoring the grid-like structure in the recreated image (a consequence of the random point generation algorithm), even with a very high sampling point density or large field, the image is still very low-quality.
+Then, a random set of sampling points were selected and treated as the 'mock RMs', with the colour of the background corresponding to the intensity of the RM at that point. The image and the sampling points were then given to the \verb|PyNUFFT| module and transformed in and out of the frequency domain. Figure [FIG] represents the outcomes of this analysis, performed on a sample of simulated RM grids with size $30^{\circ}\times 30^{\circ}$. Ignoring the grid-like structure in the recreated image (a consequence of the random point generation algorithm), even with a very high sampling point density or large field, the image is still very low-quality.
 
 
 This does not disqualify the NUFFT as an analysis technique. Instead, it means that this technique can only work on a very large continuously connected RM set i.e. a complete or partially complete RM grid map of the sky. However, due to the lack of POSSUM data in its early stages, this is a method that must be investigated in the future.
@@ -67,13 +71,16 @@ This does not disqualify the NUFFT as an analysis technique. Instead, it means t
 \subsection{Bandpass Filtering}
 \label{ssec:bandpass}
 
-A simpler method is to directly alter the interpolation itself using normal FFTs. First, a 2-D FFT was applied to the Hutschenreuter map. A crosshatch-shaped bandpass was created as seen in figure [FIG]. This crosshatch imitates a bandpass commonly applied to 1-dimensional signals, where objects of a particular angular size are eliminated by removing all frequencies corresponding to that angular size in the k-space. The equation below quantifies the relationship between frequency and angular size:
+A simpler method is to directly alter the interpolation itself using normal FFTs. First, a 2-D FFT was applied to the Hutschenreuter map. A crosshatch-shaped bandpass was created. This crosshatch imitates a bandpass commonly applied to 1-dimensional signals, where objects of a particular angular size are eliminated by removing all frequencies corresponding to that angular size in the k-space. The equation below quantifies the relationship between frequency and angular size:
 
 
-[EQ]
+\begin{equation}
+        k_{\mathrm{HVC}} = \frac{1}{2 \theta_{\mathrm{HVC}} R}
+    \label{eq:freq_to_angle}
+\end{equation}
 
 
-Where [UNIT] is the spatial frequency, [UNIT] is the angular size of the HVC, and R is the pixel resolution of the axis (measured in pixels per degree). Assuming all interpolation images exist in a 2:1 cartesian space, due to the range of galactic latitude and longitude, the value of R is constant across the two axes.
+Where $k_{\mathrm{HVC}}$ is the spatial frequency in $\mathrm{deg}^{-1}$, $\theta_{\mathrm{HVC}}$ is the angular size of the HVC in degrees, and R is the pixel resolution of the axis, in pixels per degree. Assuming all interpolation images exist in a 2:1 cartesian space, due to the range of galactic latitude and longitude, the value of R is constant across the two axes.
 
 
 The crosshatch is shaped such that, when multiplied by the original k-space, objects of a particular size are either eliminated or reduced in prevalence. This method also guarantees the linearity of the crosshatch 'function'. After this, the inverse FFT is applied to give a resulting interpolation, seen in figure [FIG].
@@ -85,23 +92,26 @@ However, bandpassing introduces ripples into the interpolation. This effect is e
 When applying FTs to any interpolated image, it is important to maintain the corresponding uncertainty map's accuracy. This is where one can take advantage of linearity. The following formula below determines how uncertainties can be calculated:
 
 
-[EQ]
+\begin{equation}
+    \sigma_{\mathrm{output}} = \mathbf{\mathfrak{F}}^{-1} \biggl[ B \bigl( \mathbf{\mathfrak{F}} \left[ \sigma_{\mathrm{original}} \right] \bigr) \biggr]
+    \label{eq:ft_unc}
+\end{equation}
 
 
-Where [UNIT] is the bandpass function, [UNIT] is the uncertainty image, and [UNIT] is the FT.
+Where $B\colon\sigma\rightarrow\sigma$ is the bandpass function, $\sigma_{\mathrm{output}}$ and $\sigma_{\mathrm{original}}$ is the uncertainty images for the output and input respectively in $\mathrm{rad m}^{-2}$, and $\mathbf{\mathfrak{F}}$ is the FT.
 
 \subsection{Kernel Filtering}
 \label{ssec:kernel}
 
-The same techniques from above can be applied to convolutions, where the aim is to convolve the interpolation with a defined kernel. Two-dimensional convolutions have a time complexity of [NUM], depending on the kernel size k, whereas the FFT has a complexity [NUM]. By performing a FFT on both the kernel and the interpolation separately, then multiplying the two k-spaces together, and applying an inverse FFT, the result is a faster application of a convolution with a kernel. This was the chosen method to demonstrate the large fixed-size annulus subtraction method. Figure [FIG] displays the results of this method.
+The same techniques from above can be applied to convolutions, where the aim is to convolve the interpolation with a defined kernel. Two-dimensional convolutions have a time complexity of $O(n^4)$, depending on the kernel size, whereas the FFT has a complexity $O(n^2 \mathrm{log}^2 n)$. By performing a FFT on both the kernel and the interpolation separately, then multiplying the two k-spaces together, and applying an inverse FFT, the result is a faster application of a convolution with a kernel. This was the chosen method to demonstrate the large fixed-size annulus subtraction method. Figure [FIG] displays the results of this method.
 
 
-The main problem, as apparent from this method, is that the annulus kernel acts as an edge detection algorithm [SOURCE]. This causes defects at higher absolute galactic latitudes. Another problem is that this subtraction method is being applied to the interpolation, instead of the actual RM grid. This secondary issue can be solved by relying on the NUFFT of a larger RM grid. As it stands, this method appears to be incompatible with the goals of foreground removal.
+The main problem, as apparent from this method, is that the annulus kernel acts as an edge detection algorithm \citep{ID38}. This causes defects at higher absolute galactic latitudes. Another problem is that this subtraction method is being applied to the interpolation, instead of the actual RM grid. This secondary issue can be solved by relying on the NUFFT of a larger RM grid. As it stands, this method appears to be incompatible with the goals of foreground removal.
 
 \section{Characterising the RM data}
 \label{sec:charm}
 
-As seen from figures [FIG] and [FIG], there are several ways in which the RM grid can have 'bad data' – most notably in a lack of signal-to-noise and the inherent scatter when observing near the Galactic midplane. Thus, the final step of this chapter is to both characterise the RM sample set and to compare the methods against each other.
+As seen from figures \ref{fig:snr} and \ref{fig:rm_scatter}, there are several ways in which the RM grid can have 'bad data' – most notably in a lack of signal-to-noise and the inherent scatter when observing near the Galactic midplane. Thus, the final step of this chapter is to both characterise the RM sample set and to compare the methods against each other.
 
 
 Figure [FIG] represents a simple residual histogram comparison between all the methods discussed in this chapter. The desired result is seen in the residuals between the interpolated or crosshatch-bandpassed RMs and the actual RMs - appearing as a normal distribution centred at zero.  This is opposed to the two annulus methods, which do not appear to interact with the RM grid in a desirable manner.
@@ -118,7 +128,7 @@ Lastly, figure [FIG] compares the two annulus methods together. The annulus-band
 \section{Other Methods}
 \label{sec:other_methods}
 
-There are other methods for foreground removal that, while researched, were not considered viable options or of enough importance to numerically analyse in this report. However, they may still offer useful methods for future researchers. The first is median filtering, which is like previously discussed convolutional blurring methods. [SOURCE] provides a description of a fast median filtering algorithm for two-dimensional images. [SOURCE] is also a reference describing the potential benefits of median filtering, including a more robust removal of noise due to the statistical properties of the median, and the preservation of edges. It was disregarded in this report due to its inherent non-linearity, and the debatable nature of whether this disadvantage is worth the advantages it can bring. Linear decomposition of line-of-sight RMs are also possible, attempted in [SOURCE]. However, it is also quite mathematically complex and may not be conducive to a generalised algorithm, hence the lack of focus on this technique in this report.
+There are other methods for foreground removal that, while researched, were not considered viable options or of enough importance to numerically analyse in this report. However, they may still offer useful methods for future researchers. The first is median filtering, which is like previously discussed convolutional blurring methods. \cite{ID39} provides a description of a fast median filtering algorithm for two-dimensional images. \cite{ID40} is also a reference describing the potential benefits of median filtering, including a more robust removal of noise due to the statistical properties of the median, and the preservation of edges. It was disregarded in this report due to its inherent non-linearity, and the debatable nature of whether this disadvantage is worth the advantages it can bring. Linear decomposition of line-of-sight RMs are also possible, attempted in \cite{ID21}. However, it is also quite mathematically complex and may not be conducive to a generalised algorithm, hence the lack of focus on this technique in this report.
 
 
 %%% Local Variables: 

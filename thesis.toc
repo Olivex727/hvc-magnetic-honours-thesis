@@ -24,11 +24,13 @@
 \contentsline {subsection}{\numberline {3.3.1}Non-Uniform Fast Fourier Transforms (NUFFTs)}{20}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Bandpass Filtering}{21}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Kernel Filtering}{22}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Characterising the RM data}{22}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Characterising the RM data}{23}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Other Methods}{23}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Magnetic Field Derivation}{24}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Discussion}{25}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Conclusions}{26}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Appendix}{27}{chapter.7}%
-\contentsline {section}{\numberline {7.1}A - Developed code and data}{27}{section.7.1}%
-\contentsline {section}{\numberline {7.2}B - All HVCs}{27}{section.7.2}%
+\contentsline {chapter}{\numberline {4}Magnetic Field Derivation}{25}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Discussion}{26}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusions}{27}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Appendix}{28}{chapter.7}%
+\contentsline {section}{\numberline {7.1}A - Developed code and data}{28}{section.7.1}%
+\contentsline {section}{\numberline {7.2}B - All HVCs}{28}{section.7.2}%
+\contentsline {section}{\numberline {7.3}C - Planck Mission Cosmic Microwave Background}{28}{section.7.3}%
+\contentsline {section}{\numberline {7.4}D - PyNUFFT Python Module}{28}{section.7.4}%

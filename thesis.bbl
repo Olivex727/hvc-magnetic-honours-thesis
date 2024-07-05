@@ -1,4 +1,4 @@
-\begin{thebibliography}{43}
+\begin{thebibliography}{49}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -6,6 +6,21 @@
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
+
+\bibitem[{Arias-Castro and Donoho(2009)}]{ID40}
+\textsc{Arias-Castro, E. and Donoho, D.~L.}, (2009).
+\newblock Does median filtering truly preserve edges better than linear
+  filtering?
+\newblock \emph{The Annals of Statistics}, 37(3), 1172--1206.
+\newblock \doi{10.1214/08-AOS604}.
+
+\bibitem[{Bagchi and Mitra(1996)}]{ID55}
+\textsc{Bagchi, S. and Mitra, S.}, (1996).
+\newblock The nonuniform discrete fourier transform and its applications in
+  filter design. ii. 2-d.
+\newblock \emph{IEEE Transactions on Circuits and Systems II: Analog and
+  Digital Signal Processing}, 43(6), 434--444.
+\newblock \doi{10.1109/82.502316}.
 
 \bibitem[{Beck et~al.(2012)Beck, Lesch, Dolag, Kotarba, Geng, and
   Stasyszyn}]{ID42}
@@ -70,6 +85,14 @@
 \newblock Survey science with askap: Polarisation sky survey of the universes's
   magnetism (possum).
 \newblock In \emph{Bulletin of the American Astronomical Society}.
+
+\bibitem[{Greengard and Lee(2004)}]{ID57}
+\textsc{Greengard, L. and Lee, J.-Y.}, (2004).
+\newblock Accelerating the nonuniform fast fourier transform.
+\newblock \emph{Society for Industrial and Applied Mathematics Reviews}, 46(3),
+  443--454.
+\newblock \doi{10.1137/S003614450343200X}.
+\newblock \urlprefix\url{https://doi.org/10.1137/S003614450343200X}.
 
 \bibitem[{Grønnow et~al.(2018)Grønnow, Tepper-García, and
   Bland-Hawthorn}]{ID24}
@@ -152,6 +175,13 @@
   e009.
 \newblock \doi{10.1017/pasa.2021.1}.
 
+\bibitem[{Huang et~al.(1979)Huang, T., Yang, G., Tang, and G.}]{ID39}
+\textsc{Huang, T., Yang, G., Tang, and G.}, (1979).
+\newblock A fast two-dimensional median filtering algorithm.
+\newblock \emph{IEEE Transactions on Acoustics, Speech, and Signal Processing},
+  27(1), 13--18.
+\newblock \doi{10.1109/TASSP.1979.1163188}.
+
 \bibitem[{Hutschenreuter et~al.(2022)Hutschenreuter, Anderson, Betti, Bower,
   Brown, Brüggen, Carretti, Clarke, Clegg, Costa, Croft, Eck, Gaensler,
   de~Gasperin, Haverkorn, Heald, Hull, *, Inoue, Johnston-Hollitt, Kaczmarek,
@@ -190,6 +220,14 @@
 \newblock \emph{Monthly Notices of the Royal Astronomical Society}, 522(3),
   4161–4180.
 \newblock \doi{10.1093/mnras/stad1236}.
+
+\bibitem[{Jung et~al.(2021)Jung, McClure-Griffiths, and Hill}]{ID36}
+\textsc{Jung, S.~L., McClure-Griffiths, N.~M., and Hill, A.~S.}, (2021).
+\newblock Distant probes of rotation measure structure: where is the faraday
+  rotation towards the magellanic leading arm?
+\newblock \emph{Monthly Notices of the Royal Astronomical Society}, 508(3),
+  3921–3935.
+\newblock \doi{10.1093/mnras/stab2773}.
 
 \bibitem[{Jung et~al.(2023)Jung, McClure-Griffiths, Pakmor, Ma, Hill, Eck, and
   Anderson}]{ID4}
@@ -287,6 +325,12 @@
 \newblock High-velocity clouds in the galactic all sky survey. i. catalog.
 \newblock \emph{The Astrophysial Journal}, 209(1), 12.
 \newblock \doi{10.1088/0067-0049/209/1/12}.
+
+\bibitem[{Pulfer(2019)}]{ID38}
+\textsc{Pulfer, E.-M.}, (2019).
+\newblock \emph{Different Approaches to Blurring Digital Images and Their
+  Effect on Facial Detection}.
+\newblock Honour's thesis, University of Arkansas.
 
 \bibitem[{Putman et~al.(2012)Putman, Peek, and Joung}]{ID19}
 \textsc{Putman, M., Peek, J., and Joung, M.}, (2012).
