@@ -38,7 +38,14 @@ Where n is the RM grid density in $\mathrm{deg}^{-2}$, r is the inner radius of 
 There are benefits to both methods. On one hand, fixed-size methods can be described mathematically as convolutions, making them linear. However, they can run into measurement and calculation errors when there is a low amount of RM grid points surrounding the central RM. On the other hand, fixed-sampling methods guarantee a consistent uncertainty and the existence of an average. However, this method is both non-linear and prone to including RM grid points very far away from the central point.
 
 
-The primary issue with annulus subtraction is determining the size of the annulus, or the amount of RM sampling points to select i.e. what counts as the “foreground”. This issue is what leads to many of the above-mentioned errors in both methods. The logical response is either to select a large annulus that completely removes the objects' RM contributions (in the case of HVCs this would correspond to an annulus of $1-\pi$ degrees in radius), or to select a small radius with numerous RM points to capture the foreground contributions both overlapping the object and isolated in the field. Both methods will be analysed in this paper, with the former being discussed in section \ref{ssec:kernel} and the latter being shown in figure [FIG] \footnote{The fixed-sampling annulus subtraction was proprietary data collected from the supervisor. However, the quantitative and qualitative analysis of the viability of this method is my own work.}. The specific choice of parameters in the latter method being an inner radius of 0.4” and a sample size of 50 grid points – corresponding to an outer radius of approx. $0.728^{\circ}$.
+The primary issue with annulus subtraction is determining the size of the annulus, or the amount of RM sampling points to select i.e. what counts as the “foreground”. This issue is what leads to many of the above-mentioned errors in both methods. The logical response is either to select a large annulus that completely removes the objects' RM contributions (in the case of HVCs this would correspond to an annulus of $1-\pi$ degrees in radius), or to select a small radius with numerous RM points to capture the foreground contributions both overlapping the object and isolated in the field. Both methods will be analysed in this paper, with the former being discussed in section \ref{ssec:kernel} and the latter being shown in figure \ref{fig:annulus_sky} \footnote{The fixed-sampling annulus subtraction was proprietary data collected from the supervisor. However, the quantitative and qualitative analysis of the viability of this method is my own work.}. The specific choice of parameters in the latter method being an inner radius of 0.4” and a sample size of 50 grid points – corresponding to an outer radius of approx. $0.728^{\circ}$.
+
+\begin{figure}
+    \includegraphics[width=12cm]{"POSSUM_RMs_Aitoff_Craig_Annulus.jpg"}
+    \centering
+    \caption{An Aitoff projection of all portions of the RM sky observed by ASKAP for the POSSUM survey similar to \ref{fig:rm_map}, filtered through a proprietary fixed-sampling algorithim with inner radius of 0.4" and a samplinig constant of 50.}
+    \label{fig:annulus_sky}
+\end{figure}
 
 \section{Fast Fourier Transforms (FFTs)}
 \label{sec:ffts}
@@ -63,7 +70,14 @@ Applying a forward and then an adjoint NUFFT to a set of RM grid sampling points
 The important first step in determining if this method is useful is to attempt creating an interpolation. First, an image was selected, specifically a grayscale and cropped image of the Cosmic Microwave Background (CMB) from the Planck mission (see appendix \ref{sec:appendixC} for more). This was chosen as the test image due to the CMB being able to replicate a noisy and 'blobby' structure, the CMB has also been analysed using FFTs for unrelated cosmological purposes.
 
 
-Then, a random set of sampling points were selected and treated as the 'mock RMs', with the colour of the background corresponding to the intensity of the RM at that point. The image and the sampling points were then given to the \verb|PyNUFFT| module and transformed in and out of the frequency domain. Figure [FIG] represents the outcomes of this analysis, performed on a sample of simulated RM grids with size $30^{\circ}\times 30^{\circ}$. Ignoring the grid-like structure in the recreated image (a consequence of the random point generation algorithm), even with a very high sampling point density or large field, the image is still very low-quality.
+Then, a random set of sampling points were selected and treated as the 'mock RMs', with the colour of the background corresponding to the intensity of the RM at that point. The image and the sampling points were then given to the \verb|PyNUFFT| module and transformed in and out of the frequency domain. Figure \ref{fig:nufft} represents the outcomes of this analysis, performed on a sample of simulated RM grids with size $30^{\circ}\times 30^{\circ}$. Ignoring the grid-like structure in the recreated image (a consequence of the random point generation algorithm), even with a very high sampling point density or large field, the image is still very low-quality.
+
+\begin{figure}
+    \includegraphics[width=12cm]{"NUFFT_Compare.png"}
+    \centering
+    \caption{(Right) A cropped and grayscale image of the CMB. (Left) The same image after being fed through a forward then adjoint NUFFT. The amount of sample points total to 27000. Both plots share a common intensity colourbar for refrence.}
+    \label{fig:nufft}
+\end{figure}
 
 
 This does not disqualify the NUFFT as an analysis technique. Instead, it means that this technique can only work on a very large continuously connected RM set i.e. a complete or partially complete RM grid map of the sky. However, due to the lack of POSSUM data in its early stages, this is a method that must be investigated in the future.
@@ -83,10 +97,17 @@ A simpler method is to directly alter the interpolation itself using normal FFTs
 Where $k_{\mathrm{HVC}}$ is the spatial frequency in $\mathrm{deg}^{-1}$, $\theta_{\mathrm{HVC}}$ is the angular size of the HVC in degrees, and R is the pixel resolution of the axis, in pixels per degree. Assuming all interpolation images exist in a 2:1 cartesian space, due to the range of galactic latitude and longitude, the value of R is constant across the two axes.
 
 
-The crosshatch is shaped such that, when multiplied by the original k-space, objects of a particular size are either eliminated or reduced in prevalence. This method also guarantees the linearity of the crosshatch 'function'. After this, the inverse FFT is applied to give a resulting interpolation, seen in figure [FIG].
+The crosshatch is shaped such that, when multiplied by the original k-space, objects of a particular size are either eliminated or reduced in prevalence. This method also guarantees the linearity of the crosshatch 'function'. After this, the inverse FFT is applied to give a resulting interpolation, seen in figure \ref{fig:ripples}.
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{"Crosshatch_Interpolation_Compare.png"}
+    \centering
+    \caption{Crosshatch-Bandpassed versions of the interpolated RM sky at various opacity gradings - where "original" means 0\% opacity. The term "opacity" refers to the effect of the bandpass e.g. 100\% opacity means the bandpass completely removes selected frequencies and 50\% opacity means that the bandpass halves the presence of selected frequencies.}
+    \label{fig:ripples}
+\end{figure}
 
 
-However, bandpassing introduces ripples into the interpolation. This effect is expected but undesirable. There are two methods to remove this: either to apply the crosshatch at a certain 'opacity' i.e. the crosshatch is not eliminating all the k-space in its region, but instead is reducing those frequencies by a percentage; or using a more complex window than a Top Hat, such as a Tukey window or Gaussian window. The effects of the former are seen in figure [FIG]. The latter was not investigated due to time constraints.
+However, bandpassing introduces ripples into the interpolation. This effect is expected but undesirable. There are two methods to remove this: either to apply the crosshatch at a certain 'opacity' i.e. the crosshatch is not eliminating all the k-space in its region, but instead is reducing those frequencies by a percentage; or using a more complex window than a Top Hat, such as a Tukey window or Gaussian window. The effects of the former are seen in figure \ref{fig:ripples}. The latter was not investigated due to time constraints.
 
 
 When applying FTs to any interpolated image, it is important to maintain the corresponding uncertainty map's accuracy. This is where one can take advantage of linearity. The following formula below determines how uncertainties can be calculated:
@@ -103,8 +124,14 @@ Where $B\colon\sigma\rightarrow\sigma$ is the bandpass function, $\sigma_{\mathr
 \subsection{Kernel Filtering}
 \label{ssec:kernel}
 
-The same techniques from above can be applied to convolutions, where the aim is to convolve the interpolation with a defined kernel. Two-dimensional convolutions have a time complexity of $O(n^4)$, depending on the kernel size, whereas the FFT has a complexity $O(n^2 \mathrm{log}^2 n)$. By performing a FFT on both the kernel and the interpolation separately, then multiplying the two k-spaces together, and applying an inverse FFT, the result is a faster application of a convolution with a kernel. This was the chosen method to demonstrate the large fixed-size annulus subtraction method. Figure [FIG] displays the results of this method.
+The same techniques from above can be applied to convolutions, where the aim is to convolve the interpolation with a defined kernel. Two-dimensional convolutions have a time complexity of $O(n^4)$, depending on the kernel size, whereas the FFT has a complexity $O(n^2 \mathrm{log}^2 n)$. By performing a FFT on both the kernel and the interpolation separately, then multiplying the two k-spaces together, and applying an inverse FFT, the result is a faster application of a convolution with a kernel. This was the chosen method to demonstrate the large fixed-size annulus subtraction method. Figure \ref{fig:annulus_interpolation} displays the results of this method.
 
+\begin{figure}
+    \includegraphics[width=12cm]{"Annulus_Interpolation_Compare.png"}
+    \centering
+    \caption{Cartesian plots of the interpolated RM sky (Top) compared against the Annulus-Bandpassed version of the interpolated RM sky (Bottom). The annulus kernel used sums to unity, making it act like a unitary operator, standard for blurring techniques \citep{ID38}.}
+    \label{fig:annulus_interpolation}
+\end{figure}
 
 The main problem, as apparent from this method, is that the annulus kernel acts as an edge detection algorithm \citep{ID38}. This causes defects at higher absolute galactic latitudes. Another problem is that this subtraction method is being applied to the interpolation, instead of the actual RM grid. This secondary issue can be solved by relying on the NUFFT of a larger RM grid. As it stands, this method appears to be incompatible with the goals of foreground removal.
 
@@ -114,16 +141,34 @@ The main problem, as apparent from this method, is that the annulus kernel acts 
 As seen from figures \ref{fig:snr} and \ref{fig:rm_scatter}, there are several ways in which the RM grid can have 'bad data' – most notably in a lack of signal-to-noise and the inherent scatter when observing near the Galactic midplane. Thus, the final step of this chapter is to both characterise the RM sample set and to compare the methods against each other.
 
 
-Figure [FIG] represents a simple residual histogram comparison between all the methods discussed in this chapter. The desired result is seen in the residuals between the interpolated or crosshatch-bandpassed RMs and the actual RMs - appearing as a normal distribution centred at zero.  This is opposed to the two annulus methods, which do not appear to interact with the RM grid in a desirable manner.
+Figure \ref{fig:big_hist} represents a simple residual histogram comparison between all the methods discussed in this chapter. The desired result is seen in the residuals between the interpolated or crosshatch-bandpassed RMs and the actual RMs - appearing as a normal distribution centred at zero.  This is opposed to the two annulus methods, which do not appear to interact with the RM grid in a desirable manner.
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{"Big_RM_histogram_2.png"}
+    \centering
+    \caption{Residual histogram plots of the actual POSSUM RMs compared to the corresponding various foreground removal methods: interpolation (Top left); crosshatch-bandpassed (Top right); annulus-bandpassed (Bottom left); and annulus-convolved (Bottom right).}
+    \label{fig:big_hist}
+\end{figure}
 
 
-Figure [FIG] demonstrates the similarities between the crosshatch-bandpass and straight interpolation, with them being related to each other in a linear manner, specifically with a gradient of approximately unity. This is ideal, as it means that the crosshatch-bandpass method is not deviating significantly from the interpolation, only altering it subtly. The figure also demonstrates how scattered the RMs become near the galactic latitude, hence it being plotted for colour to delineate between RMs near and far away from the midplane.
+Figure \ref{fig:colour_maps} demonstrates the similarities between the crosshatch-bandpass and straight interpolation, with them being related to each other in a linear manner, specifically with a gradient of approximately unity. This is ideal, as it means that the crosshatch-bandpass method is not deviating significantly from the interpolation, only altering it subtly. The figure also demonstrates how scattered the RMs become near the galactic latitude, hence it being plotted for colour to delineate between RMs near and far away from the midplane.
 
 
-Figure [FIG] is the same, but instead comparing with the annulus-convolved method (a.k.a. the fixed-sampling annulus method). There is a somewhat linear relationship between the actual RMs and the annulus-convolved RMs, ignoring the heavy scatter closer to the midplane. This gives credibility to this method, and the choice of having a small-sized annulus.
+Figure \ref{fig:colour_maps} is the same, but instead comparing with the annulus-convolved method (a.k.a. the fixed-sampling annulus method). There is a somewhat linear relationship between the actual RMs and the annulus-convolved RMs, ignoring the heavy scatter closer to the midplane. This gives credibility to this method, and the choice of having a small-sized annulus.
 
 
-Lastly, figure [FIG] compares the two annulus methods together. The annulus-bandpass method (a.k.a. the fixed-size annulus method). From the bottom two graphs, the annulus bandpass overcorrects near the Galactic midplane, sending most RMs to near-zero. Despite this, RMs at higher galactic latitudes 'blow up'. This implies that the annulus-bandpass method is only viable for analysing objects close to the Galactic midplane. 
+Lastly, figure \ref{fig:colour_maps} compares the two annulus methods together. The annulus-bandpass method (a.k.a. the fixed-size annulus method). From the bottom two graphs, the annulus bandpass overcorrects near the Galactic midplane, sending most RMs to near-zero. Despite this, RMs at higher galactic latitudes 'blow up'. This implies that the annulus-bandpass method is only viable for analysing objects close to the Galactic midplane.
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{"Big_RM_Colour_Map.png"}
+    \centering
+    \caption{Three corner plots of all RM sampling points, describing the relationship between the several associated RM values and Galactic lattitude indicated by colour. (Top left) a comparison between actual RMs, interpolated RMs, and Crosshatch-Bandpassed RMs. (Top right) a comparison between actual RMs, interpolated RMs, and Annulus-Convolved RMs. (Bottom) a comparison between actual RMs, Annulus-Bandpassed RMs, and Annulus-Convolved RMs.}
+    \label{fig:colour_maps}
+\end{figure}
+
+%A corner plot of all RM sampling points, describing the relationship between the actual RMs, interpolated RMs, crosshatch-banpassed RMs, and Galactic lattitude. The Galactic lattitude is indicated by colour.
+
+\newpage
 
 \section{Other Methods}
 \label{sec:other_methods}
