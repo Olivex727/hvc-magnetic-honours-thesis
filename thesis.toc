@@ -18,10 +18,17 @@
 \contentsline {section}{\numberline {2.4}Data Collation}{16}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}HVC Imaging}{16}{subsection.2.4.1}%
 \contentsline {chapter}{\numberline {3}Foreground Subtraction}{18}{chapter.3}%
-\contentsline {chapter}{\numberline {4}Magnetic Field Derivation}{19}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Results}{20}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Discussion}{21}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Conclusions}{22}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Appendix}{23}{chapter.8}%
-\contentsline {section}{\numberline {8.1}A - Developed code and data}{23}{section.8.1}%
-\contentsline {section}{\numberline {8.2}B - All HVCs}{23}{section.8.2}%
+\contentsline {section}{\numberline {3.1}Interpolation}{18}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Annulus Subtraction}{19}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Fast Fourier Transforms (FFTs)}{20}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Non-Uniform Fast Fourier Transforms (NUFFTs)}{20}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Bandpass Filtering}{21}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Kernel Filtering}{22}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Characterising the RM data}{22}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Other Methods}{23}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Magnetic Field Derivation}{24}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Discussion}{25}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Conclusions}{26}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Appendix}{27}{chapter.7}%
+\contentsline {section}{\numberline {7.1}A - Developed code and data}{27}{section.7.1}%
+\contentsline {section}{\numberline {7.2}B - All HVCs}{27}{section.7.2}%
