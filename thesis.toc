@@ -35,25 +35,24 @@
 \contentsline {subsection}{\numberline {4.4.2}Uncertainy Subtraction}{33}{subsection.4.4.2}%
 \contentsline {section}{\numberline {4.5}Toy Model Analysis}{33}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Magnetic Field Results}{33}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Uncertainties}{33}{subsection.4.6.1}%
-\contentsline {chapter}{\numberline {5}Discussion}{34}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Foreground Removal}{34}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Edge Detection and Rippling}{34}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Comparison of Methods}{34}{subsection.5.1.2}%
-\contentsline {subsection}{\numberline {5.1.3}Sample Size Limitations}{34}{subsection.5.1.3}%
-\contentsline {section}{\numberline {5.2}Magnetic Field Derivation}{34}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Data Collection}{35}{subsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.1.1}HI and H-alpha Data}{35}{subsubsection.5.2.1.1}%
-\contentsline {subsection}{\numberline {5.2.2}Neccesity of Assumptions}{35}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Validity of Derivation Methods}{35}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Uncertainty Analysis}{35}{subsection.5.2.4}%
-\contentsline {chapter}{\numberline {6}Conclusions}{36}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Future Research}{36}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Foreground Removal}{36}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Magnetic Field Derivation}{36}{subsection.6.1.2}%
-\contentsline {chapter}{Bibliography}{42}{chapter*.6}%
-\contentsline {chapter}{Appendix}{43}{appendix*.7}%
-\contentsline {section}{\numberline {A}Developed code and data}{43}{section.Alph0.1}%
-\contentsline {section}{\numberline {B}All HVCs}{43}{section.Alph0.2}%
-\contentsline {section}{\numberline {C}Planck Mission Cosmic Microwave Background}{43}{section.Alph0.3}%
-\contentsline {section}{\numberline {D}PyNUFFT Python Module}{43}{section.Alph0.4}%
+\contentsline {subsection}{\numberline {4.6.1}Uncertainties}{35}{subsection.4.6.1}%
+\contentsline {chapter}{\numberline {5}Discussion}{36}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Foreground Removal}{36}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Edge Detection and Rippling}{36}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Comparison of Methods}{36}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Sample Size Limitations}{36}{subsection.5.1.3}%
+\contentsline {section}{\numberline {5.2}Magnetic Field Derivation}{36}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Data Collection}{37}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Neccesity of Assumptions}{37}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Validity of Derivation Methods}{37}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Uncertainty Analysis}{37}{subsection.5.2.4}%
+\contentsline {chapter}{\numberline {6}Conclusions}{38}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Future Research}{38}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Foreground Removal}{38}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Magnetic Field Derivation}{38}{subsection.6.1.2}%
+\contentsline {chapter}{Bibliography}{44}{chapter*.6}%
+\contentsline {chapter}{Appendix}{45}{appendix*.7}%
+\contentsline {section}{\numberline {A}Developed code and data}{45}{section.Alph0.1}%
+\contentsline {section}{\numberline {B}All HVCs and HVC Calulations}{45}{section.Alph0.2}%
+\contentsline {section}{\numberline {C}Planck Mission Cosmic Microwave Background}{45}{section.Alph0.3}%
+\contentsline {section}{\numberline {D}PyNUFFT Python Module}{45}{section.Alph0.4}%

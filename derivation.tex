@@ -89,6 +89,8 @@ A two-sample, two-tailed, KS test was performed comparing both the background an
         \hline
         \csvreader[head to column names]{"../../Resources/CSV/KStest_proc.csv"}{}
         {\\\csvcoli & \csvcolii & \csvcoliii}
+        \\
+        \hline
     \end{tabular}
     \caption{A table describing the KS test results for each HVC.}
     \label{tab:KStest}
@@ -104,11 +106,22 @@ For the HVCs which did have detectable magnetic fields, the next step is to esti
 While the background virtual magnetic field population will generally follow the expected normal distribution, the in-HVC population can come in multiple varieties including: skewed normal distributions, where the HVC is travelling side-on; bimodal distributions, where the HVC is travelling towards or away from Earth; or sinc distributions, similar to the bimodal distribution, however under the unique case where the HVC magnetic field perfectly overlaps with the corrected background, resulting in a depopulation of virtual magnetic fields where the HVC magnetic field strength should align to. More is provided on these morphologies in section \ref{sec:toy_models}.
 
 
-The more complex HVC virtual magnetic field distribution combined with the oversimplified morphology model means that using a weighted average is dubious in validity at best. Henceforth, this report proposes two new methods to determine the magnetic field strength surrounding HVCs under the simplified morphological model. Sections \ref{ssec:KS_EDF} and \ref{ssec:sigma_sub} attempts to justify the mathematical validity of these two methods, section \ref{sec:toy_models} demonstrates validity further through the application of a simple toy model, and section \ref{sec:results} shows both the results of using these methods, with some further post-hoc justifications demonstrated in output data.
+The more complex HVC virtual magnetic field distribution combined with the oversimplified morphology model means that using a weighted average is dubious in validity at best - the same applies to most forms of modal analysis including gaussian fitting i.e. any method that can not account for antimodal or multimodal analysis. Henceforth, this report proposes two new methods to determine the magnetic field strength surrounding HVCs under the simplified morphological model. Sections \ref{ssec:KS_EDF} and \ref{ssec:sigma_sub} attempts to justify the mathematical validity of these two methods, section \ref{sec:toy_models} demonstrates validity further through the application of a simple toy model, and section \ref{sec:results} shows both the results of using these methods, with some further post-hoc justifications demonstrated in output data.
 
 
 \subsection{KS-EDF Method}
 \label{ssec:KS_EDF}
+
+E
+
+
+\begin{figure}
+    \includegraphics[width=10cm]{"KS_diff.png"}
+    \centering
+    \caption{A diagram representing the physical evaluation of the KS-EDF method. The graph shows the EDFs of inside and outside populations for an example HVC. The lines drawn on the diagram represent the statistic value and the KS-EDF magnetic field value.}
+    \label{fig:KSdiff}
+\end{figure}
+
 
 E
 
@@ -127,8 +140,61 @@ E
 
 E
 
+
+\begin{table}
+    \centering
+    \begin{tabular}{l l l}
+        \hline
+        \multirow{2}{*}{\bfseries Name} & \multicolumn{2}{l}{\bfseries Magnetic Field (\textmu G)} \\
+        & KS-EDF & $\sigma$-Sub. \\
+        \hline
+        \csvreader[head to column names]{"../../Resources/CSV/results_filtered_proc.csv"}{}
+        {\\\csvcoli & \csvcolvi & \csvcolxi}
+        \\
+        \hline
+    \end{tabular}
+    \caption{A table describing the magnetic field derivations for each HVC.}
+    \label{tab:Bdev}
+\end{table}
+
+
+E
+
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{"B_Boxplots.png"}
+    \centering
+    \caption{A boxplot representing the absolute-value magnetic field of each HVC for both derivational methods. The red and blue dotted lines indicate two upper bounds, one set by the Grønnow Simulations, and the other by the Smith Cloud respectively.}
+    \label{fig:BBox}
+\end{figure}
+
+
+E
+
+
+\begin{figure}
+    \includegraphics[width=10cm]{"B_VGSR.png"}
+    \centering
+    \caption{A graph displaying the relationship between the absolute GSR velocity and the absolute magnetic field for each corresponding HVC. Lines of fit for the two methods used are displayed as well.}
+    \label{fig:VGSR}
+\end{figure}
+
+
+E
+
 \subsection{Uncertainties}
 \label{ssec:results_uncertainties}
+
+E
+
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{"Method_Err_Rel.png"}
+    \centering
+    \caption{A boxplot representing the relative error between the KS-EDF and Uncertainty Subtraction methods for each HVC. The denominator value is taken to be the KS-EDF value.}
+    \label{fig:RelErr}
+\end{figure}
+
 
 E
 
