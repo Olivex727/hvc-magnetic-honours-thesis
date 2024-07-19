@@ -16,6 +16,7 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Residual histogram plots of the actual POSSUM RMs compared to the corresponding various foreground removal methods: interpolation (Top left); crosshatch-bandpassed (Top right); annulus-bandpassed (Bottom left); and annulus-convolved (Bottom right).}}{25}{figure.3.5}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Three corner plots of all RM sampling points, describing the relationship between the several associated RM values and Galactic lattitude indicated by colour. (Top left) a comparison between actual RMs, interpolated RMs, and Crosshatch-Bandpassed RMs. (Top right) a comparison between actual RMs, interpolated RMs, and Annulus-Convolved RMs. (Bottom) a comparison between actual RMs, Annulus-Bandpassed RMs, and Annulus-Convolved RMs.}}{26}{figure.3.6}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Two histograms describing the calculated line-of-sight virtual magnetic field strengths within a certain distance to the 15 sample HVCs. The red histogram uses uncorrected. The green histogram uses corrected RMs.}}{31}{figure.4.1}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
