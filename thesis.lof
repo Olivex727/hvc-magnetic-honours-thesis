@@ -18,9 +18,8 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Two histograms describing the calculated line-of-sight virtual magnetic field strengths within a certain distance to the 15 sample HVCs. The red histogram uses uncorrected. The green histogram uses corrected RMs.}}{31}{figure.4.1}%
 \contentsline {figure}{\numberline {4.2}{\ignorespaces A diagram representing the physical evaluation of the KS-EDF method. The graph shows the EDFs of inside and outside populations for an example HVC. The lines drawn on the diagram represent the statistic value and the KS-EDF magnetic field value.}}{33}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces A boxplot representing the absolute-value magnetic field of each HVC for both derivational methods. The red and blue dotted lines indicate two upper bounds, one set by the Grønnow Simulations, and the other by the Smith Cloud respectively.}}{34}{figure.4.3}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces A graph displaying the relationship between the absolute GSR velocity and the absolute magnetic field for each corresponding HVC. Lines of fit for the two methods used are displayed as well.}}{35}{figure.4.4}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces A boxplot representing the relative error between the KS-EDF and Uncertainty Subtraction methods for each HVC. The denominator value is taken to be the KS-EDF value.}}{35}{figure.4.5}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces A boxplot representing the absolute-value magnetic field of each HVC for both derivational methods. The red and blue dotted lines indicate two upper bounds, one set by the Grønnow Simulations, and the other by the Smith Cloud respectively.}}{36}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces A graph displaying the relationship between the absolute GSR velocity and the absolute magnetic field for each corresponding HVC. Lines of fit for the two methods used are displayed as well.}}{37}{figure.4.4}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
