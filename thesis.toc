@@ -35,7 +35,7 @@
 \contentsline {subsection}{\numberline {4.4.2}Uncertainy Subtraction}{34}{subsection.4.4.2}%
 \contentsline {section}{\numberline {4.5}Toy Model Analysis}{35}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Magnetic Field Results}{35}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Uncertainties}{36}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.1}Uncertainties}{38}{subsection.4.6.1}%
 \contentsline {subsection}{\numberline {4.6.2}Statistical Comparison of Methods}{38}{subsection.4.6.2}%
 \contentsline {chapter}{\numberline {5}Discussion}{39}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Foreground Removal}{39}{section.5.1}%

@@ -7,6 +7,7 @@
 \backcite {ID44}{{vii}{(document)}{Doc-Start}}
 \backcite {ID45}{{vii}{(document)}{Doc-Start}}
 \backcite {ID38}{{viii}{(document)}{Doc-Start}}
+\backcite {ID23}{{ix}{(document)}{Doc-Start}}
 \backcite {ID7}{{1}{[section][1][1]1.1}{section.1.1}}
 \backcite {ID8}{{1}{[section][1][1]1.1}{section.1.1}}
 \backcite {ID66}{{1}{[section][1][1]1.1}{section.1.1}}
@@ -79,9 +80,14 @@
 \backcite {ID23}{{4}{[subsection][1][1.2]1.2.1}{subsection.1.2.1}}
 \backcite {ID24}{{4}{[subsection][1][1.2]1.2.1}{subsection.1.2.1}}
 \backcite {ID33}{{4}{[subsection][1][1.2]1.2.1}{subsection.1.2.1}}
+\backcite {ID23}{{4}{[subsection][1][1.2]1.2.1}{subsection.1.2.1}}
 \backcite {ID13}{{4}{[subsection][1][1.2]1.2.1}{subsection.1.2.1}}
 \backcite {ID11}{{4}{[subsection][1][1.2]1.2.1}{subsection.1.2.1}}
+\backcite {ID23}{{4}{[subsection][1][1.2]1.2.1}{subsection.1.2.1}}
+\backcite {ID23}{{4}{[subsection][1][1.2]1.2.1}{subsection.1.2.1}}
+\backcite {ID23}{{4}{[subsection][1][1.2]1.2.1}{subsection.1.2.1}}
 \backcite {ID5}{{4}{[subsection][1][1.2]1.2.1}{subsection.1.2.1}}
+\backcite {ID23}{{4}{[subsection][1][1.2]1.2.1}{subsection.1.2.1}}
 \backcite {ID1}{{5}{[subsection][2][1.2]1.2.2}{subsection.1.2.2}}
 \backcite {ID14}{{5}{[subsection][2][1.2]1.2.2}{subsection.1.2.2}}
 \backcite {ID1}{{5}{[subsection][2][1.2]1.2.2}{subsection.1.2.2}}
@@ -177,3 +183,5 @@
 \backcite {ID26}{{31}{[section][4][4]4.4}{section.4.4}}
 \backcite {ID5}{{32}{[section][4][4]4.4}{section.4.4}}
 \backcite {ID26}{{32}{[section][4][4]4.4}{section.4.4}}
+\backcite {ID23}{{36}{[figure][3][]4.3}{figure.4.3}}
+\backcite {ID23}{{36}{[section][6][4]4.6}{table.4.2}}
