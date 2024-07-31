@@ -13,10 +13,10 @@
 \contentsline {section}{\numberline {2.1}The Australian Square Kilometer Array Pathfinder (ASKAP)}{10}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Observational Data}{11}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}RM Sky Interpolation}{11}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Other Data Soruces}{12}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.2}Other Data Sources}{12}{subsection.2.2.2}%
 \contentsline {section}{\numberline {2.3}HVC Selection and Elimination}{12}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Data Collation}{15}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}HVC Imaging}{15}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.4}Data Collation}{14}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}HVC Image Overlays}{14}{subsection.2.4.1}%
 \contentsline {chapter}{\numberline {3}Foreground Subtraction}{17}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Interpolation}{17}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Annulus Subtraction}{18}{section.3.2}%
@@ -35,7 +35,7 @@
 \contentsline {subsection}{\numberline {4.4.2}Uncertainy Subtraction}{34}{subsection.4.4.2}%
 \contentsline {section}{\numberline {4.5}Toy Model Analysis}{35}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Magnetic Field Results}{35}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Uncertainties}{38}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.1}Uncertainties}{36}{subsection.4.6.1}%
 \contentsline {subsection}{\numberline {4.6.2}Statistical Comparison of Methods}{38}{subsection.4.6.2}%
 \contentsline {chapter}{\numberline {5}Discussion}{39}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Foreground Removal}{39}{section.5.1}%

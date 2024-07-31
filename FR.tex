@@ -85,7 +85,7 @@ This does not disqualify the NUFFT as an analysis technique. Instead, it means t
 \subsection{Bandpass Filtering}
 \label{ssec:bandpass}
 
-A simpler method is to directly alter the interpolation itself using normal FFTs. First, a 2-D FFT was applied to the Hutschenreuter map. A crosshatch-shaped bandpass was created. This crosshatch imitates a bandpass commonly applied to 1-dimensional signals, where objects of a particular angular size are eliminated by removing all frequencies corresponding to that angular size in the k-space. The equation below quantifies the relationship between frequency and angular size:
+A simpler method is to directly alter the Hutschenreuter map itself using normal FFTs. First, a 2-D FFT was applied to the Hutschenreuter map. A crosshatch-shaped bandpass was created. This crosshatch imitates a bandpass commonly applied to 1-dimensional signals, where objects of a particular angular size are eliminated by removing all frequencies corresponding to that angular size in the k-space. The equation below quantifies the relationship between frequency and angular size:
 
 
 \begin{equation}
@@ -94,10 +94,10 @@ A simpler method is to directly alter the interpolation itself using normal FFTs
 \end{equation}
 
 
-Where $k_{\mathrm{HVC}}$ is the spatial frequency in $\mathrm{deg}^{-1}$, $\theta_{\mathrm{HVC}}$ is the angular size of the HVC in degrees, and R is the pixel resolution of the axis, in pixels per degree. Assuming all interpolation images exist in a 2:1 cartesian space, due to the range of galactic latitude and longitude, the value of R is constant across the two axes.
+Where $k_{\mathrm{HVC}}$ is the spatial frequency in $\mathrm{deg}^{-1}$, $\theta_{\mathrm{HVC}}$ is the angular size of the HVC in degrees, and R is the pixel resolution of the axis, in pixels per degree. Assuming all RM sky images exist in a 2:1 cartesian space, due to the range of galactic latitude and longitude, the value of R is constant across the two axes.
 
 
-The crosshatch is shaped such that, when multiplied by the original k-space, objects of a particular size are either eliminated or reduced in prevalence. This method also guarantees the linearity of the crosshatch 'function'. After this, the inverse FFT is applied to give a resulting interpolation, seen in figure \ref{fig:ripples}.
+The crosshatch is shaped such that, when multiplied by the original k-space, objects of a particular size are either eliminated or reduced in prevalence. This method also guarantees the linearity of the crosshatch 'function'. After this, the inverse FFT is applied to give a resulting foreground map, seen in figure \ref{fig:ripples}.
 
 \begin{figure}
     \includegraphics[width=\textwidth]{"Crosshatch_Interpolation_Compare.png"}
@@ -107,7 +107,7 @@ The crosshatch is shaped such that, when multiplied by the original k-space, obj
 \end{figure}
 
 
-However, bandpassing introduces ripples into the interpolation. This effect is expected but undesirable. There are two methods to remove this: either to apply the crosshatch at a certain 'opacity' i.e. the crosshatch is not eliminating all the k-space in its region, but instead is reducing those frequencies by a percentage; or using a more complex window than a Top Hat, such as a Tukey window or Gaussian window. The effects of the former are seen in figure \ref{fig:ripples}. The latter was not investigated due to time constraints.
+However, bandpassing introduces ripples into the Hutschenreuter map. This effect is expected but undesirable. There are two methods to remove this: either to apply the crosshatch at a certain 'opacity' i.e. the crosshatch is not eliminating all the k-space in its region, but instead is reducing those frequencies by a percentage; or using a more complex window than a Top Hat, such as a Tukey window or Gaussian window. The effects of the former are seen in figure \ref{fig:ripples}. The latter was not investigated due to time constraints.
 
 
 When applying FTs to any interpolated image, it is important to maintain the corresponding uncertainty map's accuracy. This is where one can take advantage of linearity. The following formula below determines how uncertainties can be calculated:
@@ -124,7 +124,7 @@ Where $B\colon\sigma\rightarrow\sigma$ is the bandpass function, $\sigma_{\mathr
 \subsection{Kernel Filtering}
 \label{ssec:kernel}
 
-The same techniques from above can be applied to convolutions, where the aim is to convolve the interpolation with a defined kernel. Two-dimensional convolutions have a time complexity of $O(n^4)$, depending on the kernel size, whereas the FFT has a complexity $O(n^2 \mathrm{log}^2 n)$. By performing a FFT on both the kernel and the interpolation separately, then multiplying the two k-spaces together, and applying an inverse FFT, the result is a faster application of a convolution with a kernel. This was the chosen method to demonstrate the large fixed-size annulus subtraction method. Figure \ref{fig:annulus_interpolation} displays the results of this method.
+The same techniques from above can be applied to convolutions, where the aim is to convolve the Hutschenreuter map with a defined kernel. Two-dimensional convolutions have a time complexity of $O(n^4)$, depending on the kernel size, whereas the FFT has a complexity $O(n^2 \mathrm{log}^2 n)$. By performing a FFT on both the kernel and the Hutschenreuter map separately, then multiplying the two k-spaces together, and applying an inverse FFT, the result is a faster application of a convolution with a kernel. This was the chosen method to demonstrate the large fixed-size annulus subtraction method. Figure \ref{fig:annulus_interpolation} displays the results of this method.
 
 \begin{figure}
     \includegraphics[width=12cm]{"Annulus_Interpolation_Compare.png"}
@@ -133,7 +133,7 @@ The same techniques from above can be applied to convolutions, where the aim is 
     \label{fig:annulus_interpolation}
 \end{figure}
 
-The main problem, as apparent from this method, is that the annulus kernel acts as an edge detection algorithm \citep{ID38}. This causes defects at higher absolute galactic latitudes. Another problem is that this subtraction method is being applied to the interpolation, instead of the actual RM grid. This secondary issue can be solved by relying on the NUFFT of a larger RM grid. As it stands, this method appears to be incompatible with the goals of foreground removal.
+The main problem, as apparent from this method, is that the annulus kernel acts as an edge detection algorithm \citep{ID38}. This causes defects at higher absolute galactic latitudes. Another problem is that this subtraction method is being applied to the Hutschenreuter map, instead of the actual RM grid. This secondary issue can be solved by relying on the NUFFT of a larger RM grid. As it stands, this method appears to be incompatible with the goals of foreground removal.
 
 \section{Characterising the RM data}
 \label{sec:charm}
@@ -151,7 +151,7 @@ Figure \ref{fig:big_hist} represents a simple residual histogram comparison betw
 \end{figure}
 
 
-Figure \ref{fig:colour_maps} demonstrates the similarities between the crosshatch-bandpass and straight interpolation, with them being related to each other in a linear manner, specifically with a gradient of approximately unity. This is ideal, as it means that the crosshatch-bandpass method is not deviating significantly from the interpolation, only altering it subtly. The figure also demonstrates how scattered the RMs become near the Galactic midplane, hence it being plotted for colour to delineate between RMs near and far away from the midplane.
+Figure \ref{fig:colour_maps} demonstrates the similarities between the crosshatch-bandpass and unaltered Hutschenreuter map, with them being related to each other in a linear manner, specifically with a gradient of approximately unity. This is ideal, as it means that the crosshatch-bandpass method is not deviating significantly from the Hutschenreuter map, only altering it subtly. The figure also demonstrates how scattered the RMs become near the Galactic midplane, hence it being plotted for colour to delineate between RMs near and far away from the midplane.
 
 
 Figure \ref{fig:colour_maps} is the same, but instead comparing with the annulus-convolved method (a.k.a. the fixed-sampling annulus method). There is a somewhat linear relationship between the actual RMs and the annulus-convolved RMs, ignoring the heavy scatter closer to the midplane. This gives credibility to this method, and the choice of having a small-sized annulus.
