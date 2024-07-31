@@ -159,15 +159,6 @@
 \newblock \emph{The Astrophysial Journal}, 703(2), 1832.
 \newblock \doi{10.1088/0004-637X/703/2/1832}.
 
-\bibitem[{Hill et~al.(2010)Hill, Mao, Benjamin, Lockman, and
-  McClure-Griffiths}]{ID30}
-\textsc{Hill, A.~S., Mao, S.~A., Benjamin, R.~A., Lockman, F.~J., and
-  McClure-Griffiths, N.~M.}, (2010).
-\newblock A survey of extragalactic faraday rotation at high galactic latitude:
-  The vertical magnetic field of the milky way toward the galactic poles.
-\newblock \emph{The Astrophysial Journal}, 714(2), 1170.
-\newblock \doi{10.1088/0004-637X/714/2/1170}.
-
 \bibitem[{Hill et~al.(2013)Hill, Mao, Benjamin, Lockman, and
   McClure-Griffiths}]{ID26}
 \textsc{Hill, A.~S., Mao, S.~A., Benjamin, R.~A., Lockman, F.~J., and
@@ -320,6 +311,15 @@
   the galaxy.
 \newblock \emph{The Astrophysial Journal}, 652(1), 401.
 \newblock \doi{10.1086/508441}.
+
+\bibitem[{Mao et~al.(2010)Mao, Gaensler, Haverkorn, Zweibel, Madsen,
+  McClure-Griffiths, Shukurov, and Kronberg}]{ID30}
+\textsc{Mao, S.~A., Gaensler, B.~M., Haverkorn, M., Zweibel, E.~G., Madsen,
+  G.~J., McClure-Griffiths, N.~M., Shukurov, A., and Kronberg, P.~P.}, (2010).
+\newblock A survey of extragalactic faraday rotation at high galactic latitude:
+  The vertical magnetic field of the milky way toward the galactic poles.
+\newblock \emph{The Astrophysial Journal}, 714(2), 1170.
+\newblock \doi{10.1088/0004-637X/714/2/1170}.
 
 \bibitem[{McClure-Griffiths et~al.(2010)McClure-Griffiths, Madsen, Gaensler,
   McConnell, and Schnitzeler}]{ID2}
