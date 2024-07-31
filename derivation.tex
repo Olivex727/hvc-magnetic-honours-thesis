@@ -182,6 +182,25 @@ To reiterate, the caveats and assumptions described in this derivation may appea
 
 E
 
+\begin{equation}
+    P_{\mathrm{image}} (x,y;k,\alpha,\beta,\gamma) = k P_{\mathrm{background}}(x,y) + P_{\mathrm{HVC}} (x,y;\alpha,\beta,\gamma)
+    \label{eq:image_toy}
+\end{equation}
+
+\begin{equation}
+    P_{\mathrm{HVC}} (x,y) = \int_{-\infty}^{\infty}{\mathrm{R}(\alpha,\beta,\gamma)\vec{B}_{\mathrm{sim}}(x,y,z) \cdot \hat{z}dz}
+    \label{eq:toy_vec}
+\end{equation}
+
+\begin{equation}
+    \vec{B}_{\mathrm{sim}}(x,y,z) =
+    \begin{cases}
+        \begin{bmatrix} x \\ y \\ z \end{bmatrix} & x\leq 0 \\
+        \begin{bmatrix} x \\ y \\ z \end{bmatrix} & x > 0
+    \end{cases}
+    \label{eq:toy_mag}
+\end{equation}
+
 \section{Magnetic Field Results}
 \label{sec:results}
 
