@@ -1,4 +1,4 @@
-\begin{thebibliography}{51}
+\begin{thebibliography}{52}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -79,6 +79,25 @@
 \newblock A full-sky h$\alpha$ template for microwave foreground prediction.
 \newblock \emph{The Astrophysial Journal}, 146(2), 407.
 \newblock \doi{10.1086/374411}.
+
+\bibitem[{Gaensler et~al.(2024)Gaensler, Heald, McClure-Griffiths, Anderson,
+  Eck, West, Thomson, Leahy, Rudnick, Ma, Akahori, Gürkan, Landecker, Mao,
+  O'Sullivan, Raja, Sun, Vernstrom, Baidoo, Carretti, Taylor, Willis, Osinga,
+  Livingston, An, Bracco, Brüggen, Eswaraiah, Enßlin, Upasana, Ideguchi,
+  Jung, Kaczmarek, Kothes, Lazarević, Leahy, Loi, Pandhi, Price, Shen, Seta,
+  Sobey, Stuardi, and Velović}]{ID71}
+\textsc{Gaensler, B.~M., Heald, G.~H., McClure-Griffiths, N.~M., Anderson,
+  C.~S., Eck, C. L.~V., West, J.~L., Thomson, A. J.~M., Leahy, J.~P., Rudnick,
+  L., Ma, Y.~K., Akahori, T., Gürkan, G., Landecker, T.~L., Mao, S.~A.,
+  O'Sullivan, S.~P., Raja, W., Sun, X., Vernstrom, T., Baidoo, L., Carretti,
+  E., Taylor, A.~R., Willis, A., Osinga, E., Livingston, J.~D., An, T., Bracco,
+  A., Brüggen, M., Eswaraiah, C., Enßlin, T., Upasana, G., Ideguchi, S.,
+  Jung, S.~L., Kaczmarek, J.~F., Kothes, R., Lazarević, S., Leahy, D., Loi,
+  F., Pandhi, A., Price, J.~M., Shen, A.~X., Seta, A., Sobey, C., Stuardi, C.,
+  and Velović, V.}, (2024).
+\newblock The polarisation sky survey of the universe's magnetism (possum). i.
+  science goals and survey description.
+\newblock In preperation.
 
 \bibitem[{Gaensler et~al.(2010)Gaensler, Landecker, and Taylor}]{ID52}
 \textsc{Gaensler, B.~M., Landecker, T.~L., and Taylor, A.~R.}, (2010).
