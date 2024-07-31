@@ -14,28 +14,28 @@
 \contentsline {section}{\numberline {2.2}Observational Data}{11}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}RM Sky Interpolation}{11}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Other Data Sources}{12}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}HVC Selection and Elimination}{12}{section.2.3}%
+\contentsline {section}{\numberline {2.3}Selection of HVCs}{12}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Data Collation}{14}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}HVC Image Overlays}{14}{subsection.2.4.1}%
-\contentsline {chapter}{\numberline {3}Foreground Subtraction}{17}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Interpolation}{17}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Annulus Subtraction}{18}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Fast Fourier Transforms (FFTs)}{19}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Non-Uniform Fast Fourier Transforms (NUFFTs)}{20}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Bandpass Filtering}{21}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Kernel Filtering}{23}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Characterising the RM data}{24}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Other Methods}{27}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Magnetic Field Derivation}{28}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Assumptions}{28}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Derivation of Line-of-Sight Magnetic Fields}{29}{section.4.2}%
+\contentsline {chapter}{\numberline {3}Foreground Subtraction}{16}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Interpolation}{16}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Annulus Subtraction}{17}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Fast Fourier Transforms (FFTs)}{18}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Non-Uniform Fast Fourier Transforms (NUFFTs)}{19}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Bandpass Filtering}{20}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Kernel Filtering}{22}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Characterising the RM data}{23}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Other Methods}{26}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Magnetic Field Derivation}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Assumptions}{27}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Derivation of Line-of-Sight Magnetic Fields}{28}{section.4.2}%
 \contentsline {section}{\numberline {4.3}KS Testing}{30}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Mathematical methods to evaluate HVC Magnetic Fields}{31}{section.4.4}%
+\contentsline {section}{\numberline {4.4}Mathematical methods to evaluate HVC Magnetic Fields}{32}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}KS-EDF Method}{33}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}Uncertainy Subtraction}{34}{subsection.4.4.2}%
 \contentsline {section}{\numberline {4.5}Toy Model Analysis}{35}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Magnetic Field Results}{35}{section.4.6}%
-\contentsline {subsection}{\numberline {4.6.1}Uncertainties}{36}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.1}Uncertainties}{37}{subsection.4.6.1}%
 \contentsline {subsection}{\numberline {4.6.2}Statistical Comparison of Methods}{38}{subsection.4.6.2}%
 \contentsline {chapter}{\numberline {5}Discussion}{39}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Foreground Removal}{39}{section.5.1}%

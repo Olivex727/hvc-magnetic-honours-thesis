@@ -15,7 +15,7 @@ The first major assumption is that the ionisation fraction of the Galactic halo 
 Simulation data can be used to analyse the problematic nature of assuming a constant ionisation fraction \citep{ID23}. However, it is difficult to apply simulation data to observational data due to the sheer variety of analysis capable of being performed by simulations. For now, it is 'good enough' to rely on that assumption from \cite{ID23} that the ionisation fraction is high and constant.
 
 
-The second major assumption is that the weighted average of the HI column density surrounding a HVC is relatively constant and biased towards the peak column density in the centre of the HVC. This is an assumption that only works under the consideration of averages, as HI column density is certainly not uniform within clouds, as mentioned in \cite{ID69}.
+The second major assumption is that the weighted average of the HI column density surrounding a HVC is linearly proportional to, and biased towards the peak column density in the centre of the HVC. This is an assumption that only works under the consideration of averages, as HI column density is certainly not uniform within clouds, as mentioned in \cite{ID69}. It also neccessitates some level of correlation between line of sight magnetic fields and their uncertainties (a consequence of Poisson noise).
 
 
 Both above assumptions can, and should, be taken to be unreasonable for providing an accurate estimate of magnetic field strength. However, the result of applying both assumptions is that the line-of-sight magnetic field strength is linearly proportional to the faraday depth with a scaling constant unique to each HVC – as demonstrated in later section \ref{sec:los_dev}. This greatly simplifies the analysis, without loss of validity, primarily due to the method of calculation explained by \cite{ID27} and in section \ref{sec:los_dev}.
@@ -28,6 +28,13 @@ All three assumptions additionally meet the desired goal of an alterable method.
 
 
 Lastly, a very typical assumption made is that the RM contribution along a line of sight is averaged across said line of sight. This is not necessarily correct; however, it is a fair assumption that most past literature has made to deconstruct the integral as seen in \cite{ID27, ID3, ID26}. This makes the fourth assumption.
+
+\begin{figure}
+    \includegraphics[width=11.4cm]{"Selected_HVCs.png"}
+    \centering
+    \caption{All 14 HVCs used in the analyis of the primary outcome. The HI column density is represented using a greyscale image background. The RMs are represented by circular markers, their size equal to the magnitude and the colour representative of their sign with Red being positive. The black circle is the maximum-extent HVC area and the black 'x' indicates the centre of the HVC.}
+    \label{fig:all_hvcs}
+\end{figure}
 
 
 \section{Derivation of Line-of-Sight Magnetic Fields}
@@ -60,7 +67,7 @@ Applying both assumptions and utilizing this equation demonstrates that the line
 At this point, it is important to distinguish between what is called 'virtual magnetic field' and 'actual magnetic field'. For any individual RM point source, there are a lot of interferences that may make the resulting magnetic field not representative of the actual magnetic field at that point – more specifically, the turbulent nature of gas mixing in the halo and HVC \citep{ID69, ID30, ID16}. Thus, calculating the magnetic field value associated with a single RM point source is to be considered 'virtual' – an approximation to the actual magnetic field within a degree of uncertainty. It is only through the statistical analysis of multiple virtual magnetic fields that an actual magnetic field value can be derived. As the combination ensures that turbulence effects are accounted for, due to it being unlikely that random contributions to line-of-sight magnetic fields can become uniform at the point of observation.
 
 
-Despite the detailed analysis conducted in section \ref{cha:FR}, it was decided that the non-altered interpolated sky map be used to correct RM contributions. This is due to most already-existing literature relying on this method. From figure \ref{fig:anisotropy}, which displays histograms of the corrected and uncorrected line-of-sight magnetic field points surrounding HVCs. From the figure, it is demonstrated that the Hutschenreuter map can remove the anisotropy of the ISM by turning an uncorrected bimodal symmetric distribution into a normal distribution centred at zero. However, it also is apparent that the correction can introduce a significantly higher variance in the data, shown in the ridge-like structures in figure \ref{fig:all_hvcs}.
+Despite the detailed analysis conducted in section \ref{cha:FR}, it was decided that the non-altered interpolated sky map be used to correct RM contributions. This is due to most already-existing literature relying on this method. From figure \ref{fig:anisotropy}, which displays histograms of the corrected and uncorrected line-of-sight magnetic field points surrounding HVCs. From the figure, it is demonstrated that the Hutschenreuter map can remove the anisotropy of the ISM by turning an uncorrected bimodal symmetric distribution into a normal distribution centred at zero. However, it also is apparent that the correction can introduce a significantly higher variance in the data, shown in the ridge-like structures in figure \ref{fig:all_hvcs}, which presents HI images of all 14 HVCs, the overlapping RM grids, and the cropped HI fields. The filtered Moss catalogue, including all 14 HVCs is displayed in appendix \ref{sec:appendixB}.
 
 \begin{figure}
     \includegraphics[width=10cm]{"Virtual_B_All_HVCs.png"}
