@@ -151,19 +151,33 @@ Figure \ref{fig:big_hist} represents a simple residual histogram comparison betw
 \end{figure}
 
 
-Figure \ref{fig:colour_maps} demonstrates the similarities between the crosshatch-bandpass and unaltered Hutschenreuter map, with them being related to each other in a linear manner, specifically with a gradient of approximately unity. This is ideal, as it means that the crosshatch-bandpass method is not deviating significantly from the Hutschenreuter map, only altering it subtly. The figure also demonstrates how scattered the RMs become near the Galactic midplane, hence it being plotted for colour to delineate between RMs near and far away from the midplane.
+Figure \ref{fig:colour_maps_1} demonstrates the similarities between the crosshatch-bandpass and unaltered Hutschenreuter map, with them being related to each other in a linear manner, specifically with a gradient of approximately unity. This is ideal, as it means that the crosshatch-bandpass method is not deviating significantly from the Hutschenreuter map, only altering it subtly. The figure also demonstrates how scattered the RMs become near the Galactic midplane, hence it being plotted for colour to delineate between RMs near and far away from the midplane.
 
 
-Figure \ref{fig:colour_maps} also compares the unaltered Hutschenreuter map with the annulus-convolved method (a.k.a. the fixed-sampling annulus method). There is a somewhat linear relationship between the actual RMs and the annulus-convolved RMs, ignoring the heavy scatter closer to the midplane. This gives credibility to this method, and the choice of having a small-sized annulus.
+Figure \ref{fig:colour_maps_2} compares the unaltered Hutschenreuter map with the annulus-convolved method (a.k.a. the fixed-sampling annulus method). There is a somewhat linear relationship between the actual RMs and the annulus-convolved RMs, ignoring the heavy scatter closer to the midplane. This gives credibility to this method, and the choice of having a small-sized annulus.
 
 
-Lastly, figure \ref{fig:colour_maps} also compares the two annulus methods together. The annulus-bandpass method (a.k.a. the fixed-size annulus method). From the bottom two graphs, the annulus bandpass does not interact properly with the Galactic midplane, sending most RMs to near-zero. Despite this, RMs at higher galactic latitudes 'blow up'. This implies that the utilised annulus-bandpass method is not a viable for foreground correction.
+Lastly, figure \ref{fig:colour_maps_3} compares the two annulus methods together. The annulus-bandpass method (a.k.a. the fixed-size annulus method). From the bottom two graphs, the annulus bandpass does not interact properly with the Galactic midplane, sending most RMs to near-zero. Despite this, RMs at higher galactic latitudes 'blow up'. This implies that the utilised annulus-bandpass method is not a viable for foreground correction.
 
 \begin{figure}
-    \includegraphics[width=\textwidth]{"Big_RM_Colour_Map.png"}
+    \includegraphics[width=0.6\textwidth]{"RM_Colour_Maps.png"}
     \centering
-    \caption{Three corner plots of all RM sampling points, describing the relationship between the several associated RM values and Galactic lattitude indicated by colour. (Top left) a comparison between actual RMs, interpolated RMs, and Crosshatch-Bandpassed RMs. (Top right) a comparison between actual RMs, interpolated RMs, and Annulus-Convolved RMs. (Bottom) a comparison between actual RMs, Annulus-Bandpassed RMs, and Annulus-Convolved RMs.}
-    \label{fig:colour_maps}
+    \caption{Three corner plots of all RM sampling points, describing the relationship between the several associated RM values and Galactic lattitude indicated by colour. Here, a comparison between actual RMs, interpolated RMs, and Crosshatch-Bandpassed RMs is displayed.}
+    \label{fig:colour_maps_1}
+\end{figure}
+
+\begin{figure}
+    \includegraphics[width=0.6\textwidth]{"RM_Colour_Maps_Craig_Annulus.png"}
+    \centering
+    \caption{Three corner plots of all RM sampling points, describing the relationship between the several associated RM values and Galactic lattitude indicated by colour. Here, a comparison between actual RMs, interpolated RMs, and Annulus-Convolved RMs is displayed.}
+    \label{fig:colour_maps_2}
+\end{figure}
+
+\begin{figure}
+    \includegraphics[width=0.6\textwidth]{"RM_Colour_Maps_Compare_Annulus.png"}
+    \centering
+    \caption{Three corner plots of all RM sampling points, describing the relationship between the several associated RM values and Galactic lattitude indicated by colour. Here, a comparison between actual RMs, Annulus-Bandpassed RMs, and Annulus-Convolved RMs is displayed.}
+    \label{fig:colour_maps_3}
 \end{figure}
 
 %A corner plot of all RM sampling points, describing the relationship between the actual RMs, interpolated RMs, crosshatch-banpassed RMs, and Galactic lattitude. The Galactic lattitude is indicated by colour.

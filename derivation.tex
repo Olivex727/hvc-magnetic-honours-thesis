@@ -30,10 +30,17 @@ All three assumptions additionally meet the desired goal of an alterable method.
 Lastly, a very typical assumption made is that the RM contribution along a line of sight is averaged across said line of sight. This is not necessarily correct; however, it is a fair assumption that most past literature has made to deconstruct the integral as seen in \cite{ID27, ID3, ID26}. This makes the fourth assumption.
 
 \begin{figure}
-    \includegraphics[width=11.4cm]{"Selected_HVCs.png"}
+    \includegraphics[width=11.2cm]{"Selected_HVCs_new.png"}
     \centering
-    \caption{All 14 HVCs used in the analyis of the primary outcome. The HI column density is represented using a greyscale image background. The RMs are represented by circular markers, their size equal to the magnitude and the colour representative of their sign with Red being positive. The black circle is the maximum-extent HVC area and the black 'x' indicates the centre of the HVC.}
+    \caption{All 14 HVCs used in the analyis of the primary outcome. The HI column density is represented using a greyscale image background. The RMs are represented by circular markers, their size equal to the magnitude and the colour representative of their sign with Red being positive. The black circle is the deliniation between in-HVC and out-HVC populations, and the black 'x' indicates the centre of the HVC.}
     \label{fig:all_hvcs}
+\end{figure}
+
+\begin{figure}
+    \includegraphics[width=11.2cm]{"Selected_HVCs_new_average_subtraction.png"}
+    \centering
+    \caption{The same set of HVCs in HI with RM overlays, displayed the same as in \ref{fig:all_hvcs}. However, instead of using the interpolation as a method of correction, the mean uncorrected RM value is subtracted out.}
+    \label{fig:all_hvcs_avg}
 \end{figure}
 
 
@@ -67,14 +74,14 @@ Applying both assumptions and utilizing this equation demonstrates that the line
 At this point, it is important to distinguish between what is called 'virtual magnetic field' and 'actual magnetic field'. For any individual RM point source, there are a lot of interferences that may make the resulting magnetic field not representative of the actual magnetic field at that point – more specifically, the turbulent nature of gas mixing in the halo and HVC \citep{ID69, ID30, ID16}. Thus, calculating the magnetic field value associated with a single RM point source is to be considered 'virtual' – an approximation to the actual magnetic field within a degree of uncertainty. It is only through the statistical analysis of multiple virtual magnetic fields that an actual magnetic field value can be derived. As the combination ensures that turbulence effects are accounted for, due to it being unlikely that random contributions to line-of-sight magnetic fields can become uniform at the point of observation.
 
 
-Despite the detailed analysis conducted in section \ref{cha:FR}, it was decided that the non-altered interpolated sky map be used to correct RM contributions. This is due to most already-existing literature relying on this method. From figure \ref{fig:anisotropy}, which displays histograms of the corrected and uncorrected line-of-sight magnetic field points surrounding HVCs. From the figure, it is demonstrated that the Hutschenreuter map can remove the anisotropy of the ISM by turning an uncorrected bimodal symmetric distribution into a normal distribution centred at zero. However, it also is apparent that the correction can introduce a significantly higher variance in the data, shown in the ridge-like structures in figure \ref{fig:all_hvcs}, which presents HI images of all 14 HVCs, the overlapping RM grids, and the cropped HI fields. The filtered Moss catalogue, including all 14 HVCs is displayed in appendix \ref{sec:appendixB}.
+Despite the detailed analysis conducted in section \ref{cha:FR}, it was decided that the non-altered interpolated sky map be used to correct RM contributions. This is due to most already-existing literature relying on this method. From figure \comment{FIXME}, which displays histograms of the corrected and uncorrected line-of-sight magnetic field points surrounding HVCs. From the figure, it is demonstrated that the Hutschenreuter map can remove the anisotropy of the ISM by turning an uncorrected bimodal symmetric distribution into a normal distribution centred at zero. However, it also is apparent that the correction can introduce a significantly higher variance in the data, shown in the ridge-like structures in figure \ref{fig:all_hvcs}, which presents HI images of all 14 HVCs, the overlapping RM grids, and the cropped HI fields. The filtered Moss catalogue, including all 14 HVCs is displayed in appendix \ref{sec:appendixB}.
 
-\begin{figure}
-    \includegraphics[width=10cm]{"Virtual_B_All_HVCs.png"}
-    \centering
-    \caption{Two histograms describing the calculated line-of-sight virtual magnetic field strengths within a certain distance to the 14 sample HVCs. The red histogram uses uncorrected. The green histogram uses corrected RMs.}
-    \label{fig:anisotropy}
-\end{figure}
+%\begin{figure}
+%    \includegraphics[width=10cm]{"Virtual_B_All_HVCs.png"}
+%    \centering
+%    \caption{Two histograms describing the calculated line-of-sight virtual magnetic field strengths within a certain distance to the 14 sample HVCs. The red histogram uses uncorrected. The green histogram uses corrected RMs.}
+%    \label{fig:anisotropy}
+%\end{figure}
 
 
 \section{KS Testing}
@@ -238,44 +245,7 @@ The distributions of the results are displayed in the boxplots of figure \ref{fi
 From figure \ref{fig:BBox}, the magnetic field strengths are overall higher compared to the hypothesised estimate of being on the order of magnitude of 0.1 {\textmu}G. The three methods appear to visually agree with each other approximately, with the KS-EDF overestimating the magnetic field value, the Variance Subtraction having the greatest spread, and the Weighted Average having the largest tail. It is important to note that due to the logarithmic scale used, the mean is inherently biased to visually appear at higher values. However, the use of a logarithmic scale is still justified due to the order-of-magnitude levels of error.
 
 
-Figure \ref{fig:VGSR} displays the relationship between the calculated magnetic field and the absolute GSR velocity. With all three methods, there appears to be a weak negative correlation in the form of:
-
-\begin{equation}
-    |V_{\mathrm{GSR}}|\equiv\alpha\left(|B_{\parallel}|-\beta\right)
-\label{eq:linfit}
-\end{equation}
-
-Table \ref{tab:BR2} states the fitted linear model parameters given by equation \ref{eq:linfit}. The R-squared value is used to demonstrate the presence of the weak correlation.
-
-
-\begin{figure}
-    \includegraphics[width=12cm]{"B_VGSR.png"}
-    \centering
-    \caption{A graph displaying the relationship between the absolute GSR velocity and the absolute magnetic field for each corresponding HVC. Lines of fit for the two methods used are displayed as well.}
-    \label{fig:VGSR}
-\end{figure}
-
-
-\begin{table}
-    \centering
-    \begin{tabular}{l l l l}
-        \hline
-        \multirow{3}{*}{\bfseries Method} & \multicolumn{3}{l}{\bfseries Statistics} \\
-        & x-intercept ($\beta$) & Slope ($\alpha$) & $R^2$ value \\
-        & \textmu G & $\mathrm{kms}^{-1}$dex[\textmu$\mathrm{G}$]$^{-1}$ & \\
-        \hline
-        \\
-        Weighted Average & 1.836 & -26.10 & 0.5187
-        \\
-        KS-EDF & 2.151 & -34.84 & 0.5715
-        \\
-        Variance Subtraction & 2.231 & -17.81 & 0.6320
-        \\
-        \hline
-    \end{tabular}
-    \caption{A table describing the linear fit model parameters of the relatonship described in equation \ref{eq:linfit} and displayed in figure \ref{fig:VGSR}.}
-    \label{tab:BR2}
-\end{table}
+\comment{FIXME} displays the relationship between the calculated magnetic field and the absolute GSR velocity. With all three methods, there appears to be a weak negative correlation in the form of:
 
 \subsection{Uncertainties}
 \label{ssec:results_uncertainties}
