@@ -32,7 +32,7 @@ Lastly, a very typical assumption made is that the RM contribution along a line 
 \begin{figure}
     \includegraphics[width=11.2cm]{"Selected_HVCs_new.png"}
     \centering
-    \caption{All 14 HVCs used in the analyis of the primary outcome. The HI column density is represented using a greyscale image background. The RMs are represented by circular markers, their size equal to the magnitude and the colour representative of their sign with Red being positive. The black circle is the deliniation between in-HVC and out-HVC populations, and the black 'x' indicates the centre of the HVC.}
+    \caption{All 13 HVCs used in the analyis of the primary outcome. The HI column density is represented using a greyscale image background. The RMs are represented by circular markers, their size equal to the magnitude and the colour representative of their sign with Red being positive. The black circle is the deliniation between in-HVC and out-HVC populations, and the black 'x' indicates the centre of the HVC.}
     \label{fig:all_hvcs}
 \end{figure}
 
@@ -74,12 +74,12 @@ Applying both assumptions and utilizing this equation demonstrates that the line
 At this point, it is important to distinguish between what is called 'virtual magnetic field' and 'actual magnetic field'. For any individual RM point source, there are a lot of interferences that may make the resulting magnetic field not representative of the actual magnetic field at that point – more specifically, the turbulent nature of gas mixing in the halo and HVC \citep{ID69, ID30, ID16}. Thus, calculating the magnetic field value associated with a single RM point source is to be considered 'virtual' – an approximation to the actual magnetic field within a degree of uncertainty. It is only through the statistical analysis of multiple virtual magnetic fields that an actual magnetic field value can be derived. As the combination ensures that turbulence effects are accounted for, due to it being unlikely that random contributions to line-of-sight magnetic fields can become uniform at the point of observation.
 
 
-Despite the detailed analysis conducted in section \ref{cha:FR}, it was decided that the non-altered interpolated sky map be used to correct RM contributions. This is due to most already-existing literature relying on this method. From figure \comment{FIXME}, which displays histograms of the corrected and uncorrected line-of-sight magnetic field points surrounding HVCs. From the figure, it is demonstrated that the Hutschenreuter map can remove the anisotropy of the ISM by turning an uncorrected bimodal symmetric distribution into a normal distribution centred at zero. However, it also is apparent that the correction can introduce a significantly higher variance in the data, shown in the ridge-like structures in figure \ref{fig:all_hvcs}, which presents HI images of all 14 HVCs, the overlapping RM grids, and the cropped HI fields. The filtered Moss catalogue, including all 14 HVCs is displayed in appendix \ref{sec:appendixB}.
+Despite the detailed analysis conducted in section \ref{cha:FR}, it was decided that the non-altered interpolated sky map be used to correct RM contributions. This is due to most already-existing literature relying on this method. From figure \comment{FIXME}, which displays histograms of the corrected and uncorrected line-of-sight magnetic field points surrounding HVCs. From the figure, it is demonstrated that the Hutschenreuter map can remove the anisotropy of the ISM by turning an uncorrected bimodal symmetric distribution into a normal distribution centred at zero. However, it also is apparent that the correction can introduce a significantly higher variance in the data, shown in the ridge-like structures in figure \ref{fig:all_hvcs}, which presents HI images of all 13 HVCs, the overlapping RM grids, and the cropped HI fields. The filtered Moss catalogue, including all 13 HVCs is displayed in appendix \ref{sec:appendixB}.
 
 %\begin{figure}
 %    \includegraphics[width=10cm]{"Virtual_B_All_HVCs.png"}
 %    \centering
-%    \caption{Two histograms describing the calculated line-of-sight virtual magnetic field strengths within a certain distance to the 14 sample HVCs. The red histogram uses uncorrected. The green histogram uses corrected RMs.}
+%    \caption{Two histograms describing the calculated line-of-sight virtual magnetic field strengths within a certain distance to the 13 sample HVCs. The red histogram uses uncorrected. The green histogram uses corrected RMs.}
 %    \label{fig:anisotropy}
 %\end{figure}
 
@@ -93,7 +93,7 @@ Before evaluating the effect of magnetic draping on HVCs, it is important to fir
 Due to the linear proportionality between the faraday depth and virtual magnetic field, these two values are interchangeable when doing statistical analysis on the individual HVC level. This allows the KS test to be performed on the set of virtual magnetic fields associated with grid points directly, instead of the faraday depth.
 
 
-A two-sample, two-tailed, KS test was performed comparing both the background and HVC virtual magnetic fields. A critical p-value of 0.001 was assumed to determine if a significant magnetic field was detected. Table \ref{tab:KStest} shows the KS test results applied to each HVC. Out of the 14 HVCs tested, 11 HVCs (79\%) had a significant difference between both populations. This is a promising confirmation of the hypothesis presented by the literature, that magnetic draping is an existing phenomenon.
+A two-sample, two-tailed, KS test was performed comparing both the background and HVC virtual magnetic fields. A critical p-value of 0.001 was assumed to determine if a significant magnetic field was detected. Table \ref{tab:KStest} shows the KS test results applied to each HVC. Out of the 13 HVCs tested, 10 HVCs (77\%) had a significant difference between both populations. This is a promising confirmation of the hypothesis presented by the literature, that magnetic draping is an existing phenomenon.
 
 \begin{table}
     \centering
@@ -226,7 +226,7 @@ The results of each method are compiled in table \ref{tab:Bdev}. Out of 11 HVCs 
         \\
         \hline
     \end{tabular}
-    \caption{A table describing the magnetic field derivations for each HVC. HVCs from the sample of 14 that had no significant KS test detection, or an invalid variance subtraction result are removed.}
+    \caption{A table describing the magnetic field derivations for each HVC. HVCs from the sample of 13 that had no significant KS test detection, or an invalid variance subtraction result are removed.}
     \label{tab:Bdev}
 \end{table}
 
