@@ -97,12 +97,13 @@ A two-sample, two-tailed, KS test was performed comparing both the background an
 
 \begin{table}
     \centering
-    \begin{tabular}{l l l}
+    \begin{tabular}{l l l l l}
         \hline
-        \bfseries Name & \bfseries KS Statistic & \bfseries p-value \\
+        \multirow{2}{*}{\bfseries Name} & \multicolumn{2}{l}{\bfseries Corrected RMs} & \multicolumn{2}{l}{\bfseries Raw RMs} \\
+        & Statistic & p-value & Statistic & p-value \\
         \hline
         \csvreader[head to column names]{"../../Resources/CSV/KStest_proc.csv"}{}
-        {\\\csvcoli & \csvcolii & \csvcoliii}
+        {\\\csvcoli & \csvcolii & \csvcoliii & \csvcolviii & \csvcolix}
         \\
         \hline
     \end{tabular}
