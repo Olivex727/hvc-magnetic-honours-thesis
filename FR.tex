@@ -141,7 +141,7 @@ The main problem, as apparent from this method, is that the annulus kernel acts 
 As seen from figures \ref{fig:snr} and \ref{fig:rm_scatter}, there are several ways in which the RM grid can have 'bad data' – most notably in a lack of signal-to-noise and the inherent scatter when observing near the Galactic midplane. Thus, the final step of this chapter is to both characterise the RM sample set and to compare the subtraction methods against each other.
 
 
-Figure \ref{fig:big_hist} represents a simple residual histogram comparison between all the methods discussed in this chapter. The desired result is seen in the residuals between the interpolated or crosshatch-bandpassed RMs and the actual RMs - appearing as a normal distribution centred at zero.  This is opposed to the two annulus methods, which do not appear to interact with the RM grid in a desirable manner.
+Figure \ref{fig:big_hist} represents a simple residual histogram comparison between all the methods discussed in this chapter. The desired result is seen in the residuals between the interpolated or crosshatch-bandpassed RMs and the actual RMs - appearing as a distribution centred at zero (which does not look gaussian).  This is opposed to the two annulus methods, which do not appear to interact with the RM grid in a desirable manner.
 
 \begin{figure}
     \includegraphics[width=\textwidth]{"Big_RM_histogram_2.png"}
@@ -185,7 +185,38 @@ Lastly, figure \ref{fig:colour_maps_3} compares the two annulus methods together
 \section{Statistical Comparison of Foreground Removal Methods}
 \label{sec:FR_stats}
 
-T
+There is a lack of an ability to quantify the utility of the discussed foreground removal methods. Hence, why most analysis in this section is visual or qualitative. However, there is still benefit in deriving numerical statistics.
+
+The histograms displayed in figure \ref{fig:big_hist} do not follow a normal distribution or a Cauchy distribution of the same standard deviation or mean absolute deviation. This can be seen by eye. This means that it's difficult to compare each histogram with anything meaningful. Table \ref{tab:fr_stats} presents the mean and standard deviations of each of the four residual histograms. The mean ideally should be as close to zero as possible.
+
+\begin{table}
+    \centering
+    \begin{tabular}{l l l}
+        \hline
+        \bfseries{Methods} & \bfseries{Mean Residual} & \bfseries{Residual Stdev.} \\
+        \hline
+        Straight Interpolation Residuals & 92.84 & 3.365 \\
+        Crosshatch-Bandpassed Residuals & 92.14 & 3.327 \\
+        Annulus-Bandpassed Residuals & 100.5 & 18.91 \\
+        Annulus-Convolved Residuals & 75.87 & 17.87 \\
+        \hline
+    \end{tabular}
+    \begin{tabular}{l l}
+        \hline
+        \bfseries{Methods} & \bfseries{$R^2$ Statistic} \\
+        \hline
+        Interpolation vs. Crosshatch-Bandpassed & 0.9279 \\
+        Interpolation vs. Annulus-Bandpassed & 0.007611 \\
+        Interpolation vs. Annulus-Convolved & 0.003866 \\
+        Annulus-Bandpassed vs. Annulus-Convolved & 1.3894E-06 \\
+        \hline
+    \end{tabular}
+    \caption{(Top) Parameters for the residual histograms as displayed in figure \ref{fig:big_hist}. (Bottom) $R^2$ statistics comparing the Hutschenreuter map with the other methods detailed in this section.}
+    \label{tab:fr_stats}
+\end{table}
+
+The Pearson $R^2$ test can be performed in comparing the Hutschenreuter map with its corrected versions. Ideally, the $R^2$ statistic should be somewhat close to 1, as not a lot of sub-degree variations are expected (due to the single-degree scales of the Hutschenreuter map's sources). Table \ref{tab:fr_stats} presents the $R^2$ statistics for a series of compared cases.
+
 
 \section{Other Methods}
 \label{sec:other_methods}

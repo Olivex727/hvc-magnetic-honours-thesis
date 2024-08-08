@@ -227,8 +227,8 @@ The results of each method are compiled in table \ref{tab:Bdev}. Out of 11 HVCs 
         \multirow{2}{*}{\bfseries Name} & \multicolumn{3}{l}{\bfseries Abs. Magnetic Field  $|B_{\parallel}|$ (\textmu G)} \\
         & Wgt. Avg. & KS-EDF & $\sigma$-Sub. \\
         \hline
-        \csvreader[head to column names]{"../../Resources/CSV/results_final_filtered_proc.csv"}{}
-        {\\\csvcoli & \csvcolxv $\pm$ \csvcolxviii & \csvcolvi $\pm$ \csvcolxix & \csvcolxi $\pm$ \csvcolxx}
+        \csvreader[head to column names]{"../../Resources/CSV/results_post_RM.csv"}{}
+        {\\\csvcoli & \csvcoliv $\pm$ \csvcolv & \csvcolvi $\pm$ \csvcolvii & \csvcolviii $\pm$ \csvcolix}
         \\
         \hline
     \end{tabular}
@@ -266,6 +266,13 @@ The uncertainty in the variance subtraction method was calculated via bootstrap 
 
 \subsection{Statistical Comparison of Methods}
 \label{ssec:results_stats}
+
+\begin{figure}
+    \includegraphics[width=\textwidth]{"Sigma_Agree.png"}
+    \centering
+    \caption{A boxplot representing the absolute-value magnetic field of each HVC for both derivational methods. The red and blue dotted lines indicate two upper bounds, one set by the \citeauthor[][simulations]{ID23}, and the other by the Smith Cloud respectively.}
+    \label{fig:sigma_agree}
+\end{figure}
 
 In addition to the reduced chi-squared statistic for the toy model analysis shown in section \ref{sec:toy_models}, another reduced chi-squared analysis was performed on the magnetic field values calculated for each HVC. The point of comparison is the weighted average. While the hypothesis stated in section \ref{sec:evaluation} describes the potential problems with using the weighted average, the distribution in figure \ref{fig:BBox} and the values in table \ref{tab:Bdev} demonstrate that the weighted average is still a potentially robust method.
 

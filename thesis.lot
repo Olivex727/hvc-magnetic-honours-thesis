@@ -1,6 +1,7 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces (Top) Parameters for the residual histograms as displayed in figure \ref {fig:big_hist}. (Bottom) $R^2$ statistics comparing the Hutschenreuter map with the other methods detailed in this section.}}{27}{table.3.1}%
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces A table describing the KS test results for each HVC.}}{33}{table.4.1}%
 \contentsline {table}{\numberline {4.2}{\ignorespaces A table describing the magnetic field derivations for each HVC. HVCs from the sample of 13 that had no significant KS test detection, or an invalid variance subtraction result are removed.}}{38}{table.4.2}%
