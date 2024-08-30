@@ -1,4 +1,4 @@
-\begin{thebibliography}{52}
+\begin{thebibliography}{55}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -6,6 +6,19 @@
   \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
   \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
   \urlstyle{rm}\Url}\fi
+
+\bibitem[{Anderson et~al.(2024)Anderson, McClure-Griffiths, Rudnick, Gaensler,
+  O'Sullivan, Bradbury, Akahori, Baidoo, Bruggen, Carretti, Duchesne, Heald,
+  Jung, Kaczmarek, Leahy, Loi, Ma, Osinga, Seta, Stuardi, Thomson, Eck,
+  Vernstrom, and West}]{ID73}
+\textsc{Anderson, C.~S., McClure-Griffiths, N.~M., Rudnick, L., Gaensler,
+  B.~M., O'Sullivan, S.~P., Bradbury, S., Akahori, T., Baidoo, L., Bruggen, M.,
+  Carretti, E., Duchesne, S., Heald, G., Jung, S.~L., Kaczmarek, J., Leahy, D.,
+  Loi, F., Ma, Y.~K., Osinga, E., Seta, A., Stuardi, C., Thomson, A. J.~M.,
+  Eck, C.~V., Vernstrom, T., and West, J.}, (2024).
+\newblock Probing the magnetised gas distribution in galaxy groups and the
+  cosmic web with possum faraday rotation measures.
+\newblock Accepted by MNRAS.
 
 \bibitem[{Arias-Castro and Donoho(2009)}]{ID40}
 \textsc{Arias-Castro, E. and Donoho, D.~L.}, (2009).
@@ -257,6 +270,17 @@
   circumgalactic medium around milky way-like galaxies.
 \newblock Accepted to MNRAS.
 
+\bibitem[{Jung et~al.(2024)Jung, Seta, Price, McClure-Griffiths, Livingston,
+  Gaensler, Ma, Tahani, Anderson, Federrath, Van~Eck, Leahy, O'Sullivan, West,
+  Heald, and Akahori}]{ID75}
+\textsc{Jung, S.~L., Seta, A., Price, J., McClure-Griffiths, N., Livingston,
+  J., Gaensler, B., Ma, Y.~K., Tahani, M., Anderson, C., Federrath, C.,
+  Van~Eck, C., Leahy, D., O'Sullivan, S., West, J., Heald, G., and Akahori,
+  T.}, (2024).
+\newblock Magnetised hi superbubbles in the small magellanic cloud revealed by
+  the possum pilot survey.
+\newblock Submitted to MNRAS.
+
 \bibitem[{Kaczmarek et~al.(2017)Kaczmarek, Purcell, Gaensler,
   McClure-Griffiths, and Stevens}]{ID27}
 \textsc{Kaczmarek, J.~F., Purcell, C.~R., Gaensler, B.~M., McClure-Griffiths,
@@ -312,6 +336,11 @@
   5285--5293.
 \newblock \doi{10.1093/mnras/stz350}.
 \newblock \urlprefix\url{https://doi.org/10.1093/mnras/stz350}.
+
+\bibitem[{Lucchini et~al.(2024)Lucchini, Han, Hernquist, and Conroy}]{ID74}
+\textsc{Lucchini, S., Han, J.~J., Hernquist, L., and Conroy, C.}, (2024).
+\newblock On the origin of high velocity clouds in the galaxy.
+\newblock Accepted by ApJ.
 
 \bibitem[{Macquart et~al.(2012)Macquart, Ekers, Feain, and
   Johnston-Hollitt}]{ID60}

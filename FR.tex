@@ -194,7 +194,7 @@ There is a lack of an ability to quantify the utility of the discussed foregroun
     \label{fig:t_dist}
 \end{figure}
 
-The histograms displayed in figure \ref{fig:big_hist} do not follow a Gaussian distribution or a Cauchy distribution, but do follow a Student's t-distribution. This has been seen before in past analysis of residual RMs [SOURCE]. By eye, it is quite clear that this is not the case for the other two distributions, hence why no statistical analysis was conducted on them. A chi-squared test can be used to compare the residual RM distributions with the t-distribution, with the t-distribution being fitted via a bootstrapping method. 1000 resamplings with replacement were used.
+The histograms displayed in figure \ref{fig:big_hist} do not follow a Gaussian distribution or a Cauchy distribution, but do follow a Student's t-distribution. This has been seen before in past analysis of residual RMs \citep{ID73}. By eye, it is quite clear that this is not the case for the other two distributions, hence why no statistical analysis was conducted on them. A chi-squared test can be used to compare the residual RM distributions with the t-distribution, with the t-distribution being fitted via a bootstrapping method. 1000 resamplings with replacement were used.
 
 Table \ref{tab:fr_stats} displayed the resulting t-distribution fit and Pearson's chi-squared statistic. The p-values for both were extremely small, despite the clear visual incongruency in the model and data set in figure \ref{fig:t_dist}. This is most likely caused by the t-distribution fitting very well with the tails and mid-section of the data histogram.
 
