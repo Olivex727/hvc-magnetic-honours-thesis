@@ -187,19 +187,38 @@ Lastly, figure \ref{fig:colour_maps_3} compares the two annulus methods together
 
 There is a lack of an ability to quantify the utility of the discussed foreground removal methods. Hence, why most analysis in this section is visual or qualitative. However, there is still benefit in deriving numerical statistics.
 
-The histograms displayed in figure \ref{fig:big_hist} do not follow a normal distribution or a Cauchy distribution of the same standard deviation or mean absolute deviation. This can be seen by eye. This means that it's difficult to compare each histogram with anything meaningful. Table \ref{tab:fr_stats} presents the mean and standard deviations of each of the four residual histograms. The mean ideally should be as close to zero as possible.
+\begin{figure}
+    \includegraphics[width=10cm]{"t_dist_residuals.png"}
+    \centering
+    \caption{The sample of all RMs corrected with the Hutschenreuter Interpolation (Blue) and Crosshatch-Bandpassed Interpolation (Red). A bootstrap fitted t-distribution is drawn on the graph for each respective residual RM set.}
+    \label{fig:t_dist}
+\end{figure}
+
+The histograms displayed in figure \ref{fig:big_hist} do not follow a Gaussian distribution or a Cauchy distribution, but do follow a Student's t-distribution. This has been seen before in past analysis of residual RMs [SOURCE]. By eye, it is quite clear that this is not the case for the other two distributions, hence why no statistical analysis was conducted on them. A chi-squared test can be used to compare the residual RM distributions with the t-distribution, with the t-distribution being fitted via a bootstrapping method. 1000 resamplings with replacement were used.
+
+Table \ref{tab:fr_stats} displayed the resulting t-distribution fit and Pearson's chi-squared statistic. The p-values for both were extremely small, despite the clear visual incongruency in the model and data set in figure \ref{fig:t_dist}. This is most likely caused by the t-distribution fitting very well with the tails and mid-section of the data histogram.
 
 \begin{table}
     \centering
+    \begin{tabular}{l l l l}
+        \hline
+        \multirow{2}{*}{\bfseries{Residual Set}} & \multicolumn{3}{l}{\bfseries{t-Distribution Fit}} \\
+        & Centre & d.o.f. & Scale \\
+        \hline
+        Straight Interpolation & 1.0395 $\pm$ 0.0039 & 1.4583 $\pm$ 0.1828 & 14.241 $\pm$ 0.0587 \\
+        Crosshatch-Bandpassed & 1.0463 $\pm$ 0.0038 & 1.6425 $\pm$ 0.0694 & 14.461 $\pm$ 0.0583 \\
+        \hline
+        & & & \\
+    \end{tabular}
     \begin{tabular}{l l l}
         \hline
-        \bfseries{Methods} & \bfseries{Mean Residual} & \bfseries{Residual Stdev.} \\
+        \multirow{2}{*}{\bfseries{Residual Set}} & \multicolumn{2}{l}{\bfseries{$\chi^2$ Results}} \\
+        & Statistic & p-value \\
         \hline
-        Straight Interpolation Residuals & 92.84 & 3.365 \\
-        Crosshatch-Bandpassed Residuals & 92.14 & 3.327 \\
-        Annulus-Bandpassed Residuals & 100.5 & 18.91 \\
-        Annulus-Convolved Residuals & 75.87 & 17.87 \\
+        Straight Interpolation & 0.01432 & 1.042E-166 \\
+        Crosshatch-Bandpassed & 0.01459 & 2.618E-166 \\
         \hline
+        & & \\
     \end{tabular}
     \begin{tabular}{l l}
         \hline
@@ -211,7 +230,7 @@ The histograms displayed in figure \ref{fig:big_hist} do not follow a normal dis
         Annulus-Bandpassed vs. Annulus-Convolved & 1.3894E-06 \\
         \hline
     \end{tabular}
-    \caption{(Top) Parameters for the residual histograms as displayed in figure \ref{fig:big_hist}. (Bottom) $R^2$ statistics comparing the Hutschenreuter map with the other methods detailed in this section.}
+    \caption{(Top) Student's t-distribution fit parameters for the residual histograms as displayed in figure \ref{fig:t_dist}. (Middle) Results of the $\chi^2$ test comparing residual histograms with the t-distrubution. (Bottom) $R^2$ statistics comparing the Hutschenreuter map with the other methods detailed in this section.}
     \label{tab:fr_stats}
 \end{table}
 

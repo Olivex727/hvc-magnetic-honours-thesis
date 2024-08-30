@@ -9,13 +9,13 @@ In constructing a rudimentary algorithm to quantify the effect of magnetic drapi
 Due to the significant limitations in available data, the use of assumptions is necessary to begin the process of rough evaluation. Several assumptions were employed in the process of evaluation, some of which are less than satisfactory at contributing an accurate answer to the research question. Again, it is highly important to note that goal is to ensure the validity of the method is sound and to ensure the method's manipulability, but not necessarily provide a guarantee of accuracy and precision.
 
 
-The first major assumption is that the ionisation fraction of the Galactic halo is approximately constant, i.e. gas in the halo is well-mixed. This does not account for major sources of heterogeneity caused by HVCs (a desired outcome) or other ionised regions such as the Magellanic Clouds (an undesired outcome). It is not necessarily unreasonable to assume this, especially if the region of analysis per HVC is under 4 square degrees.
+The first major assumption is that the ionisation fraction of the Galactic halo is approximately constant, i.e. gas in the halo is well-mixed. This does not account for major sources of heterogeneity caused by HVCs (a desired outcome) or other ionised regions such as the Magellanic Clouds (an undesired outcome). It is not necessarily unreasonable to assume this, especially if the region of analysis per HVC is under 4 square degrees. As there is less likelihood of interference from one or more sources.
 
 
-Simulation data can be used to analyse the problematic nature of assuming a constant ionisation fraction \citep{ID23}. However, it is difficult to apply simulation data to observational data due to the sheer variety of analysis capable of being performed by simulations. For now, it is 'good enough' to rely on that assumption from \cite{ID23} that the ionisation fraction is high and constant.
+Simulation data can be used to analyse the problematic nature of assuming a constant ionisation fraction \citep{ID23}. However, it is difficult to apply simulation data to observational data due to the amount of variables that need to be controlled for. For now, it is 'good enough' to rely on the assumption from \cite{ID23} that the ionisation fraction is high and constant.
 
 
-The second major assumption is that the weighted average of the HI column density surrounding a HVC is linearly proportional to, and biased towards the peak column density in the centre of the HVC. This is an assumption that only works under the consideration of averages, as HI column density is certainly not uniform within clouds, as mentioned in \cite{ID69}. It also neccessitates some level of correlation between line of sight magnetic fields and their uncertainties (a consequence of Poisson noise).
+The second major assumption is that the weighted average of the HI column density on a HVC is linearly proportional to, and biased towards the peak column density in the centre of the HVC. This is an assumption that only works under the consideration of averages, as HI column density is certainly not uniform within clouds, as mentioned in \cite{ID69}. It also neccessitates some level of correlation between line-of-sight magnetic fields and their uncertainties (a consequence of Poisson noise).
 
 
 Both above assumptions can, and should, be taken to be unreasonable for providing an accurate estimate of magnetic field strength. However, the result of applying both assumptions is that the line-of-sight magnetic field strength is linearly proportional to the faraday depth with a scaling constant unique to each HVC – as demonstrated in later section \ref{sec:los_dev}. This greatly simplifies the analysis, without loss of validity, primarily due to the method of calculation explained by \cite{ID27} and in section \ref{sec:los_dev}.
@@ -68,20 +68,17 @@ Where $\left<B_{\parallel}\right>$ is the average line-of-sight magnetic field i
 Where $X$ is the unitless ionisation fraction, and $\left<N_{HI}\right>$ is the weighted average HI column density over the region being analysed, measured in $\mathrm{cm}^{-2}$. This equation can only be derived under the first assumption. Additionally, the use of the average HI column density is intrinsically tied to the second assumption.
 
 
-Applying both assumptions and utilizing this equation demonstrates that the line-of-sight magnetic field is linearly proportional to the faraday depth. For every RM sampling point, the magnetic field was calculated using this equation. With the assumption that the ionisation fraction is approximately unity, and the average HI column density is equal to the peak HI column density of the HVC. As aforementioned, these values act more as simple placeholders for more detailed analysis, being within an order of magnitude is all that is necessary for the aims of this report.
+Applying both assumptions one and two and utilizing this equation demonstrates that the line-of-sight magnetic field is linearly proportional to the faraday depth. Thus, a 'master RM'  can be constructed - denoting the faraday depth associated with any given HVC, and any given background surrounding the HVC. These two master RM values can be subtracted from each other and converted into a magnetic field via multiplication of a constant factor. The method can be performed in that order due to the second assumption. The methods used to create this 'master RM' are described in \ref{sec:evaluation}.
 
 
-At this point, it is important to distinguish between what is called 'virtual magnetic field' and 'actual magnetic field'. For any individual RM point source, there are a lot of interferences that may make the resulting magnetic field not representative of the actual magnetic field at that point – more specifically, the turbulent nature of gas mixing in the halo and HVC \citep{ID69, ID30, ID16}. Thus, calculating the magnetic field value associated with a single RM point source is to be considered 'virtual' – an approximation to the actual magnetic field within a degree of uncertainty. It is only through the statistical analysis of multiple virtual magnetic fields that an actual magnetic field value can be derived. As the combination ensures that turbulence effects are accounted for, due to it being unlikely that random contributions to line-of-sight magnetic fields can become uniform at the point of observation.
+Despite the detailed analysis conducted in section \ref{cha:FR}, it was decided that the non-altered interpolated sky map be used to correct RM contributions. This is due to most already-existing literature relying on this method. From figure \ref{fig:anisotropy}, which displays histograms of the corrected and uncorrected line-of-sight magnetic field points surrounding HVCs, it is demonstrated that the Hutschenreuter map can remove the anisotropy of the ISM by turning an uncorrected bimodal symmetric distribution into a normal distribution centred at zero. However, it also is apparent that the correction can introduce a significantly higher variance in the data, shown in the ridge-like structures in figure \ref{fig:all_hvcs}, which presents HI images of all 13 HVCs, the overlapping RM grids, and the cropped HI fields. The filtered Moss catalogue, including all 13 HVCs is displayed in appendix \ref{sec:appendixB}.
 
-
-Despite the detailed analysis conducted in section \ref{cha:FR}, it was decided that the non-altered interpolated sky map be used to correct RM contributions. This is due to most already-existing literature relying on this method. From figure \comment{FIXME}, which displays histograms of the corrected and uncorrected line-of-sight magnetic field points surrounding HVCs. From the figure, it is demonstrated that the Hutschenreuter map can remove the anisotropy of the ISM by turning an uncorrected bimodal symmetric distribution into a normal distribution centred at zero. However, it also is apparent that the correction can introduce a significantly higher variance in the data, shown in the ridge-like structures in figure \ref{fig:all_hvcs}, which presents HI images of all 13 HVCs, the overlapping RM grids, and the cropped HI fields. The filtered Moss catalogue, including all 13 HVCs is displayed in appendix \ref{sec:appendixB}.
-
-%\begin{figure}
-%    \includegraphics[width=10cm]{"Virtual_B_All_HVCs.png"}
-%    \centering
-%    \caption{Two histograms describing the calculated line-of-sight virtual magnetic field strengths within a certain distance to the 13 sample HVCs. The red histogram uses uncorrected. The green histogram uses corrected RMs.}
-%    \label{fig:anisotropy}
-%\end{figure}
+\begin{figure}
+    \includegraphics[width=10cm]{"anisotropy.png"}
+    \centering
+    \caption{Two histograms describing the RM sample within a certain distance to the 13 sample HVCs. The red histogram uses uncorrected RMs. The green histogram uses corrected RMs.}
+    \label{fig:anisotropy}
+\end{figure}
 
 
 \section{KS Testing}
@@ -90,10 +87,10 @@ Despite the detailed analysis conducted in section \ref{cha:FR}, it was decided 
 Before evaluating the effect of magnetic draping on HVCs, it is important to first confirm that there is a detectable magnetic field to analyse. To do this, the KS test was employed. The set of RM grid points for each HVC collated in section \ref{ssec:hvc_snapshot} include any grid point within $2 - 2\pi$ degrees of the HVC centre, depending on HVC size. Employing assumption three, two separate populations can be formed by delineating RMs inside and outside a certain circular distance from the HVC centre. The specific radius of delineation was the average value between the Moss catalogue's 'dx' and 'dy' values (i.e. its cartesian dimensions). All sampling points within the defined circle is apart of the “HVC RMs” population, and the ones outside the circle are apart of the “Background RMs” population.
 
 
-Due to the linear proportionality between the faraday depth and virtual magnetic field, these two values are interchangeable when doing statistical analysis on the individual HVC level. This allows the KS test to be performed on the set of virtual magnetic fields associated with grid points directly, instead of the faraday depth.
+A two-sample, two-tailed, KS test was performed comparing both the background and HVC RM distributions. A critical p-value of 0.001 was assumed to determine if a significant magnetic field was detected. Table \ref{tab:KStest} shows the KS test results applied to each HVC. Out of the 13 HVCs tested, 10 HVCs (77\%) had a significant difference between both populations in the corrected RM case. This is a promising confirmation of the hypothesis presented by the literature, that magnetic draping is an existing phenomenon.
 
 
-A two-sample, two-tailed, KS test was performed comparing both the background and HVC virtual magnetic fields. A critical p-value of 0.001 was assumed to determine if a significant magnetic field was detected. Table \ref{tab:KStest} shows the KS test results applied to each HVC. Out of the 13 HVCs tested, 10 HVCs (77\%) had a significant difference between both populations. This is a promising confirmation of the hypothesis presented by the literature, that magnetic draping is an existing phenomenon.
+For uncorrected RMs, the KS test determined that 12 HVCs had a significant difference between both populations. No HVC had a significant detection for the uncorrected case and a non-significant detection for the corrected case. This implies that using the corrected RMs makes the KS test more selective.
 
 \begin{table}
     \centering
@@ -111,10 +108,10 @@ A two-sample, two-tailed, KS test was performed comparing both the background an
     \label{tab:KStest}
 \end{table}
 
-\section{Effect of Missing Data}
-\label{sec:Missing}
-
-T
+%\section{Effect of Missing Data}
+%\label{sec:Missing}
+%
+%T
 
 
 \section{Mathematical methods to evaluate HVC Magnetic Fields}
@@ -123,13 +120,13 @@ T
 For the HVCs which did have detectable magnetic fields, the next step is to estimate the strength of the magnetic field draping over each HVC. Previous analyses of the Smith Cloud, such as in \cite{ID5, ID26}, utilises a weighted average to determine the magnetic field strength. However, this method may not be transferable to a generalised algorithm. In \cite{ID5, ID26}, due to analysing one single and large object, it is possible to divide the object into several smaller sections for analysis. It is not possible to do this especially given the limitations created by assumption three.
 
 
-While the background virtual magnetic field population will generally follow the expected normal distribution, the in-HVC population can come in multiple varieties including: skewed normal distributions, where the HVC is travelling side-on; bimodal distributions, where the HVC is travelling towards or away from Earth; or sinc distributions - similar to the bimodal distribution, however under the unique case where the HVC magnetic field perfectly overlaps with the corrected background, resulting in a depopulation of virtual magnetic fields where the HVC magnetic field strength should align to. More is provided on these morphologies in section \ref{sec:toy_models}.
+While the background RM population will generally follow the expected normal distribution, the in-HVC population can come in multiple varieties depending on the orientation of the HVC with respect to the observer. These may appear 'coffee stain' RM fields [SOURCE].
 
 
-The more complex HVC virtual magnetic field distribution combined with the oversimplified morphology model means that using a weighted average is dubious in validity at best - the same applies to most forms of modal analysis including gaussian fitting i.e. any method that can not account for antimodal or multimodal analysis. Henceforth, this report proposes two new methods to determine the magnetic field strength surrounding HVCs under the simplified morphological model. Sections \ref{ssec:KS_EDF} and \ref{ssec:sigma_sub} attempts to justify the mathematical validity of these two methods, section \ref{sec:toy_models} demonstrates validity further through the application of a simple toy model, and section \ref{sec:results} shows both the results of using these methods, with some further post-hoc justifications demonstrated in output data.
+The more complex HVC RM distribution combined with the oversimplified spherical morphological model means that using a weighted average is dubious in validity at best - the same applies to most forms of modal analysis including gaussian fitting i.e. any method that can not account for antimodal or multimodal analysis. Henceforth, this report proposes two new methods to determine the magnetic field strength surrounding HVCs under the simplified spherical morphological model. Sections \ref{ssec:KS_EDF} and \ref{ssec:sigma_sub} attempts to justify the mathematical validity of these two methods, and section \ref{sec:results} shows both the results of using these methods, with some further post-hoc justifications demonstrated via statistical analysis in \ref{ssec:results_stats}.
 
 
-Regardless of the hypothesis that the weighted average is inadequate, it will still be included as a method in the analysis of both the toy model and actual results, for the point of either disproving or validating said hypothesis.
+Regardless of the hypothesis that the weighted average is inadequate, it will still be included as a method in the analysis of the results, for the point of either disproving or validating said hypothesis.
 
 
 \subsection{KS-EDF Method}
@@ -160,7 +157,7 @@ The second step is not always valid, due to the inherent variability in the EDFs
 A more legitimate method involves the reverse-propagation of uncertainties. An assumption can be made that for some HVCs, there is an inherent variation in the magnetic field as one looks at different locations in the defined morphological circle, appearing as a 'ring' of changing numerical parity. This inherent variance is denoted as $\sigma_{\mathrm{true}}^2$.
 
 
-Additionally, each virtual magnetic field measurement comes with a measurement uncertainty, denoted as $\sigma_{\mathrm{meas.}}$. Propagating these two uncertainties would give what should be the observed variance, $\sigma_{\mathrm{obs}}^2$:
+Additionally, each RM measurement comes with a measurement uncertainty, denoted as $\sigma_{\mathrm{meas.}}$. Propagating these two uncertainties would give what should be the observed variance, $\sigma_{\mathrm{obs}}^2$:
 
 
 \begin{equation}
@@ -178,7 +175,7 @@ The observed uncertainty can be calculated by taking the statistical standard de
 \end{equation}
 
 
-By definition of standard deviation, the corresponding true variance can be equivocated to the average separation between virtual magnetic fields in the population, thus quantifying the inherent variation in the HVC magnetic field, i.e. the magnetic field strength.
+By definition of standard deviation, the corresponding true variance can be equivocated to the average separation between RMs in the population, thus quantifying the inherent variation in the HVC magnetic field, i.e. the magnetic field strength.
 
 
 The same can be done to the background population, instead to detect the potential interferences of the ridge-like structures of the magnetic field. This can be used to subtract out the background interferences that were included in the derivation of the true in-HVC variance.
@@ -187,32 +184,32 @@ The same can be done to the background population, instead to detect the potenti
 A clear potential source of error in this method comes in the fact that the standard deviation is positive, affecting the validity in two separate ways: (i) cases where the average measurement uncertainty is larger than the statistical standard deviation, resulting in a complex uncertainty; (ii) cases where the magnetic field strength \textit{should} be negative but is calculated as positive (before the true background variance is subtracted). Case (i) does not invalidate the method outright but does mean that 'bad data' might have to be thrown out. This happened in only one case as seen in section \ref{sec:results}. Case (ii) is irrelevant in the conclusion, as the parity of the magnetic field is not a factor being analysed. However, the if the main concern is if the background and HVC true variances differ in sign. This is not of concern because if there is a sign difference, the background ridge-like structures would cancel-out the presence of HVC magnetic fields, resulting in every invalidating occurrence of case (ii) necessarily leading to case (i).
 
 
-To reiterate, the caveats and assumptions described in this derivation may appear as mathematically or intuitively valid, however it is worthwhile to test things via toy modelling and statistical analysis.
+To reiterate, the caveats and assumptions described in this derivation may appear as mathematically or intuitively valid, however it is worthwhile to test things via statistical analysis and modelling (see section \ref{sec:future}).
 
-
-\section{Toy Model Analysis}
-\label{sec:toy_models}
-
-E
-
-\begin{equation}
-    P_{\mathrm{image}} (x,y;k,\alpha,\beta,\gamma) = k P_{\mathrm{background}}(x,y) + P_{\mathrm{HVC}} (x,y;\alpha,\beta,\gamma)
-    \label{eq:image_toy}
-\end{equation}
-
-\begin{equation}
-    P_{\mathrm{HVC}} (x,y) = \int_{-\infty}^{\infty}{\mathrm{R}(\alpha,\beta,\gamma)\vec{B}_{\mathrm{sim}}(\mathrm{R}^{-1}(\alpha,\beta,\gamma)\cdot(x,y,z)) \cdot \hat{z}dz}
-    \label{eq:toy_vec}
-\end{equation}
-
-\begin{equation}
-    \vec{B}_{\mathrm{sim}}(x,y,z) =
-    \begin{cases}
-        \begin{bmatrix} x \\ y \\ z \end{bmatrix} & x\leq 0 \\
-        \begin{bmatrix} x \\ y \\ z \end{bmatrix} & x > 0
-    \end{cases}
-    \label{eq:toy_mag}
-\end{equation}
+%
+%\section{Toy Model Analysis}
+%\label{sec:toy_models}
+%
+%E
+%
+%\begin{equation}
+%    P_{\mathrm{image}} (x,y;k,\alpha,\beta,\gamma) = k P_{\mathrm{background}}(x,y) + P_{\mathrm{HVC}} (x,y;\alpha,\beta,\gamma)
+%    \label{eq:image_toy}
+%\end{equation}
+%
+%\begin{equation}
+%    P_{\mathrm{HVC}} (x,y) = \int_{-\infty}^{\infty}{\mathrm{R}(\alpha,\beta,\gamma)\vec{B}_{\mathrm{sim}}(\mathrm{R}^{-1}(\alpha,\beta,\gamma)\cdot(x,y,z)) \cdot \hat{z}dz}
+%    \label{eq:toy_vec}
+%\end{equation}
+%
+%\begin{equation}
+%    \vec{B}_{\mathrm{sim}}(x,y,z) =
+%    \begin{cases}
+ %       \begin{bmatrix} x \\ y \\ z \end{bmatrix} & x\leq 0 \\
+%        \begin{bmatrix} x \\ y \\ z \end{bmatrix} & x > 0
+%    \end{cases}
+%    \label{eq:toy_mag}
+%\end{equation}
 
 \section{Magnetic Field Results}
 \label{sec:results}
@@ -250,16 +247,13 @@ The distributions of the results are displayed in the boxplots of figure \ref{fi
 
 From figure \ref{fig:BBox}, the magnetic field strengths are overall higher compared to the hypothesised estimate of being on the order of magnitude of 0.1 {\textmu}G. The three methods appear to visually agree with each other approximately, with the KS-EDF overestimating the magnetic field value, the Variance Subtraction having the greatest spread, and the Weighted Average having the largest tail. It is important to note that due to the logarithmic scale used, the mean is inherently biased to visually appear at higher values. However, the use of a logarithmic scale is still justified due to the order-of-magnitude levels of error.
 
-
-\comment{FIXME} displays the relationship between the calculated magnetic field and the absolute GSR velocity. With all three methods, there appears to be a weak negative correlation in the form of:
-
 \subsection{Uncertainties}
 \label{ssec:results_uncertainties}
 
 With each method comes a unique derivation of uncertainties. The uncertainty in the weighted mean is given as trivial – calculated separately for the HVC and background populations, and then propagated.
 
 
-The uncertainty in the KS-EDF statistic reflects the inherent variability in the method and is calculated by the Euclidean addition of the average measurement uncertainty of both the HVC and background populations. This corresponds to the propagation of virtual magnetic field uncertainties shown in figure \ref{fig:KSdiff}, where the black line is the source of determining the uncertainties to propagate.
+The uncertainty in the KS-EDF statistic reflects the inherent variability in the method and is calculated by the Euclidean addition of the average measurement uncertainty of both the HVC and background populations. This corresponds to the propagation of RM uncertainties shown in figure \ref{fig:KSdiff}, where the black line is the source of determining the uncertainties to propagate.
 
 
 The uncertainty in the variance subtraction method was calculated via bootstrap resampling with replacement. The number of samples generated per population is equal to the size of the population being analysed. Once the HVC and background population uncertainties were evaluated, the two uncertainties were propagated to produce the listed result.
@@ -267,22 +261,30 @@ The uncertainty in the variance subtraction method was calculated via bootstrap 
 \subsection{Statistical Comparison of Methods}
 \label{ssec:results_stats}
 
-\begin{figure}
-    \includegraphics[width=\textwidth]{"Sigma_Agree.png"}
+Two statistical tests were used to compare the three methods in-between eachother. While typically, a chi-squared test may be used, because there is no 'expected' model to compare observations to, it is difficult to designate the variables in the chi-squared test.
+
+A weighted ANOVA test was employed as it can compare multiple methods against eachother, with the weights allowing for the accounting of uncertainties. The F-Statistic calculated from the weighted ANOVA test was 3.375, which corresponds to a p-value of 0.0388. This p-value is within a 95\% confidence interval of similarity, but is still fairly weak.
+
+\begin{table}
     \centering
-    \caption{A boxplot representing the absolute-value magnetic field of each HVC for both derivational methods. The red and blue dotted lines indicate two upper bounds, one set by the \citeauthor[][simulations]{ID23}, and the other by the Smith Cloud respectively.}
-    \label{fig:sigma_agree}
-\end{figure}
+    \begin{tabular}{l l l l l l}
+        \hline
+        \multicolumn{2}{l}{\multirow{2}{*}{\bfseries{Methods}}} & \multicolumn{3}{l}{\bfseries{Difference (\textmu G)}} & \multirow{2}{*}{\bfseries{p-value}} \\
+         &  & Mean & Upper Bd. & Lower Bd. & \\
+        \hline
+        \csvreader[head to column names]{"../../Resources/CSV/anova.csv"}{}
+        {\\ \csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv & \csvcolvi}
+        \\
+        \hline
+    \end{tabular}
+    \caption{A table describing the Tukey Multiple Comparison of Means test results for the HVCs with magnetic field detection.}
+    \label{tab:tukey_hsd}
+\end{table}
 
-In addition to the reduced chi-squared statistic for the toy model analysis shown in section \ref{sec:toy_models}, another reduced chi-squared analysis was performed on the magnetic field values calculated for each HVC. The point of comparison is the weighted average. While the hypothesis stated in section \ref{sec:evaluation} describes the potential problems with using the weighted average, the distribution in figure \ref{fig:BBox} and the values in table \ref{tab:Bdev} demonstrate that the weighted average is still a potentially robust method.
+The weighted ANOVA test results were also fed into a Tukey multiple comparisons of means test. The results of this test are shown in table \ref{tab:tukey_hsd}. Note that here, it is only when comparing the Weighted Mean and KS-EDF methods that a weakly significant (95\% confidence) p-value is obtained.
 
 
-The weighted average has the lowest uncertainties out of the three methods and given its use in previous literature, it was used as the 'expected' value in evaluating the reduced chi-squared statistic. Like the toy model statistical analysis, it was assumed that there were no parameters in the models, because all methods were exclusively mathematically derived from the data.
-
-
-For the KS-EDF method, the reduced chi-squared statistic was 0.1378, and for the variance subtraction method, it was 14.25. Both values are an order of magnitude away from unity, which mainly demonstrates that the KS-EDF overestimates uncertainties, and additionally the pitfalls of the variance subtraction method. The results of this test does not immediately disqualify either method, but it does provide credence to the hypothesis in section \ref{sec:toy_models} that these methods have specific points of failure. It is also important to note that there were only 10 degrees of freedom for these statistics.
-
-
+The reason for the weighted ANOVA test as a whole giving a weak significantce compared to only one of three values in the Tukey test, is due to the ability of the weighted ANOVA test to 'bridge the gaps' created by two data points with no overlapping uncertainties and a third data point in the centre. This is why a three-way comparison is needed.
 
 
 %%% Local Variables: 

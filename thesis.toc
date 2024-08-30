@@ -26,19 +26,17 @@
 \contentsline {subsection}{\numberline {3.3.3}Kernel Filtering}{22}{subsection.3.3.3}%
 \contentsline {section}{\numberline {3.4}Characterising the RM data}{23}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Statistical Comparison of Foreground Removal Methods}{26}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Other Methods}{27}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Magnetic Field Derivation}{28}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Assumptions}{28}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Derivation of Line-of-Sight Magnetic Fields}{29}{section.4.2}%
-\contentsline {section}{\numberline {4.3}KS Testing}{32}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Effect of Missing Data}{33}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Mathematical methods to evaluate HVC Magnetic Fields}{34}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}KS-EDF Method}{34}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Uncertainy Subtraction}{36}{subsection.4.5.2}%
-\contentsline {section}{\numberline {4.6}Toy Model Analysis}{37}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Magnetic Field Results}{37}{section.4.7}%
-\contentsline {subsection}{\numberline {4.7.1}Uncertainties}{39}{subsection.4.7.1}%
-\contentsline {subsection}{\numberline {4.7.2}Statistical Comparison of Methods}{39}{subsection.4.7.2}%
+\contentsline {section}{\numberline {3.6}Other Methods}{28}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Magnetic Field Derivation}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Assumptions}{29}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Derivation of Line-of-Sight Magnetic Fields}{30}{section.4.2}%
+\contentsline {section}{\numberline {4.3}KS Testing}{33}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Mathematical methods to evaluate HVC Magnetic Fields}{34}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}KS-EDF Method}{35}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Uncertainy Subtraction}{36}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Magnetic Field Results}{38}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Uncertainties}{39}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Statistical Comparison of Methods}{39}{subsection.4.5.2}%
 \contentsline {chapter}{\numberline {5}Discussion}{41}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Foreground Removal}{41}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Edge Detection and Rippling}{41}{subsection.5.1.1}%
@@ -52,8 +50,8 @@
 \contentsline {subsection}{\numberline {5.2.5}Uncertainty Analysis}{42}{subsection.5.2.5}%
 \contentsline {chapter}{\numberline {6}Conclusions}{43}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Future Research}{43}{section.6.1}%
-\contentsline {chapter}{Bibliography}{49}{chapter*.8}%
-\contentsline {chapter}{Appendix}{50}{appendix*.9}%
+\contentsline {chapter}{Bibliography}{49}{chapter*.6}%
+\contentsline {chapter}{Appendix}{50}{appendix*.7}%
 \contentsline {section}{\numberline {A}Developed code and data}{50}{section.Alph0.1}%
 \contentsline {section}{\numberline {B}All HVCs and HVC Calulations}{50}{section.Alph0.2}%
 \contentsline {section}{\numberline {C}Planck Mission Cosmic Microwave Background}{50}{section.Alph0.3}%
