@@ -1,4 +1,4 @@
-\begin{thebibliography}{55}
+\begin{thebibliography}{59}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -312,6 +312,17 @@
 \newblock \emph{Astronomy {\&} Astrophysics}, 391(2), 713--723.
 \newblock \doi{10.1051/0004-6361:20020863}.
 
+\bibitem[{Kutner et~al.(2005)Kutner, Nachtsheim, Neter, and Li}]{ID76}
+\textsc{Kutner, M.~H., Nachtsheim, C.~J., Neter, J., and Li, W.}, (2005).
+\newblock \emph{Applied Linear Statistical Models}.
+\newblock McGraw-Hill/Irwin, 5th edition.
+
+\bibitem[{Li(2013)}]{ID72}
+\textsc{Li, C.}, (2013).
+\newblock Little's test of missing completely at random.
+\newblock \emph{The Stata Journal}, 13(4), 795--809.
+\newblock \doi{10.1177/1536867X1301300407}.
+
 \bibitem[{Lockman(2008)}]{ID35}
 \textsc{Lockman, F.~J.}, (2008).
 \newblock \emph{High-Velocity Clouds Merging with the Milky Way}, chap.~53,
@@ -376,6 +387,11 @@
 \newblock \emph{The Astrophysial Journal}, 725(1), 275.
 \newblock \doi{10.1088/0004-637X/725/1/275}.
 
+\bibitem[{Montgomery(2019)}]{ID78}
+\textsc{Montgomery, D.~C.}, (2019).
+\newblock \emph{Design and Analysis of Experiments}.
+\newblock Wiley, 10th edition.
+
 \bibitem[{Moss et~al.(2013)Moss, McClure-Griffiths, Murphy, Pisano, Kummerfeld,
   and Curran}]{ID3}
 \textsc{Moss, V.~A., McClure-Griffiths, N.~M., Murphy, T., Pisano, D.~J.,
@@ -425,6 +441,11 @@
   5514--5531.
 \newblock \doi{10.1093/mnras/stx2680}.
 \newblock \urlprefix\url{https://doi.org/10.1093/mnras/stx2680}.
+
+\bibitem[{Tukey(1949)}]{ID77}
+\textsc{Tukey, J.~W.}, (1949).
+\newblock Comparing individual means in the analysis of variance.
+\newblock \emph{Biometrics}, 5(2), 99--114.
 
 \bibitem[{Vanderwoude et~al.(2024)Vanderwoude, West, Gaensler, Rudnick, VanEck,
   Thomson, H.Andernach, Anderson, Carretti, Heald, Leahy, McClure-Griffiths,
