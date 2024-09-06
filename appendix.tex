@@ -13,24 +13,52 @@
 \section{Developed code and data}
 \label{sec:appendixA}
 
-E
+All developed code and data is found in a publically-available GitHub repository as shown here: \url{https://github.com/Olivex727/hvc-magnetic-honours-programs}.
 
 \section{All HVCs and HVC Calulations}
 \label{sec:appendixB}
 
-E
+The filtered Moss catalogue is as below.
+
 
 \section{Planck Mission Cosmic Microwave Background}
 \label{sec:appendixC}
 
-E
+The source for the Planck mission's CMB temperature map is available on this website: \url{https://www.esa.int/ESA_Multimedia/Images/2013/03/Planck_CMB/}.
 
 \section{PyNUFFT Python Module}
 \label{sec:appendixD}
 
-E
+The pyNUFFT Python Module, which was used in the investigation for foreground removal, has its main documentation page here: \url{https://pynufft.readthedocs.io/en/latest/index.html}
 
 \section{Statistical ANOVA Tests}
 \label{sec:appendixE}
 
-E
+The R language was used to calculate all tests mentioned in \ref{ssec:results_stats}, the file is available here: \url{https://github.com/Olivex727/hvc-magnetic-honours-programs/blob/main/KS_confirmation/wgt_anova.R}.
+
+The specific R code output when running this file is as follows:
+
+\begin{verbatim}
+> summary(base_V2_aov)
+Df Sum Sq Mean Sq F value Pr(>F)  
+data_new$variable.x  2   44.7  22.349   3.375 0.0388 *
+Residuals           87  576.1   6.622                 
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+> tukey.test
+Tukey multiple comparisons of means
+95% family-wise confidence level
+
+Fit: aov(formula = data_new$Estimate ~ data_new$variable.x,
+weights = data_new$prescision)
+
+$`data_new$variable.x`
+   diff       lwr         upr     p adj
+Var_Sub-KS_EDF   -1.199 -2.783335  0.38533482 0.1741072
+Wgt_Mean-KS_EDF  -1.675 -3.259335 -0.09066518 0.0357301
+Wgt_Mean-Var_Sub -0.476 -2.060335  1.10833482 0.7544765
+
+> 
+\end{verbatim}
+
+A copy of this text output is available in the file: \url{https://github.com/Olivex727/hvc-magnetic-honours-programs/blob/main/KS_confirmation/chisq.txt}.
