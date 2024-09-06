@@ -94,7 +94,7 @@ A simpler method is to directly alter the Hutschenreuter map itself using normal
 \end{equation}
 
 
-Where $k_{\mathrm{HVC}}$ is the spatial frequency in $\mathrm{deg}^{-1}$, $\theta_{\mathrm{HVC}}$ is the angular size of the HVC in degrees, and R is the pixel resolution of the axis, in pixels per degree. Assuming all RM sky images exist in a 2:1 cartesian space, due to the range of galactic latitude and longitude, the value of R is constant across the two axes.
+Where $k_{\mathrm{HVC}}$ is the spatial frequency in $\mathrm{deg}^{-1}$, $\theta_{\mathrm{HVC}}$ is the angular size of the HVC in degrees, and R is the pixel resolution of the axis, in pixels per degree. Assuming all RM sky images exist in a 2:1 cartesian space, due to the range of Galactic latitude and longitude, the value of R is constant across the two axes.
 
 
 The crosshatch is shaped such that, when multiplied by the original k-space, objects of a particular size are either eliminated or reduced in prevalence. This method also guarantees the linearity of the crosshatch 'function'. After this, the inverse FFT is applied to give a resulting foreground map, seen in figure \ref{fig:ripples}.
@@ -133,7 +133,7 @@ The same techniques from above can be applied to convolutions, where the aim is 
     \label{fig:annulus_interpolation}
 \end{figure}
 
-The main problem, as apparent from this method, is that the annulus kernel acts as an edge detection algorithm \citep{ID38}. This causes defects at higher absolute galactic latitudes due to the effect of distortions from the cartesian distribution. Another problem is that this subtraction method is being applied to the Hutschenreuter map, instead of the actual RM grid. This secondary issue can be solved by relying on the NUFFT of a larger RM grid. As it stands, this method appears to be incompatible with the goals of foreground removal.
+The main problem, as apparent from this method, is that the annulus kernel acts as an edge detection algorithm \citep{ID38}. This causes defects at higher absolute Galactic latitudes due to the effect of distortions from the cartesian distribution. Another problem is that this subtraction method is being applied to the Hutschenreuter map, instead of the actual RM grid. This secondary issue can be solved by relying on the NUFFT of a larger RM grid. As it stands, this method appears to be incompatible with the goals of foreground removal.
 
 \section{Characterising the RM data}
 \label{sec:charm}
@@ -157,7 +157,7 @@ Figure \ref{fig:colour_maps_1} demonstrates the similarities between the crossha
 Figure \ref{fig:colour_maps_2} compares the unaltered Hutschenreuter map with the annulus-convolved method (a.k.a. the fixed-sampling annulus method). There is a somewhat linear relationship between the actual RMs and the annulus-convolved RMs, ignoring the heavy scatter closer to the midplane. This gives credibility to this method, and the choice of having a small-sized annulus.
 
 
-Lastly, figure \ref{fig:colour_maps_3} compares the two annulus methods together. The annulus-bandpass method (a.k.a. the fixed-size annulus method). From the bottom two graphs, the annulus bandpass does not interact properly with the Galactic midplane, sending most RMs to near-zero. Despite this, RMs at higher galactic latitudes 'blow up'. This implies that the utilised annulus-bandpass method is not a viable for foreground correction.
+Lastly, figure \ref{fig:colour_maps_3} compares the two annulus methods together. The annulus-bandpass method (a.k.a. the fixed-size annulus method). From the bottom two graphs, the annulus bandpass does not interact properly with the Galactic midplane, sending most RMs to near-zero. Despite this, RMs at higher Galactic latitudes 'blow up'. This implies that the utilised annulus-bandpass method is not a viable for foreground correction.
 
 \begin{figure}
     \includegraphics[width=0.6\textwidth]{"RM_Colour_Maps.png"}

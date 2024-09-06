@@ -46,7 +46,7 @@ The HI sky was taken from the HI4PI 21 cm survey, with modifications done by \ci
 The H-alpha sky was taken from \cite{ID43}, which was a collage of three smaller H-alpha surveys. Unfortunately, this map is also limited by the same problems as the Hutschenreuter map, with a notable lack of coverage near the terrestrial south pole. It was decided that the H-alpha map would be included in the process of collation for the purposes of future research potential.
 
 
-Both maps, the Hutschenreuter map, and their respective error maps are displayed in figure \ref{fig:maps}. The only exception being the HI error, which is only altered by a scalar. All data sources collected were first converted to a FITS file under the cartesian projection. The location of individual point-values will not be affected by a cartesian projection, however it can introduce distorions at a high galactic lattitude. This does need to be accounted for.
+Both maps, the Hutschenreuter map, and their respective error maps are displayed in figure \ref{fig:maps}. The only exception being the HI error, which is only altered by a scalar. All data sources collected were first converted to a FITS file under the cartesian projection. The location of individual point-values will not be affected by a cartesian projection, however it can introduce distorions at a high Galactic lattitude. This does need to be accounted for.
 
 \begin{figure}
     \includegraphics[width=\textwidth]{"Cartesian_Plots.png"}
@@ -67,7 +67,7 @@ The Moss catalogue includes a total of 1693 HVCs, of which most are not viable c
 Other considerations made when filtering HVCs were their overlap with the current POSSUM RM grids. Not every HVC is properly covered by the current RM grid. HVCs were filtered out if their centres (obtained from the Moss catalogue) were more than one degree separated from the nearest RM sampling point. This further reduced the sample size to 26 HVCs.
 
 
-There is a major increase in scatter with POSSUM RMs and interpolated RMs closer to the galactic midplane \citep{ID21}. This is explored in later sections; however, figure \ref{fig:rm_scatter} represents this scatter. Because of this, HVCs close to the galactic midplane must be eliminated to reduce scatter – specifically HVCs located with Galactic Latitudes $|b|<20^{\circ}$ were excluded. This reduces the sample size to 15.
+There is a major increase in scatter with POSSUM RMs and interpolated RMs closer to the Galactic midplane \citep{ID21}. This is explored in later sections; however, figure \ref{fig:rm_scatter} represents this scatter. Because of this, HVCs close to the Galactic midplane must be eliminated to reduce scatter – specifically HVCs located with Galactic Latitudes $|b|<20^{\circ}$ were excluded. This reduces the sample size to 15.
 
 
 The distortions introduced by cartesian projections need to be accounted for. HVCs located at Galactic Latitudes $|b|>80^{\circ}$ were also eliminated from the sample set. This removes one HVC to give a sample size of 14.
@@ -77,7 +77,7 @@ Lastly, it was clear that HVC G282.3-38.3+117 had not detectable HI emission acc
 \begin{figure}
     \includegraphics[width=\textwidth]{"RM_whole_scatter.png"}
     \centering
-    \caption{(Left) A graph of all $\sim$180000 RMs plotted against their corresponding galactic lattitude; (Right) The corresponding graph of all interpolated faraday depths matched to the POSSUM RMs. Both graphs represent a significant level of scatter present in RMs collected near the galactic midplane.}
+    \caption{(Left) A graph of all $\sim$180000 RMs plotted against their corresponding Galactic lattitude; (Right) The corresponding graph of all Hutschenreuter map faraday depths matched to the POSSUM RMs. Both graphs represent a significant level of scatter present in RMs collected near the Galactic midplane.}
     \label{fig:rm_scatter}
 \end{figure}
 
