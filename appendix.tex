@@ -18,8 +18,30 @@ All developed code and data is found in a publically-available GitHub repository
 \section{All HVCs and HVC Calulations}
 \label{sec:appendixB}
 
-The filtered Moss catalogue is as below.
+The filtered Moss catalogue is as below. The table has been modified from what was originally retrieved for display and formatting purposes. The actual Moss catalogue data can be found at VisieR: \url{https://vizier.cds.unistra.fr/viz-bin/VizieR-3?-source=J/ApJS/209/12}.
 
+\begin{flushleft}
+\begin{tabular}{l | l l l l l l}
+    \hline
+    Name & RAJ200 & DEJ2000 & VLSR & VLSR Error & VGSR & V Dev. \\
+    \hline
+    \csvreader[head to column names]{"../../Resources/CSV/moss_filtered.csv"}{}
+    {\\ \csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv & \csvcolvi & \csvcolvii}
+    \\
+    \hline
+\end{tabular}
+
+\begin{tabular}{l | l l l l l l l}
+    \hline
+    Name & FWHM & $T_b$ Fit & $N_{HI}$ & $N_{HI}$ Error & Area & dx & dy \\
+    \hline
+    \csvreader[head to column names]{"../../Resources/CSV/moss_filtered.csv"}{}
+    {\\ \csvcoli & \csvcolviii & \csvcolix & \csvcolx & \csvcolxi & \csvcolxii & \csvcolxiii & \csvcolxiv }
+    \\
+    \hline
+\end{tabular}
+
+\end{flushleft}
 
 \section{Planck Mission Cosmic Microwave Background}
 \label{sec:appendixC}
@@ -30,6 +52,8 @@ The source for the Planck mission's CMB temperature map is available on this web
 \label{sec:appendixD}
 
 The pyNUFFT Python Module, which was used in the investigation for foreground removal, has its main documentation page here: \url{https://pynufft.readthedocs.io/en/latest/index.html}
+
+\newpage
 
 \section{Statistical ANOVA Tests}
 \label{sec:appendixE}
