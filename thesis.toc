@@ -50,7 +50,7 @@
 \contentsline {chapter}{Bibliography}{52}{chapter*.6}%
 \contentsline {chapter}{Appendix}{53}{appendix*.7}%
 \contentsline {section}{\numberline {A}Developed code and data}{53}{section.Alph0.1}%
-\contentsline {section}{\numberline {B}All HVCs and HVC Calulations}{53}{section.Alph0.2}%
+\contentsline {section}{\numberline {B}All HVCs}{53}{section.Alph0.2}%
 \contentsline {section}{\numberline {C}Planck Mission Cosmic Microwave Background}{54}{section.Alph0.3}%
 \contentsline {section}{\numberline {D}PyNUFFT Python Module}{54}{section.Alph0.4}%
 \contentsline {section}{\numberline {E}Statistical ANOVA Tests}{55}{section.Alph0.5}%
