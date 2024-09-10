@@ -18,7 +18,8 @@
   Eck, C.~V., Vernstrom, T., and West, J.}, (2024).
 \newblock Probing the magnetised gas distribution in galaxy groups and the
   cosmic web with possum faraday rotation measures.
-\newblock Accepted by MNRAS.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society}, 533(4),
+  4068--4080.
 
 \bibitem[{Arias-Castro and Donoho(2009)}]{ID40}
 \textsc{Arias-Castro, E. and Donoho, D.~L.}, (2009).
@@ -64,7 +65,7 @@
 \textsc{Blitz, L., Spergel, D.~N., Teuben, P.~J., Hartmann, D., and Burton,
   W.~B.}, (1999).
 \newblock High-velocity clouds: Building blocks of the local group.
-\newblock \emph{ApJ}, 514(2), 818.
+\newblock \emph{The Astrophysial Journal}, 514(2), 818.
 \newblock \doi{10.1086/306963}.
 
 \bibitem[{Brentjens and de~Bruyn(2005)}]{ID14}
@@ -89,7 +90,7 @@
   {Roueff, Antoine}, and {Sievers, Albrecht}}, (2021).
 \newblock Tracers of the ionization fraction in dense and translucent gas - i.
   automated exploitation of massive astrochemical model grids.
-\newblock \emph{A&A}, 645, A28.
+\newblock \emph{Astronomy {\&} Astrophysics}, 645, A28.
 \newblock \doi{10.1051/0004-6361/202038040}.
 
 \bibitem[{Dursi and Pfrommer(2008)}]{ID10}
@@ -287,7 +288,9 @@
   A.~S., Eck, C. L.~V., and Anderson, C.~S.}, (2023).
 \newblock Sampling the faraday rotation sky of tng50: Imprint of the magnetised
   circumgalactic medium around milky way-like galaxies.
-\newblock Accepted to MNRAS.
+\newblock \emph{Monthly Notices of the Royal Astronomical Society}, 526(1),
+  836--853.
+\newblock \doi{10.1093/mnras/stad2811}.
 
 \bibitem[{Jung et~al.(2024)Jung, Seta, Price, McClure-Griffiths, Livingston,
   Gaensler, Ma, Tahani, Anderson, Federrath, Van~Eck, Leahy, O'Sullivan, West,
@@ -467,15 +470,16 @@
 \newblock \emph{Biometrics}, 5(2), 99--114.
 
 \bibitem[{Vanderwoude et~al.(2024)Vanderwoude, West, Gaensler, Rudnick, VanEck,
-  Thomson, H.Andernach, Anderson, Carretti, Heald, Leahy, McClure-Griffiths,
+  Thomson, Andernach, Anderson, Carretti, Heald, Leahy, McClure-Griffiths,
   O'Sullivan, Tahani, and Willis}]{ID1}
 \textsc{Vanderwoude, S., West, J.~L., Gaensler, B.~M., Rudnick, L., VanEck,
-  C.~L., Thomson, A. J.~M., H.Andernach, Anderson, C.~S., Carretti, E., Heald,
-  G.~H., Leahy, J.~P., McClure-Griffiths, N.~M., O'Sullivan, S.~P., Tahani, M.,
-  and Willis, A.~G.}, (2024).
-\newblock Prototype faraday rotation measure catalogs from the polarization sky
-  survey of the universe’s magnetism (possum) pilot observations.
-\newblock Submitted to ApJ.
+  C.~L., Thomson, A. J.~M., Andernach, H., Anderson, C.~S., Carretti, E.,
+  Heald, G.~H., Leahy, J.~P., McClure-Griffiths, N.~M., O'Sullivan, S.~P.,
+  Tahani, M., and Willis, A.~G.}, (2024).
+\newblock Prototype faraday rotation measure catalogs from the polarisation sky
+  survey of the universe's magnetism (possum) pilot observations.
+\newblock \emph{The Astrophysial Journal}, 167(5).
+\newblock \doi{10.3847/1538-3881/ad2fc8}.
 
 \bibitem[{Wakker(1991)}]{ID7}
 \textsc{Wakker, B.}, (1991).
