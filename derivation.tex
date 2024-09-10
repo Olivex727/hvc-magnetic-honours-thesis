@@ -277,7 +277,7 @@ A weighted ANOVA test was employed as it can compare multiple methods against ea
          &  & Mean & Upper Bd. & Lower Bd. & \\
         \hline
         \csvreader[head to column names]{"../../Resources/CSV/anova.csv"}{}
-        {\\ \csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv & \csvcolvi}
+        {\\ \csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv & \csvcolvii}
         \\
         \hline
     \end{tabular}
@@ -285,10 +285,10 @@ A weighted ANOVA test was employed as it can compare multiple methods against ea
     \label{tab:tukey_hsd}
 \end{table}
 
-The weighted ANOVA test results were also fed into a Tukey multiple comparisons of means test. The results of this test are shown in table \ref{tab:tukey_hsd}. Note that here, it is only when comparing the Weighted Mean and KS-EDF methods that a weakly significant (95\% confidence) p-value is obtained.
+The weighted ANOVA test results were also fed into a Tukey multiple comparisons of means test. The results of this test are shown in table \ref{tab:tukey_hsd}. Note that here, the p-value is a measure of the likelihood that the two data sets are different. It is clear that an alternative hypothesis, that two given distributions are different, is not met to 95\% confidence in all cases except when comparing the weighted mean and KS-EDF method. However it is clear that the KS-EDF method does not match well with the other two cases in-general.
 
 
-The reason for the weighted ANOVA test as a whole giving a weak significantce compared to only one of three values in the Tukey test, is due to the ability of the weighted ANOVA test to 'bridge the gaps' created by two data points with no overlapping uncertainties and a third data point in the centre. This is why a three-way comparison is needed.
+The reason for the weighted ANOVA test as a whole giving a weak significance of similarity compared to only one of three values in the Tukey test giving strong evidence of similarity, is due to the ability of the weighted ANOVA test to 'bridge the gaps' created by two data points with no overlapping uncertainties and a third data point in the centre. This is why a three-way comparison is needed.
 
 The primary three sources for the weighted ANOVA and Tukey test is provided in the papers by \cite{ID76, ID77, ID78}. The specific code to perform this analysis is additionally presented in \ref{sec:appendixE}.
 
