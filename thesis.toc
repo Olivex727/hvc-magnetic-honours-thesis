@@ -32,11 +32,11 @@
 \contentsline {section}{\numberline {4.2}Derivation of Line-of-Sight Magnetic Fields}{30}{section.4.2}%
 \contentsline {section}{\numberline {4.3}KS Testing}{33}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Mathematical methods to evaluate HVC Magnetic Fields}{34}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}KS-EDF Method}{35}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.1}KS-EDF Method}{36}{subsection.4.4.1}%
 \contentsline {subsection}{\numberline {4.4.2}Uncertainy Subtraction}{37}{subsection.4.4.2}%
 \contentsline {section}{\numberline {4.5}Magnetic Field Results}{38}{section.4.5}%
 \contentsline {subsection}{\numberline {4.5.1}Uncertainties}{39}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Statistical Comparison of Methods}{39}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.2}Statistical Comparison of Methods}{40}{subsection.4.5.2}%
 \contentsline {chapter}{\numberline {5}Discussion}{41}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Foreground Removal}{41}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Magnetic Field Derivation}{43}{section.5.2}%
