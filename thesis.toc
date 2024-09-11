@@ -6,7 +6,6 @@
 \contentsline {section}{\numberline {1.2}Magnetic Fields}{3}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Draping}{3}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Faraday Rotation}{4}{subsection.1.2.2}%
-\contentsline {subsubsection}{\numberline {1.2.2.1}Noise Interference}{5}{subsubsection.1.2.2.1}%
 \contentsline {section}{\numberline {1.3}Smith Cloud}{7}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Report Outline and Objectives}{7}{section.1.4}%
 \contentsline {chapter}{\numberline {2}Data Collection}{10}{chapter.2}%
