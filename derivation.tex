@@ -101,7 +101,7 @@ There appears to be a very weak correlation between the KS statistic and the Gal
         \multirow{2}{*}{\bfseries Name} & \multicolumn{2}{l}{\bfseries Corrected RMs} & \multicolumn{2}{l}{\bfseries Raw RMs} \\
         & Statistic & p-value & Statistic & p-value \\
         \hline
-        \csvreader[head to column names]{"../../Resources/CSV/KStest_proc.csv"}{}
+        \csvreader[head to column names]{"./csv/KStest_proc.csv"}{}
         {\\\csvcoli & \csvcolii & \csvcoliii & \csvcolviii & \csvcolix}
         \\
         \hline
@@ -226,7 +226,7 @@ The results of each method are compiled in table \ref{tab:Bdev}.
         \multirow{2}{*}{\bfseries Name} & \multicolumn{3}{l}{\bfseries Abs. Magnetic Field  $|B_{\parallel}|$ (\textmu G)} \\
         & Wgt. Avg. & KS-EDF & $\sigma$-Sub. \\
         \hline
-        \csvreader[head to column names]{"../../Resources/CSV/results_post_RM.csv"}{}
+        \csvreader[head to column names]{"./csv/results_post_RM.csv"}{}
         {\\\csvcoli & \csvcoliv $\pm$ \csvcolv & \csvcolvi $\pm$ \csvcolvii & \csvcolviii $\pm$ \csvcolix}
         \\
         \hline
@@ -277,7 +277,7 @@ A weighted ANOVA test was employed as it can compare multiple methods against ea
         \multicolumn{2}{l}{\multirow{2}{*}{\bfseries{Methods}}} & \multicolumn{3}{l}{\bfseries{Difference (\textmu G)}} & \multirow{2}{*}{\bfseries{p-value}} \\
          &  & Mean & Upper Bd. & Lower Bd. & \\
         \hline
-        \csvreader[head to column names]{"../../Resources/CSV/anova.csv"}{}
+        \csvreader[head to column names]{"./csv/anova.csv"}{}
         {\\ \csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv & \csvcolvii}
         \\
         \hline
