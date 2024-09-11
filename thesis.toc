@@ -48,6 +48,6 @@
 \contentsline {chapter}{Appendix}{58}{appendix*.7}%
 \contentsline {section}{\numberline {A}Developed code and data}{58}{section.Alph0.1}%
 \contentsline {section}{\numberline {B}All HVCs}{58}{section.Alph0.2}%
-\contentsline {section}{\numberline {C}Planck Mission Cosmic Microwave Background}{59}{section.Alph0.3}%
-\contentsline {section}{\numberline {D}PyNUFFT Python Module}{59}{section.Alph0.4}%
+\contentsline {section}{\numberline {C}Planck Mission Cosmic Microwave Background}{58}{section.Alph0.3}%
+\contentsline {section}{\numberline {D}PyNUFFT Python Module}{58}{section.Alph0.4}%
 \contentsline {section}{\numberline {E}Statistical ANOVA Tests}{60}{section.Alph0.5}%

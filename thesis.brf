@@ -8,6 +8,7 @@
 \backcite {ID45}{{vii}{(document)}{Doc-Start}}
 \backcite {ID38}{{viii}{(document)}{Doc-Start}}
 \backcite {ID23}{{ix}{(document)}{Doc-Start}}
+\backcite {ID3}{{x}{(document)}{Doc-Start}}
 \backcite {ID7}{{1}{[section][1][1]1.1}{section.1.1}}
 \backcite {ID8}{{1}{[section][1][1]1.1}{section.1.1}}
 \backcite {ID66}{{1}{[section][1][1]1.1}{section.1.1}}
@@ -231,3 +232,4 @@
 \backcite {ID23}{{50}{[chapter][6][]6}{chapter.6}}
 \backcite {ID5}{{50}{[chapter][6][]6}{chapter.6}}
 \backcite {ID26}{{50}{[chapter][6][]6}{chapter.6}}
+\backcite {ID3}{{59}{[table][1][]B}{table.Alph0.1}}
