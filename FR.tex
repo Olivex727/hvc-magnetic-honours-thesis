@@ -153,11 +153,11 @@ Figure \ref{fig:big_hist} represents a simple residual histogram comparison betw
 
 Figure \ref{fig:colour_maps_1} demonstrates the similarities between the crosshatch-bandpass and unaltered Hutschenreuter map, with them being related to each other in a linear manner, specifically with a gradient of approximately unity. This is ideal, as it means that the crosshatch-bandpass method is not deviating significantly from the Hutschenreuter map, only altering it subtly. The figure also demonstrates how scattered the RMs become near the Galactic midplane, hence it being plotted for colour to delineate between RMs near and far away from the midplane.
 
+Figure \ref{fig:colour_maps_2} compares the unaltered Hutschenreuter map with the annulus-convolved method (a.k.a. the fixed-size annulus method). From the bottom two graphs, the annulus bandpass does not interact properly with the Galactic midplane, sending most RMs to near-zero. Despite this, RMs at higher Galactic latitudes 'blow up'. This implies that the utilised annulus-bandpass method is not a viable for foreground correction.
 
-Figure \ref{fig:colour_maps_2} compares the unaltered Hutschenreuter map with the annulus-convolved method (a.k.a. the fixed-sampling annulus method). There is a somewhat linear relationship between the actual RMs and the annulus-convolved RMs, ignoring the heavy scatter closer to the midplane. This gives credibility to this method, and the choice of having a small-sized annulus.
 
+Figure \ref{fig:colour_maps_3} compares the unaltered Hutschenreuter map with the annulus-convolved method (a.k.a. the fixed-sampling annulus method). There is a somewhat linear relationship between the actual RMs and the annulus-convolved RMs, ignoring the heavy scatter closer to the midplane. This gives credibility to this method, and the choice of having a small-sized annulus.
 
-Lastly, figure \ref{fig:colour_maps_3} compares the two annulus methods together. The annulus-bandpass method (a.k.a. the fixed-size annulus method). From the bottom two graphs, the annulus bandpass does not interact properly with the Galactic midplane, sending most RMs to near-zero. Despite this, RMs at higher Galactic latitudes 'blow up'. This implies that the utilised annulus-bandpass method is not a viable for foreground correction.
 
 \begin{figure}
     \includegraphics[width=0.6\textwidth]{"RM_Colour_Maps.png"}
@@ -167,16 +167,16 @@ Lastly, figure \ref{fig:colour_maps_3} compares the two annulus methods together
 \end{figure}
 
 \begin{figure}
-    \includegraphics[width=0.6\textwidth]{"RM_Colour_Maps_Craig_Annulus.png"}
+    \includegraphics[width=0.6\textwidth]{"RM_Colour_Maps_Annulus.png"}
     \centering
-    \caption{Three corner plots of all RM sampling points, describing the relationship between the several associated RM values and Galactic lattitude indicated by colour. Here, a comparison between actual RMs, interpolated RMs, and Annulus-Convolved RMs is displayed.}
+    \caption{Three corner plots of all RM sampling points, describing the relationship between the several associated RM values and Galactic lattitude indicated by colour. Here, a comparison between actual RMs, interpolated RMs, and Annulus-Bandpassed RMs is displayed.}
     \label{fig:colour_maps_2}
 \end{figure}
 
 \begin{figure}
-    \includegraphics[width=0.6\textwidth]{"RM_Colour_Maps_Compare_Annulus.png"}
+    \includegraphics[width=0.6\textwidth]{"RM_Colour_Maps_Craig_Annulus.png"}
     \centering
-    \caption{Three corner plots of all RM sampling points, describing the relationship between the several associated RM values and Galactic lattitude indicated by colour. Here, a comparison between actual RMs, Annulus-Bandpassed RMs, and Annulus-Convolved RMs is displayed.}
+    \caption{Three corner plots of all RM sampling points, describing the relationship between the several associated RM values and Galactic lattitude indicated by colour. Here, a comparison between actual RMs, interpolated RMs, and Annulus-Convolved RMs is displayed.}
     \label{fig:colour_maps_3}
 \end{figure}
 
@@ -225,9 +225,8 @@ Table \ref{tab:fr_stats} displayed the resulting t-distribution fit and Pearson'
         \bfseries{Methods} & \bfseries{$R^2$ Statistic} \\
         \hline
         Interpolation vs. Crosshatch-Bandpassed & 0.9279 \\
-        Interpolation vs. Annulus-Bandpassed & 0.007611 \\
+        Interpolation vs. Annulus-Bandpassed & 0.8701 \\
         Interpolation vs. Annulus-Convolved & 0.003866 \\
-        Annulus-Bandpassed vs. Annulus-Convolved & 1.3894E-06 \\
         \hline
     \end{tabular}
     \caption{(Top) Student's t-distribution fit parameters for the residual histograms as displayed in figure \ref{fig:t_dist}. (Middle) Results of the $\chi^2$ test comparing residual histograms with the t-distrubution. (Bottom) $R^2$ statistics comparing the Hutschenreuter map with the other methods detailed in this section.}
