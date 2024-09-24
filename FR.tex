@@ -133,7 +133,7 @@ The same techniques from above can be applied to convolutions, where the aim is 
     \label{fig:annulus_interpolation}
 \end{figure}
 
-The main problem, as apparent from this method, is that the annulus kernel acts as an edge detection algorithm \citep{ID38}. This causes defects at higher absolute Galactic latitudes due to the effect of distortions from the cartesian distribution. Another problem is that this subtraction method is being applied to the Hutschenreuter map, instead of the actual RM grid. This secondary issue can be solved by relying on the NUFFT of a larger RM grid. As it stands, this method appears to be incompatible with the goals of foreground removal.
+The main problem, as apparent from this method, is that the annulus kernel appears to blur out smaller-scale structures. This can lead to more minute RM changes smaller than the angular size of the HVC may be removed out when it may be neccesary to keep them. Despite this, it visually appears as the least troublesome method.
 
 \section{Characterising the RM data}
 \label{sec:charm}
@@ -141,7 +141,7 @@ The main problem, as apparent from this method, is that the annulus kernel acts 
 As seen from figures \ref{fig:snr} and \ref{fig:rm_scatter}, there are several ways in which the RM grid can have 'bad data' – most notably in a lack of signal-to-noise and the inherent scatter when observing near the Galactic midplane. Thus, the final step of this chapter is to both characterise the RM sample set and to compare the subtraction methods against each other.
 
 
-Figure \ref{fig:big_hist} represents a simple residual histogram comparison between all the methods discussed in this chapter. The desired result is seen in the residuals between the interpolated or crosshatch-bandpassed RMs and the actual RMs - appearing as a distribution centred at zero (which does not look gaussian).  This is opposed to the two annulus methods, which do not appear to interact with the RM grid in a desirable manner.
+Figure \ref{fig:big_hist} represents a simple residual histogram comparison between all the methods discussed in this chapter. The desired result is seen in the residuals between the interpolated or crosshatch-bandpassed RMs and the actual RMs - appearing as a distribution centred at zero (which does not look gaussian). This is the same for the annulus-bandpassed RMs, and is opposed to the annulus-convolved method, which does not appear to interact with the RM grid in a desirable manner.
 
 \begin{figure}
     \includegraphics[width=\textwidth]{"Big_RM_histogram_2.png"}
@@ -153,7 +153,7 @@ Figure \ref{fig:big_hist} represents a simple residual histogram comparison betw
 
 Figure \ref{fig:colour_maps_1} demonstrates the similarities between the crosshatch-bandpass and unaltered Hutschenreuter map, with them being related to each other in a linear manner, specifically with a gradient of approximately unity. This is ideal, as it means that the crosshatch-bandpass method is not deviating significantly from the Hutschenreuter map, only altering it subtly. The figure also demonstrates how scattered the RMs become near the Galactic midplane, hence it being plotted for colour to delineate between RMs near and far away from the midplane.
 
-Figure \ref{fig:colour_maps_2} compares the unaltered Hutschenreuter map with the annulus-convolved method (a.k.a. the fixed-size annulus method). From the bottom two graphs, the annulus bandpass does not interact properly with the Galactic midplane, sending most RMs to near-zero. Despite this, RMs at higher Galactic latitudes 'blow up'. This implies that the utilised annulus-bandpass method is not a viable for foreground correction.
+Figure \ref{fig:colour_maps_2} compares the unaltered Hutschenreuter map with the annulus-convolved method (a.k.a. the fixed-size annulus method). From the bottom two graphs, the annulus-bandpass is similar to the crosshatch bandpass, leaving most RMs as correlated. Despite this, there is sightly less visual correlation.
 
 
 Figure \ref{fig:colour_maps_3} compares the unaltered Hutschenreuter map with the annulus-convolved method (a.k.a. the fixed-sampling annulus method). There is a somewhat linear relationship between the actual RMs and the annulus-convolved RMs, ignoring the heavy scatter closer to the midplane. This gives credibility to this method, and the choice of having a small-sized annulus.

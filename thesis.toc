@@ -24,7 +24,7 @@
 \contentsline {subsection}{\numberline {3.3.2}Bandpass Filtering}{20}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Kernel Filtering}{22}{subsection.3.3.3}%
 \contentsline {section}{\numberline {3.4}Characterising the RM data}{23}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Statistical Comparison of Foreground Removal Methods}{26}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Statistical Comparison of Foreground Removal Methods}{23}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Other Methods}{28}{section.3.6}%
 \contentsline {chapter}{\numberline {4}Magnetic Field Derivation}{29}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Assumptions}{29}{section.4.1}%
