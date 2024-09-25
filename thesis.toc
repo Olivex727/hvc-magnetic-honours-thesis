@@ -17,14 +17,14 @@
 \contentsline {section}{\numberline {2.4}Data Collation}{14}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}HVC Image Overlays}{14}{subsection.2.4.1}%
 \contentsline {chapter}{\numberline {3}Foreground Subtraction}{16}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Interpolation}{16}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Foreground Reconstruction via Interpolation}{16}{section.3.1}%
 \contentsline {section}{\numberline {3.2}Annulus Subtraction}{17}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Fast Fourier Transforms (FFTs)}{18}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Non-Uniform Fast Fourier Transforms (NUFFTs)}{19}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Bandpass Filtering}{20}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Kernel Filtering}{22}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Characterising the RM data}{23}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Statistical Comparison of Foreground Removal Methods}{23}{section.3.5}%
+\contentsline {section}{\numberline {3.4}Characterising the RM data}{22}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Statistical Comparison of Foreground Removal Methods}{25}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Other Methods}{28}{section.3.6}%
 \contentsline {chapter}{\numberline {4}Magnetic Field Derivation}{29}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Assumptions}{29}{section.4.1}%

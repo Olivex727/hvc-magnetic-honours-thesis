@@ -6,13 +6,13 @@ Foreground subtraction remains an open question in the field of RM radio astrono
 
 A prime example of the consequences of not correctly accounting for foreground RM contributions is the paper by \cite{ID2}, which attempted to estimate the magnetic field strength surrounding HVCs in the Leading Arm. However, as from \cite{ID36}, this result is possibly erroneous due to the obstruction of the nearby Antila supernova remnant region. While the analysis of multiple HVCs is more likely to prevent these errors from compounding to invalidate the conclusions of the report, it is still useful to account for these contributions as much as possible.
 
-\section{Interpolation}
+\section{Foreground Reconstruction via Interpolation}
 \label{sec:intp}
 
-All previous work on magnetic field analysis of HVCs involve the use of interpolation \citep{ID3, ID5, ID6, ID26, ID73}. Interpolations are very beneficial due to its ability to convert a discrete distribution of RM grid points into a continuous distribution of the RM sky. Interpolations also benefit from a 'smoothing' effect; that interpolated maps can smooth out small-scale imperfections in the RM grid that may not correspond to actual foreground objects \citep{ID44, ID45, ID58}. This smoothing can occur because of the interpolation algorithm itself, or the lack of RM grid density to resolve objects on a particular scale.
+All previous work on magnetic field analysis of HVCs, and more broady on radio objects of interest, involve the use of interpolation \citep{ID3, ID5, ID6, ID26, ID73}. Interpolations are very beneficial due to its ability to convert a discrete distribution of RM grid points into a continuous distribution of the RM sky. Interpolations also benefit from a 'smoothing' effect; that interpolated maps can smooth out small-scale imperfections in the RM grid that may not correspond to actual foreground objects \citep{ID44, ID45, ID58}. This smoothing can occur because of the interpolation algorithm itself, or the lack of RM grid density to resolve objects on a particular scale.
 
 
-The primary issue with interpolation is that they are too effective a technique at reconstructing the RM foreground. Despite the smoothing effects that they can provide, there is no way one can confirm that the RM sky has not included objects of interest as well; in other words, an interpolated RM sky could contain the profiles of objects of interest. This has the effect of making interpolated maps sourced from high-density RM grids redundant, as the original intention of interpolation is to subtract out foreground contributors to RMs – not the objects of interest themselves.
+The primary issue with interpolation is that they are too effective a technique at reconstructing the RM foreground. Despite the smoothing effects that they can provide, there is no way one can confirm that the RM sky has not included objects of interest as well; in other words, an interpolated RM sky could contain the profiles of objects of interest. This has the effect of making interpolated maps sourced from high-density RM grids innapropriate for foreground correction, as the original intention of interpolation is to subtract out foreground contributors to RMs – not the objects of interest themselves.
 
 
 Thus, with the increased RM grid density afforded by the POSSUM survey, and future SKA-era projects, it is of high importance that discussions on how to account for these issues can be solved.
@@ -38,7 +38,7 @@ Where n is the RM grid density in $\mathrm{deg}^{-2}$, r is the inner radius of 
 There are benefits to both methods. On one hand, fixed-size methods can be described mathematically as convolutions, making them linear. However, they can run into measurement and calculation errors when there is a low amount of RM grid points surrounding the central RM. On the other hand, fixed-sampling methods guarantee a consistent uncertainty and the existence of an average. However, this method is both non-linear and prone to including RM grid points very far away from the central point.
 
 
-The primary issue with annulus subtraction is determining the size of the annulus, or the amount of RM sampling points to select i.e. what counts as the “foreground”. This issue is what leads to many of the above-mentioned errors in both methods. The logical response is either to select a large annulus that completely removes the objects' RM contributions (in the case of HVCs this would correspond to an annulus of $1-\pi$ degrees in radius), or to select a small radius with numerous RM points to capture the foreground contributions both overlapping the object and isolated in the field. Both methods will be analysed in this paper, with the former being discussed in section \ref{ssec:kernel} and the latter being shown in figure \ref{fig:annulus_sky} \footnote{The fixed-sampling annulus subtraction was proprietary data collected from the supervisor. However, the quantitative and qualitative analysis of the viability of this method is my own work.}. The specific choice of parameters in the latter method being an inner radius of 0.4” and a sample size of 50 grid points – corresponding to an outer radius of approx. $0.728^{\circ}$.
+The primary issue with annulus subtraction is determining the size of the annulus, or the amount of RM sampling points to select i.e. what counts as the foreground versus the object, what is an effective smoothing of the foreground model? This is what leads the above-mentioned errors in both methods. The logical response is either to select a large-area annulus that completely removes the objects' RM contributions (in the case of the sample HVCs this would correspond to an annulus of $1-\pi$ square degrees in area), or to select a small radius with numerous RM points to capture the foreground contributions both overlapping the object and isolated in the field. Both methods will be analysed in this paper, with the former being discussed in section \ref{ssec:kernel} and the latter being shown in figure \ref{fig:annulus_sky} \footnote{The fixed-sampling annulus subtraction was proprietary data collected from the supervisor. However, the quantitative and qualitative analysis of the viability of this method is my own work.}. The specific choice of parameters in the latter method being an inner radius of 0.4” and a sample size of 50 grid points – corresponding to an outer radius of approx. $0.728^{\circ}$.
 
 \begin{figure}
     \includegraphics[width=12cm]{"POSSUM_RMs_Aitoff_Craig_Annulus.jpg"}
@@ -50,10 +50,10 @@ The primary issue with annulus subtraction is determining the size of the annulu
 \section{Fast Fourier Transforms (FFTs)}
 \label{sec:ffts}
 
-Many of the methods for foreground subtraction beyond interpolation appear to have a common intersection point in the form of image-based signal processing. Thus, the introduction of Fourier Transforms (FTs) may be a very useful direction for analysis. The benefit of FTs is their linearity, which has several benefits including: the trivialisation uncertainty calculations (quantified in equation \ref{eq:ft_unc}); the linear combination of several kernel techniques; signal processing in separate orthogonal dimensions; and consistent scaling relationships. FTs also can utilise both convolutional blurring and bandpassing separately, with convolutions already being discussed with annulus subtractions.
+Many of the methods for foreground subtraction beyond interpolation have a common intersection point in the form of image-based signal processing. Thus, the introduction of Fourier Transforms (FTs) may be a very useful direction for analysis, as they are the foundation for most signal processing methods \citep{ID38}. The benefit of FTs is their linearity, which in several ways can reduce computational expense: the trivialisation uncertainty calculations (quantified in equation \ref{eq:ft_unc}); the linear combination of several kernel techniques; signal processing in separate orthogonal dimensions; and consistent scaling relationships. FTs also can utilise both convolutional blurring and bandpassing separately, with convolutions already being discussed with annulus subtractions.
 
 
-FFTs extend the benefits of FTs by providing a FT algorithm of $O(N\mathrm{log}N)$ complexity and allowing FTs to be performed over discrete sets of data. This allows for the analysis of high-definition pixellated images, which is not unlike the standard format and use-case of a FITS file, especially when using a cartesian projection of the sky. Thus, by applying 2-dimensional FFTs to provided interpolated RM sky images, it is possible to solve the problem introduced by interpolated high-density RM grids.
+FFTs extend the benefits of FTs by providing a FT algorithm of $O(N\mathrm{log}N)$ complexity and allowing FTs to be performed over discrete sets of data. This allows for the analysis of high-definition pixellated images, which is not unlike the standard format and use-case of a FITS file, especially when using a cartesian projection of the sky. Thus, by applying 2-dimensional FFTs to interpolated RM sky images, it is possible to solve the problem introduced by interpolated high-density RM grids.
 
 \subsection{Non-Uniform Fast Fourier Transforms (NUFFTs)}
 \label{ssec:nuffts}
@@ -80,12 +80,12 @@ Then, a random set of sampling points were selected and treated as the 'mock RMs
 \end{figure}
 
 
-This does not disqualify the NUFFT as an analysis technique. Instead, it means that this technique can only work on a very large continuously connected RM set i.e. a complete or partially complete RM grid map of the sky. However, due to the lack of POSSUM data in its early stages, this is a method that must be investigated in the future.
+This does not disqualify the NUFFT as an analysis technique. Instead, it means that this technique can only work on a very large continuously connected RM set i.e. a complete or partially complete RM grid map of the sky. However, due to the lack of POSSUM data in its early stages, this is a method that must be investigated in the future. Hence its in-depth inclusion in this report despite its apparent shortcomings.
 
 \subsection{Bandpass Filtering}
 \label{ssec:bandpass}
 
-A simpler method is to directly alter the Hutschenreuter map itself using normal FFTs. First, a 2-D FFT was applied to the Hutschenreuter map. A crosshatch-shaped bandpass was created. This crosshatch imitates a bandpass commonly applied to 1-dimensional signals, where objects of a particular angular size are eliminated by removing all frequencies corresponding to that angular size in the k-space. The equation below quantifies the relationship between frequency and angular size:
+A simpler method is to directly alter the Hutschenreuter map itself using normal FFTs. First, a 2-D FFT was applied to the Hutschenreuter map. A crosshatch-shaped bandpass was created. This crosshatch imitates a bandpass commonly applied to 1-dimensional signals, where regions of a particular angular area are eliminated by removing all frequencies corresponding to that angular area in the k-space. The equation below quantifies the relationship between frequency and angular area:
 
 
 \begin{equation}
@@ -124,7 +124,7 @@ Where $B\colon\sigma\rightarrow\sigma$ is the bandpass function, $\sigma_{\mathr
 \subsection{Kernel Filtering}
 \label{ssec:kernel}
 
-The same techniques from above can be applied to convolutions, where the aim is to convolve the Hutschenreuter map with a defined kernel. Two-dimensional convolutions have a time complexity of $O(n^4)$, depending on the kernel size, whereas the FFT has a complexity $O(n^2 \mathrm{log}^2 n)$. By performing a FFT on both the kernel and the Hutschenreuter map separately, then multiplying the two k-spaces together, and applying an inverse FFT, the result is a faster application of a convolution with a kernel. This was the chosen method to demonstrate the large fixed-size annulus subtraction method. Figure \ref{fig:annulus_interpolation} displays the results of this method.
+The same techniques from above can be applied via convolutions, where the aim is to convolve the Hutschenreuter map with a defined kernel. Two-dimensional convolutions have a time complexity of $O(n^4)$, depending on the kernel size, whereas the FFT has a complexity $O(n^2 \mathrm{log}^2 n)$. By performing a FFT on both the kernel and the Hutschenreuter map separately, then multiplying the two k-spaces together, and applying an inverse FFT, the result is a faster application of a convolution with a kernel. This was the chosen method to demonstrate the large fixed-size annulus subtraction method. Figure \ref{fig:annulus_interpolation} displays the results of this method.
 
 \begin{figure}
     \includegraphics[width=12cm]{"Annulus_Interpolation_Compare.png"}
@@ -133,7 +133,7 @@ The same techniques from above can be applied to convolutions, where the aim is 
     \label{fig:annulus_interpolation}
 \end{figure}
 
-The main problem, as apparent from this method, is that the annulus kernel appears to blur out smaller-scale structures. This can lead to more minute RM changes smaller than the angular size of the HVC may be removed out when it may be neccesary to keep them. Despite this, it visually appears as the least troublesome method.
+The main problem is that the annulus kernel appears to blur out smaller-scale structures. This can lead to more minute RM changes smaller than the angular size of the HVC may be removed out when it may be neccesary to keep them. 
 
 \section{Characterising the RM data}
 \label{sec:charm}
@@ -185,7 +185,7 @@ Figure \ref{fig:colour_maps_3} compares the unaltered Hutschenreuter map with th
 \section{Statistical Comparison of Foreground Removal Methods}
 \label{sec:FR_stats}
 
-There is a lack of an ability to quantify the utility of the discussed foreground removal methods. Hence, why most analysis in this section is visual or qualitative. However, there is still benefit in deriving numerical statistics.
+There is limited ability to quantify the utility of the discussed foreground removal methods. Hence, why most analysis in this section is visual or qualitative. However, there is still benefit in deriving numerical statistics.
 
 \begin{figure}
     \includegraphics[width=10cm]{"t_dist_residuals.png"}
@@ -194,9 +194,9 @@ There is a lack of an ability to quantify the utility of the discussed foregroun
     \label{fig:t_dist}
 \end{figure}
 
-The histograms displayed in figure \ref{fig:big_hist} do not follow a Gaussian distribution or a Cauchy distribution, but do follow a Student's t-distribution. This has been seen before in past analysis of residual RMs \citep{ID73}. By eye, it is quite clear that this is not the case for the other two distributions, hence why no statistical analysis was conducted on them. A chi-squared test can be used to compare the residual RM distributions with the t-distribution, with the t-distribution being fitted via a bootstrapping method. 1000 resamplings with replacement were used.
+The corrected RM histograms for both bandpass methods displayed in figure \ref{fig:big_hist} do not follow a Gaussian distribution or a Cauchy distribution, but do follow a Student's t-distribution. This has been seen before in past analysis of residual RMs \citep{ID73}. By eye, it is quite clear that this is not the case for the annulus-convolved method, hence why no statistical analysis was conducted on it beyond an $R^2$ calculation. A chi-squared test can be used to compare the residual RM distributions with the t-distribution, with the t-distribution being fitted via a bootstrapping method. 1000 resamplings with replacement were used.
 
-Table \ref{tab:fr_stats} displayed the resulting t-distribution fit and Pearson's chi-squared statistic. The p-values for both were extremely small, despite the clear visual incongruency in the model and data set in figure \ref{fig:t_dist}. This is most likely caused by the t-distribution fitting very well with the tails and mid-section of the data histogram.
+Table \ref{tab:fr_stats} displayed the resulting t-distribution fit and Pearson's chi-squared statistic, which tests for similarity instead of difference. The p-values for both were extremely small, despite the clear visual incongruency in the model and data set in figure \ref{fig:t_dist}. This is most likely caused by the t-distribution fitting very well with the tails and mid-section of the data histogram.
 
 \begin{table}
     \centering
@@ -241,7 +241,9 @@ The Pearson $R^2$ test can be performed in comparing the Hutschenreuter map with
 \section{Other Methods}
 \label{sec:other_methods}
 
-There are other methods for foreground removal that, while researched, were not considered viable options or of enough importance to numerically analyse in this report. However, they may still offer useful methods for future researchers. The first is median filtering, which is like previously discussed convolutional blurring methods. \cite{ID39} provides a description of a fast median filtering algorithm for two-dimensional images. \cite{ID40} is also a reference describing the potential benefits of median filtering, including a more robust removal of noise due to the statistical properties of the median, and the preservation of edges. It was disregarded in this report due to its inherent non-linearity, and the debatable nature of whether this disadvantage is worth the advantages it can bring. Linear decomposition of line-of-sight RMs are also possible, attempted in \cite{ID21}. However, it is also quite mathematically complex and may not be conducive to a generalised algorithm, hence the lack of focus on this technique in this report.
+There are other methods for foreground removal that, while researched, were not considered viable options or of enough importance to numerically analyse in this report. However, they may still offer useful methods for future researchers. The first is median filtering, which is like previously discussed convolutional blurring methods. \cite{ID39} provides a description of a fast median filtering algorithm for two-dimensional images. \cite{ID40} is also a reference describing the potential benefits of median filtering, including a more robust removal of noise due to the statistical properties of the median, and the preservation of edges. It was disregarded in this report due to its inherent non-linearity, leading to more computational complexity, and the debatable nature of whether this disadvantage is worth the advantages it can bring. Linear decomposition of line-of-sight RMs are also possible, attempted in \cite{ID21}. However, it is also quite mathematically complex and may not be conducive to a generalised algorithm, hence the lack of focus on this technique in this report.
+
+Despite the methods presented in the report, in section \ref{cha:derivation}, a non-altered Hutschenreuter map will be used with the justification found in section \ref{sec:los_dev}.
 
 
 %%% Local Variables: 
