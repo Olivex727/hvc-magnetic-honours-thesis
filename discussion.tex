@@ -1,7 +1,7 @@
 \chapter{Discussion}
 \label{cha:discussion}
 
-There have been several caveats made in the explanation of the data collection, methodology, results, and analysis of results. Like the rest of the report structure, this section is split under the two different research questions investigated in this thesis, starting with the secondary goal of the report and finishing with the primary goals of the report.
+Like the rest of the report structure, this section is split under the two different research questions investigated in this thesis, starting with the secondary goal of the report and finishing with the primary goals of the report.
 
 \section{Foreground Removal}
 \label{sec:fr_disc}
@@ -9,7 +9,7 @@ There have been several caveats made in the explanation of the data collection, 
 A major shortfall of the foreground subtraction investigation is the lack of statistical analysis, which will be a common theme throughout this section. In some cases, this is justified, as statistical analysis does not need to be performed especially when the method visually appears as adequate. At the same time, this investigation is limited from a lack of characterisation of the true RM sky, including simulations to predict the distribution of corrected RMs and high-quality data to interpolate with.
 
 
-This report is not meant to act as "closing the book" on research into foreground subtraction techniques, but to point out important considerations to make as research moves into the SKA era, and to conduct a preliminary analysis of how to tackle these predicted problems. This comes in the explanation in section \ref{sec:intp}, which highlights how higher-definition data will inevitably result in issues involving foreground correction for objects of a particular angular size. Thus, the need to extend beyond interpolation techniques.
+This report is not meant to act as a definitive conclusion on research into foreground subtraction techniques, but to point out important considerations to make as research moves into the SKA era, and to conduct a preliminary analysis of how to tackle these predicted problems as outlined in \ref{sec:intp}. Section \ref{sec:intp}, highlights how higher-definition data will inevitably result in issues involving foreground correction for objects of a particular angular size. Thus, the need to extend beyond interpolation techniques when conducting SKA-era analysis.
 
 
 The NUFFT method is one example of a method that can be assessed visually, and without the need for statistical analysis. Figure \ref{fig:nufft} clearly shows that even carrying out an interpolation using a NUFFT requires a large sample size to be adequate. It would not be appropriate to completely write-off NUFFTs as an interpolation and bandpass technique, as with a more complete POSSUM dataset, and future SKA RM projects, millions of RM points would be adequate to interpolate and bandpass using a NUFFT. There will simply not be enough data in the few years after this paper.
@@ -102,9 +102,21 @@ The use of the Tukey test (as seen in table \ref{tab:tukey_hsd}) is meant to com
 Despite the statistical confirmation of validity, there is ultimately no way to determine the experimental validity of each of these three methods without modelling. This is a recommended direction for cementing the results of the report.
 
 
-As expected, from table \ref{tab:Bdev} the uncertainties are relatively large. There is no decent way at visually representing this statement due to how cluttered any given graph would be. The large uncertainties are expected. Certainly, for both variance subtraction and weighted mean, the calculation of uncertainties are mathematically justified. It was much more difficult to obtain KS-EDF uncertainties, leading to a potential over-estimation of error. This only further supports the conclusion that the KS-EDF method is a 'dead end'.
+As expected, from table \ref{tab:Bdev} the uncertainties are relatively large. There is no decent way at visually representing this statement due to how cluttered any given graph would be. The large uncertainties are expected. Certainly, for both variance subtraction and weighted mean, the calculation of uncertainties are mathematically justified. It was more difficult to obtain KS-EDF uncertainties, leading to a potential over-estimation of error. This only further supports the conclusion that the KS-EDF method is disfavourable.
 
+
+For all three methods, some of the uncertainties in table \ref{tab:Bdev} imply a nonexistent magnetic field within one sigma. It is important to seperate the KS test from the estimation techniques. As mentioned in section \ref{ssec:results_uncertainties}, if the estimation produces such large uncertainies, it does not imply a lack of detection - instead it implies that the evaluation method is imprecise - something anticipated by the assumptions laid out in \ref{sec:assumptions}.
+
+\subsection{Implications of the Results}
+\label{ssec:B4}
 
 The methodologies proposed in chapter \ref{sec:evaluation} play a role in how researchers will estimate the effect of magnetic draping, with the clear requirement of more techniques or 'angles of attack' to solving the problem of calculation for an arbitrary HVC, of arbitrary orientation, size, shape, and angular size. Effectively the goal of developing a generalised algorithm as discussed in section \ref{sec:outline} is necessary to allow for astronomers to mass-estimate magnetic draping. An important caveat being that the four major assumptions being reduced in their contribution to systematic or random errors.
+
+
+The implications of the magnetic draping hypothesis have significant ramifications on the future of galactic archaeological research. It would necessarily mean that HVCs are protected by magnetic fields, which helps to confirm a lot of \textit{qualatative} conclusions of past research done on modelling and predictions of HVC survivability (\citeauthor{ID23} simulations). It additionally aligns with other observations of HVCs, specifically the Smith Cloud \citep{ID5, ID26}. While it confirms the efforts made by past research, it can help bring the field one step closer to understanding the origins of pristine gas for star-forming galaxies, with a proven method for how galaxies can obtain said gas. A small proportion of HVCs that did not have significant magnetic field detections – specifically HVCs G089.0-64.7-311 and G248.9+36.8+181. If this were not caused by methodological error, a re-examination of both HVCs is required.
+
+
+While the conclusions of this investigation point towards magnetic draping to three sigma confidence, the order of magnitude higher magnetic field values is of notable interest. This conflicts with precious simulational data such as in the \citeauthor{ID23} simulations. It also implies that the Smith Cloud is less exceptional of a HVC than initially beleived. This order of magnitude increase should result in other consequences that should be measureable - most notably both Rayleigh-Taylor instabilites in the HVC gas and a significant slowing effect of HVCs due to magnetic pressure. The former of these could explain the complex mixing around HVCs \citep{ID67}.
+
 
 The outcomes of the methods detailed in this report will not just aid research on HVCs, but on other magnetised astronomical objects, such as in molecular clouds \citep{ID70}.
