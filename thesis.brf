@@ -190,7 +190,7 @@
 \backcite {ID3}{{30}{[section][1][4]4.1}{section.4.1}}
 \backcite {ID26}{{30}{[section][1][4]4.1}{section.4.1}}
 \backcite {ID26}{{33}{[section][3][4]4.3}{section.4.3}}
-\backcite {ID27}{{33}{[section][3][4]4.3}{equation.4.3.1}}
+\backcite {ID27}{{34}{[section][3][4]4.3}{equation.4.3.1}}
 \backcite {ID69}{{34}{[section][3][4]4.3}{equation.4.3.2}}
 \backcite {ID30}{{34}{[section][3][4]4.3}{equation.4.3.2}}
 \backcite {ID5}{{34}{[section][4][4]4.4}{section.4.4}}
@@ -206,6 +206,7 @@
 \backcite {ID77}{{40}{[subsection][2][4.5]4.5.2}{table.4.3}}
 \backcite {ID78}{{40}{[subsection][2][4.5]4.5.2}{table.4.3}}
 \backcite {ID73}{{42}{[section][1][5]5.1}{section.5.1}}
+\backcite {ID1}{{43}{[section][1][5]5.1}{section.5.1}}
 \backcite {ID58}{{43}{[section][1][5]5.1}{section.5.1}}
 \backcite {ID6}{{44}{[subsection][1][5.2]5.2.1}{subsection.5.2.1}}
 \backcite {ID3}{{44}{[subsection][1][5.2]5.2.1}{subsection.5.2.1}}
@@ -213,13 +214,11 @@
 \backcite {ID6}{{44}{[subsection][1][5.2]5.2.1}{subsection.5.2.1}}
 \backcite {ID26}{{44}{[subsection][1][5.2]5.2.1}{subsection.5.2.1}}
 \backcite {ID73}{{44}{[subsection][1][5.2]5.2.1}{subsection.5.2.1}}
-\backcite {ID66}{{45}{[subsection][1][5.2]5.2.1}{subsection.5.2.1}}
-\backcite {ID74}{{45}{[subsection][1][5.2]5.2.1}{subsection.5.2.1}}
-\backcite {ID66}{{45}{[subsection][1][5.2]5.2.1}{subsection.5.2.1}}
-\backcite {ID28}{{45}{[subsection][1][5.2]5.2.1}{subsection.5.2.1}}
-\backcite {ID64}{{45}{[subsection][1][5.2]5.2.1}{subsection.5.2.1}}
+\backcite {ID30}{{44}{[subsection][1][5.2]5.2.1}{subsection.5.2.1}}
+\backcite {ID3}{{45}{[subsection][1][5.2]5.2.1}{subsection.5.2.1}}
 \backcite {ID23}{{45}{[subsection][2][5.2]5.2.2}{subsection.5.2.2}}
 \backcite {ID69}{{45}{[subsection][2][5.2]5.2.2}{subsection.5.2.2}}
+\backcite {ID24}{{45}{[subsection][2][5.2]5.2.2}{subsection.5.2.2}}
 \backcite {ID6}{{45}{[subsection][2][5.2]5.2.2}{subsection.5.2.2}}
 \backcite {ID27}{{45}{[subsection][2][5.2]5.2.2}{subsection.5.2.2}}
 \backcite {ID13}{{46}{[subsection][2][5.2]5.2.2}{subsection.5.2.2}}
