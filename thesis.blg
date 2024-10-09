@@ -14,44 +14,44 @@ Database file #3: batch1additional.bib
 Database file #4: batch2rand.bib
 Database file #5: obstech.bib
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-You've used 59 entries,
+You've used 58 entries,
             3119 wiz_defined-function locations,
-            1039 strings with 17938 characters,
-and the built_in function-call counts, 45778 in all, are:
-= -- 3157
-> -- 2942
+            1034 strings with 17500 characters,
+and the built_in function-call counts, 44589 in all, are:
+= -- 3091
+> -- 2810
 < -- 24
-+ -- 1118
-- -- 1023
-* -- 4019
-:= -- 7092
-add.period$ -- 229
-call.type$ -- 59
-change.case$ -- 641
-chr.to.int$ -- 59
-cite$ -- 59
-duplicate$ -- 3142
-empty$ -- 2987
-format.name$ -- 1202
-if$ -- 8697
++ -- 1069
+- -- 975
+* -- 3900
+:= -- 6890
+add.period$ -- 226
+call.type$ -- 58
+change.case$ -- 619
+chr.to.int$ -- 58
+cite$ -- 58
+duplicate$ -- 3081
+empty$ -- 2945
+format.name$ -- 1151
+if$ -- 8488
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 785
-newline$ -- 356
-num.names$ -- 236
-pop$ -- 1398
+missing$ -- 765
+newline$ -- 351
+num.names$ -- 232
+pop$ -- 1356
 preamble$ -- 1
-purify$ -- 577
+purify$ -- 557
 quote$ -- 0
-skip$ -- 776
+skip$ -- 765
 stack$ -- 0
-substring$ -- 1572
-swap$ -- 1994
+substring$ -- 1559
+swap$ -- 1951
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 522
+type$ -- 513
 warning$ -- 0
-while$ -- 236
+while$ -- 233
 width$ -- 0
-write$ -- 872
+write$ -- 860

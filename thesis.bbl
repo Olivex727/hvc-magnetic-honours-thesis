@@ -1,4 +1,4 @@
-\begin{thebibliography}{59}
+\begin{thebibliography}{58}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -283,17 +283,6 @@
 \newblock \emph{Monthly Notices of the Royal Astronomical Society}, 526(1),
   836--853.
 \newblock \doi{10.1093/mnras/stad2811}.
-
-\bibitem[{Jung et~al.(2024)Jung, Seta, Price, McClure-Griffiths, Livingston,
-  Gaensler, Ma, Tahani, Anderson, Federrath, Van~Eck, Leahy, O'Sullivan, West,
-  Heald, and Akahori}]{ID75}
-\textsc{Jung, S.~L., Seta, A., Price, J., McClure-Griffiths, N., Livingston,
-  J., Gaensler, B., Ma, Y.~K., Tahani, M., Anderson, C., Federrath, C.,
-  Van~Eck, C., Leahy, D., O'Sullivan, S., West, J., Heald, G., and Akahori,
-  T.}, (2024).
-\newblock Magnetised hi superbubbles in the small magellanic cloud revealed by
-  the possum pilot survey.
-\newblock Submitted to MNRAS.
 
 \bibitem[{Kaczmarek et~al.(2017)Kaczmarek, Purcell, Gaensler,
   McClure-Griffiths, and Stevens}]{ID27}
