@@ -1,21 +1,21 @@
 \chapter{Data}
 \label{cha:data}
 
-To acheive the goals listed in \ref{sec:outline} - namely to detect and measure the magnetic fields in HVCs and improve RM foreground removal techniques - several sources of data are required including RM grid data, interpolations, and HVC catalogs. Furthermore, work needs to be done to collate the data.
+To achieve the goals listed in \ref{sec:outline} - namely to detect and measure the magnetic fields in HVCs and improve RM foreground removal techniques - several sources of data are required including RM grid data, interpolations, and HVC catalogs. Furthermore, work needs to be done to collate the data.
 
 \section{Faraday Rotation Measures}
 \label{sec:ASKAP}
 
-The Australian Square Kilometer Array Pathfinder (ASKAP) represents a recent development in the progress of the field of radio astronomy. It is a part of a new generation of southern-hemisphere telescopes building towards the Square-Kilometer Array (SKA) \citep{ID61, ID52, ID71}.
+The Australian Square Kilometre Array Pathfinder (ASKAP) represents a recent development in the progress of the field of radio astronomy. It is a part of a new generation of southern-hemisphere telescopes building towards the Square Kilometre Array (SKA), as provided by \cite{ID61, ID52, ID71}.
 
 
-POSSUM is an ongoing project using ASKAP with a key aim of measuring the RM southern sky. The benefit of using ASKAP as opposed to previous RM sky surveys is the RM grid density ASKAP can provide \citep{ID52, ID71, ID61}. Previous surveys such as the NRAO VLA Sky Survey (NVSS) were only able to record an RM grid density of 1 sampling point per square degree, with POSSUM providing a density 30 times greater \citep{ID1, ID52, ID71, ID61, ID18}. The higher grid density allows for the analysis of regular-sized HVCs in the CGM, as opposed to only the largest HVCs like the Smith Cloud.
+POSSUM is an ongoing project using ASKAP with a key aim of measuring the RM southern sky. The benefit of using ASKAP as opposed to previous RM sky surveys is the RM grid density ASKAP can provide. Previous surveys such as the NRAO VLA Sky Survey (NVSS) were only able to record an RM grid density of 1 sampling point per square degree, with POSSUM providing a density 30 times greater. The higher grid density allows for the analysis of regular-sized HVCs in the CGM, as opposed to only the largest HVCs like the Smith Cloud.
 
 
 POSSUM is set to cover a region of the southern sky that has seldom been recorded properly in previous RM grid surveys, primarily due to the lack of RM radio astronomy in the southern sky \citep{ID44, ID45, ID52, ID71}. This allows for the analysis of HVCs which otherwise would not be analysed under legacy data.
 
 
-Generally, \cite{ID52, ID71} are the references for current POSSUM data. POSSUM data is mostly recorded using the ASKAP radio frequency band 1 at 880-1088 MHz \citep{ID1, ID52, ID71}. The POSSUM grid data used in this report represents all collected and processed RMs by the POSSUM survey as of May 2024, with a total RM source count of 188842. Figure \ref{fig:rm_map} represents the entire sample on an Aitoff projection.
+POSSUM data is mostly recorded using the ASKAP radio frequency band 1 at 880-1088 MHz. The POSSUM grid data used in this report represents all collected and processed RMs by the POSSUM survey as of May 2024, with a total RM source count of 188842. Figure \ref{fig:rm_map} represents the entire sample on an Aitoff projection.
 
 \begin{figure}
     \includegraphics[width=12cm]{"POSSUM_RMs_Aitoff_Raw.jpg"}
@@ -38,20 +38,21 @@ The process of estimating RM foreground contributions typically requires the use
 Both HI and H-alpha maps of the sky were obtained in the process of data collection. Both maps were used in previous literature to detect HVCs and inform interpolations of the RM sky. In this report specifically, their primary purpose in including them in the collated data is due to display purposes and its potential inclusion in future research. 
 
 
-The HI sky was taken from the HI4PI 21 cm survey, with modifications done by \cite{ID6} to filter for high-velocity HI sources (above a column density of $2\times 10^{18} \mathrm{cm}^{-2}$). This modification allows for the better detection of HVCs in the sky, however it eliminates the ability for RMs to directly be analysed using the real HI column density, due to the removal of low-velocity modes – a factor which will be accounted for in section \ref{cha:derivation}. Unlike all other sources of data, \cite{ID6} does not provide uncertainties for its HI emissions. It is assumed that the HI uncertainty is approximately equivalent to the Poisson noise i.e. the logarithmic column density is multiplied by one half.
+The HI sky was taken from the HI4PI 21 cm survey, with modifications done by \cite{ID6} to filter for high-velocity HI sources (above a column density of $2\times 10^{18} \mathrm{cm}^{-2}$). This modification allows for the better detection and viewing of HVCs in the sky.
 
 
 The H-alpha sky was taken from \cite{ID43}, which was a collage of three smaller H-alpha surveys. Unfortunately, this map is also limited by the same problems as the Hutschenreuter map, with a notable lack of coverage near the terrestrial south pole. It was decided that the H-alpha map would be included in the process of collation for the purposes of future research potential, for example, improving interpolation models like in \cite{ID45, ID44}.
 
 
-Both maps, the Hutschenreuter map, and their respective error maps are displayed in figure \ref{fig:maps}. The only exception being the HI error, which is only altered by a scalar. All data sources collected were first converted to a FITS file under the cartesian projection. The location of individual point-values will not be affected by a cartesian projection, however it can introduce distorions at a high Galactic lattitude. These distortions in data do need to be accounted for.
+%Both maps, the Hutschenreuter map, and their respective error maps are displayed in figure \ref{fig:maps}. The only exception being the HI error, which is only altered by a scalar. 
+All data sources collected were first converted to a FITS file under the cartesian projection. The location of individual point-values will not be affected by a cartesian projection, however it can introduce distorions at a high Galactic lattitude. These distortions in data do need to be accounted for.
 
-\begin{figure}
-    \includegraphics[width=\textwidth]{"Cartesian_Plots.png"}
-    \centering
-    \caption{Cartesian plots of peripheral data maps (left): the HI sky from the \cite{ID6} modification of the HI4PI survey (top); the H-alpha sky from \cite{ID43} (middle); and the Hutschenreuter map from \cite{ID44, ID45} (bottom). Uncertainty maps for H-alpha and the Hutschenreuter map are displayed respectively (right). The HI uncertainty is not displayed due to it simply being a scalar multiple of the HI map.}
-    \label{fig:maps}
-\end{figure}
+%\begin{figure}
+%    \includegraphics[width=\textwidth]{"Cartesian_Plots.png"}
+%    \centering
+%    \caption{Cartesian plots of peripheral data maps (left): the high-velocity HI sky from the \cite{ID6} modification of the HI4PI survey (top); the H-alpha sky from \cite{ID43} (middle); and the Hutschenreuter map from \cite{ID44, ID45} (bottom). Uncertainty maps for H-alpha and the Hutschenreuter map are displayed respectively (right). The HI uncertainty is not displayed due to it simply being a scalar multiple of the HI map.}
+%    \label{fig:maps}
+%\end{figure}
 
 \section{Selection of HVCs from the Galactic All Sky Survey}
 \label{sec:hvc_sel}
@@ -59,18 +60,18 @@ Both maps, the Hutschenreuter map, and their respective error maps are displayed
 HVC-specific data was obtained from \cite{ID3} (hereafter referred to as the “Moss catalogue”) – a catalogue of all HVCs found using the Galactic All Sky Survey (GASS). The Moss catalogue is a primary source of data, for the location and size analysis of HVCs.
 
 
-The Moss catalogue includes a total of 1693 HVCs, of which most are not viable candidates for analysis. There are several reasons why a particular HVC may introduce significant analysis errors. The first consideration is size. From section \ref{sec:hvcs}, HVCs globally have variable sizes, but HVCs in the halo have similar sizes. Exceptions to halo HVC sizes cannot be included in HVC analysis as they may not be representative of a typical HVC. For example, the Smith Cloud, due to its size, has an abnormally large corresponding magnetic field. Thus, HVCs that were not in an apparent area range of $(1,\pi)$ degrees squared were be masked out. The lower limit exists to guarantee that there are enough RMs covering the cloud itself. This reduces the sample to 151 HVCs.
+The Moss catalogue includes a total of 1693 HVCs, of which most are not viable candidates for analysis. There are several reasons why a particular HVC may introduce significant analysis errors. The first consideration is size. Exceptions to halo HVC sizes cannot be included in HVC analysis as they may not be representative of a typical HVC. For example, the Smith Cloud, due to its size, has an abnormally large corresponding magnetic field. Thus, HVCs that were not in an apparent area range of $(1,\pi)$ degrees squared were be masked out. The lower limit exists to guarantee that there are enough RMs covering the cloud itself. This reduces the sample to 151 HVCs.
 
 
 Other considerations made when filtering HVCs were their overlap with the current POSSUM RM grids. Not every HVC is properly covered by the current RM grid. HVCs were filtered out if their centres (obtained from the Moss catalogue) were more than one degree separated from the nearest RM sampling point. This further reduced the sample size to 26 HVCs.
 
 
-There is a major increase in scatter with POSSUM RMs and interpolated RMs closer to the Galactic midplane \citep{ID21}. This is explored in later sections; however, figure \ref{fig:rm_scatter} represents this scatter. Because of this, HVCs close to the Galactic midplane must be eliminated to reduce scatter – specifically HVCs located with Galactic Latitudes $|b|<20^{\circ}$ were excluded. This reduces the sample size to 15.
+There is a major increase in scatter with POSSUM RMs and interpolated RMs closer to the Galactic midplane \citep{ID21}. This is explored in later sections; however, figure \ref{fig:rm_scatter} represents this scatter. Because of this, HVCs close to the Galactic midplane must be eliminated to reduce scatter – specifically HVCs located with Galactic Latitudes $|b|<20^{\circ}$ were excluded. This reduced the sample size to 15.
 
 
-Cartesian projections can distort data at high Galactic latitudes, resulting in bad data. HVCs located at Galactic latitudes $|b|>80^{\circ}$ were also eliminated from the sample set. This removes HVC G298.0-81.7+127 to give a sample size of 14.
+Cartesian projections can distort data at high Galactic latitudes, resulting in bad data. HVCs located at Galactic latitudes $|b|>80^{\circ}$ were also eliminated from the sample set. This removed HVC G298.0-81.7+127 and gave a sample size of 14.
 
-Lastly, it was clear that HVC G282.3-38.3+117 had no detectable HI emission according to the provided HI data. It was removed on the basis that it could not be analysed properly. This reduces the final sample to 13 HVCs.
+Lastly, it was clear that HVC G282.3-38.3+117 had no detectable HI emission according to the provided HI data. It was removed on the basis that it could not be analysed properly. This reduced the final sample to 13 HVCs.
 
 \begin{figure}
     \includegraphics[width=\textwidth]{"RM_whole_scatter.png"}
@@ -87,7 +88,7 @@ Once the data was obtained, calculations were done using the \verb|astropy.wcs| 
 \subsection{HVC Image Overlays}
 \label{ssec:hvc_snapshot}
 
-For each HVC, the HI, H-alpha, Hutschenreuter map, and RM grid was 'cropped' to a field twice the size of the maximum HVC source x and y extents. This is to allow for analysis of both RMs in the HVC and surrounding the HVC.
+For each HVC, the HI, H-alpha, Hutschenreuter map, and RM grid was 'cropped' to a field twice the size of the maximum HVC source x and y extents. This allows for analysis of both RMs in the HVC and surrounding the HVC.
 
 
 %%% Local Variables: 
