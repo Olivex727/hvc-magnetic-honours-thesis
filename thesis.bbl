@@ -1,4 +1,4 @@
-\begin{thebibliography}{60}
+\begin{thebibliography}{59}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \providecommand{\urlprefix}{}
@@ -59,14 +59,6 @@
 \newblock The galactic halo ionizing field and h alpha distances to hvcs.
 \newblock \emph{arXiv}.
 \newblock \doi{10.48550/arXiv.astro-ph/9812297}.
-
-\bibitem[{Blitz et~al.(1999)Blitz, Spergel, Teuben, Hartmann, and
-  Burton}]{ID66}
-\textsc{Blitz, L., Spergel, D.~N., Teuben, P.~J., Hartmann, D., and Burton,
-  W.~B.}, (1999).
-\newblock High-velocity clouds: Building blocks of the local group.
-\newblock \emph{The Astrophysial Journal}, 514(2), 818.
-\newblock \doi{10.1086/306963}.
 
 \bibitem[{Brentjens and de~Bruyn(2005)}]{ID14}
 \textsc{Brentjens, M.~A. and de~Bruyn, A.~G.}, (2005).
