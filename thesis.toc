@@ -39,7 +39,7 @@
 \contentsline {chapter}{\numberline {5}Discussion}{40}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Foreground Removal}{40}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Magnetic Field Derivation}{42}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Data Collection}{42}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.1}Limitations of Collected Data}{42}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Neccesity of Assumptions}{44}{subsection.5.2.2}%
 \contentsline {subsection}{\numberline {5.2.3}Validity of Detection Methods}{45}{subsection.5.2.3}%
 \contentsline {subsection}{\numberline {5.2.4}Validity of Derivation Methods}{46}{subsection.5.2.4}%
