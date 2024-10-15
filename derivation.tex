@@ -120,10 +120,10 @@ Figure \ref{fig:all_hvcs}, presents HI images of all 13 HVCs, the overlapping RM
 \section{Mathematical methods to evaluate HVC Magnetic Fields}
 \label{sec:evaluation}
 
-For the HVCs which did have detectable magnetic fields, the next step is to estimate the strength of the magnetic field draping over each HVC. Previous analyses of the Smith Cloud, such as in \cite{ID5, ID26}, utilises a weighted average of RMs to obtain the 'Master RM'. 
+It is highly important to seperate the techniques performed in this section as opposed to the detection method outlined in section \ref{sec:KStest}. A faliure of the methods described here to significantly determine the strength of the magnetic fields does not imply a faliure in detection of a magnetic draping signature. This is further elaborated in the discussion section \ref{ssec:B3}. This is important to point out given the size of the uncertainties in table \ref{tab:Bdev} being large enough to reasonably have a magnetic field value of zero.
 
 
-However, this method may not be transferable to a generalised algorithm. While the background RM population will generally follow the expected normal distribution, the in-HVC population distributions can vary depending on the orientation of the HVC with respect to the observer. For more face-on HVCs, RMs may form a ring of RM values ranging from positive to negative around the ring, resulting in a zero weighted average. These can also be refered to as 'coffee stain' RM fields.
+For the HVCs which did have detectable magnetic fields, the next step is to estimate the strength of the magnetic field draping over each HVC. Previous analyses of the Smith Cloud, such as in \cite{ID5, ID26}, utilises a weighted average of RMs to obtain the 'Master RM'. This may not be transferable to a generalised algorithm. While the background RM population will generally follow the expected normal distribution, the in-HVC population distributions can vary depending on the orientation of the HVC with respect to the observer. For more face-on HVCs, RMs may form a ring of RM values ranging from positive to negative around the ring, resulting in a zero weighted average. These can also be refered to as 'coffee stain' RM fields.
 
 
 In \cite{ID5, ID26}, due to analysing one single and large object, it is possible to divide the object into several smaller sections for analysis. It is not possible to do this especially given the limitations created by assumption three.
@@ -269,7 +269,7 @@ Note that when uncertainties are greater than the magnetic field values, as seen
 \subsection{Statistical Comparison of Methods}
 \label{ssec:results_stats}
 
-Two statistical tests were used to compare the three method. A weighted ANOVA test was employed as it can compare multiple methods against each other, with the weights allowing for the accounting of uncertainties. The F-Statistic calculated from the weighted ANOVA test was 3.375, with a corresponding p-value of 0.0388, meaning there is only a 95\% confidence interval of similarity, but is still fairly weak.
+Two statistical tests were used to compare the three methods' derived magnetic field values. A weighted ANOVA test was employed as it can compare multiple methods against each other, with the weights allowing for the accounting of uncertainties. The F-Statistic calculated from the weighted ANOVA test was 3.375, with a corresponding p-value of 0.0388, meaning there is only a 95\% confidence interval of similarity, but is still fairly weak. See appendix \ref{sec:appendixE} for further detail.
 
 \begin{table}
     \centering
@@ -287,15 +287,10 @@ Two statistical tests were used to compare the three method. A weighted ANOVA te
     \label{tab:tukey_hsd}
 \end{table}
 
-The weighted ANOVA test results were also fed into a Tukey multiple comparisons of means test. The results of this test are shown in table \ref{tab:tukey_hsd}. Note that here, the p-value is a measure of the likelihood that the two data sets are different. It is clear that an alternative hypothesis, that two given distributions are different, is not met to 95\% confidence in all cases except when comparing the weighted mean and KS-EDF method. However it is clear that the KS-EDF method does not match well with the other two cases in-general.
-
-To better quantify the agreement between the weighted mean and variance subtraction methods, a reduced chi-squared statistic was calculated using independent propagation of uncertainties. The resulting reduced chi-squared statistic was 1.088 - which is very close to the ideal value of unity.
+The weighted ANOVA test results were also fed into a Tukey multiple comparisons of means test. The results of this test are shown in table \ref{tab:tukey_hsd}. Note that here, the p-value is a measure of the likelihood that the two data sets are different. It is clear that an alternative hypothesis, that two given distributions are different, is not met to 95\% confidence in all cases except when comparing the weighted mean and KS-EDF method. However it is clear that the KS-EDF method does not match well with the other two cases in-general. To better quantify the agreement between the weighted mean and variance subtraction methods, a reduced chi-squared statistic was calculated using independent propagation of uncertainties. The resulting reduced chi-squared statistic was 1.088 - which is very close to the ideal value of unity.
 
 
-The reason for the weighted ANOVA test as a whole giving a weak significance of similarity compared to only one of three values in the Tukey test giving strong evidence of similarity, is due to the ability of the weighted ANOVA test to 'bridge the gaps' created by two data points with no overlapping uncertainties and a third data point in the centre. This is why a three-way comparison is needed.
-
-
-The primary three sources for the weighted ANOVA and Tukey test is provided in the papers by \cite{ID76, ID77, ID78}. The specific code to perform this analysis is additionally presented in appendix \ref{sec:appendixE}.
+The reason for the weighted ANOVA test as a whole giving a weak significance of similarity compared to only one of three values in the Tukey test giving strong evidence of similarity, is due to the ability of the weighted ANOVA test to 'bridge the gaps' created by two data points with no overlapping uncertainties and a third data point in the centre. This is why a three-way comparison is needed. The primary three sources for the weighted ANOVA and Tukey test is provided in the papers by \cite{ID76, ID77, ID78}.
 
 
 %%% Local Variables: 
