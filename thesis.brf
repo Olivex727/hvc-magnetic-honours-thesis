@@ -79,7 +79,7 @@
 \backcite {ID23}{{3}{[subsection][1][1.2]1.2.1}{subsection.1.2.1}}
 \backcite {ID5}{{4}{[subsection][1][1.2]1.2.1}{subsection.1.2.1}}
 \backcite {ID23}{{4}{[subsection][1][1.2]1.2.1}{subsection.1.2.1}}
-\backcite {ID36}{{4}{[subsection][1][1.2]1.2.1}{subsection.1.2.1}}
+\backcite {ID34}{{4}{[subsection][1][1.2]1.2.1}{subsection.1.2.1}}
 \backcite {ID23}{{4}{[subsection][1][1.2]1.2.1}{subsection.1.2.1}}
 \backcite {ID1}{{4}{[subsection][2][1.2]1.2.2}{equation.1.2.1}}
 \backcite {ID14}{{4}{[subsection][2][1.2]1.2.2}{equation.1.2.1}}
@@ -223,6 +223,7 @@
 \backcite {ID67}{{48}{[subsection][5][5.2]5.2.5}{subsection.5.2.5}}
 \backcite {ID70}{{48}{[subsection][5][5.2]5.2.5}{subsection.5.2.5}}
 \backcite {ID23}{{49}{[chapter][6][]6}{chapter.6}}
+\backcite {ID34}{{49}{[chapter][6][]6}{chapter.6}}
 \backcite {ID67}{{49}{[chapter][6][]6}{chapter.6}}
 \backcite {ID3}{{58}{[table][1][]A}{table.Alph0.1}}
 \backcite {ID28}{{60}{[figure][1][]A}{figure.Alph0.1}}
