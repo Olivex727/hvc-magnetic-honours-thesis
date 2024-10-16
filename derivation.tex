@@ -259,17 +259,14 @@ From figure \ref{fig:BBox}, the magnetic field strengths are overall higher comp
 With each method comes a unique derivation of uncertainties. The uncertainty in the weighted mean is given as trivial – calculated separately for the HVC and background populations, and then propagated. When calculating RM uncertainties, an intrinsic uncertainty of 7 $\mathrm{rad m}^{-2}$ must be added. This value comes from \cite{ID21}, being the extragalactic radio source scatter post-correction.
 
 
-The uncertainty in the KS-EDF statistic reflects the inherent variability in the method and is calculated by the Euclidean addition of the average measurement uncertainty of both the HVC and background populations. This corresponds to the propagation of RM uncertainties shown in figure \ref{fig:KSdiff}, where the black line considered to vary as the EDF varies in shape from resampling.
-
-
-The uncertainty in the variance subtraction method was estimated via bootstrap resampling with replacement. The number of samples generated per population is equal to the size of the population being analysed. Once the HVC and background population uncertainties were evaluated, the two uncertainties were propagated to produce the listed result.
+The uncertainty in the KS-EDF statistic reflects the inherent variability in the method and is calculated by the Euclidean addition of the average measurement uncertainty of both the HVC and background populations. This corresponds to the propagation of RM uncertainties shown in figure \ref{fig:KSdiff}, where the black line considered to vary as the EDF varies in shape from resampling. The uncertainty in the variance subtraction method was estimated via bootstrap resampling with replacement. The number of samples generated per population is equal to the size of the population being analysed. Once the HVC and background population uncertainties were evaluated, the two uncertainties were propagated to produce the listed result.
 
 Note that when uncertainties are greater than the magnetic field values, as seen in table \ref{tab:Bdev}, it does not mean the detection is invalid, but that the stated method cannot confidently estimate the field strength. This comes back to the understanding that the assumptions greatly decreases precision, but that these values can be improved.
 
 \subsection{Statistical Comparison of Methods}
 \label{ssec:results_stats}
 
-Two statistical tests were used to compare the three methods' derived magnetic field values. A weighted ANOVA test was employed as it can compare multiple methods against each other, with the weights allowing for the accounting of uncertainties. The F-Statistic calculated from the weighted ANOVA test was 3.375, with a corresponding p-value of 0.0388, meaning there is only a 95\% confidence interval of similarity, but is still fairly weak. See appendix \ref{sec:appendixE} for further detail.
+Two statistical tests were used to compare the three methods' derived magnetic field values (instead of master RM values, which is linearly proportional to the magnetic field value due to assumption 2). A weighted ANOVA test was employed as it can compare multiple methods against each other, with the weights allowing for the accounting of uncertainties. The F-Statistic calculated from the weighted ANOVA test was 3.375, with a corresponding p-value of 0.0388, meaning there is only a 95\% confidence interval of similarity, but is still fairly weak. See appendix \ref{sec:appendixE} for further detail.
 
 \begin{table}
     \centering
