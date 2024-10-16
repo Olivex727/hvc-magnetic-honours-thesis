@@ -27,8 +27,8 @@
 \contentsline {section}{\numberline {3.5}Statistical Comparison of Foreground Removal Methods}{26}{section.3.5}%
 \contentsline {section}{\numberline {3.6}Other Methods}{27}{section.3.6}%
 \contentsline {chapter}{\numberline {4}Analysis and Results}{28}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Assumptions}{28}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Kolmogorov–Smirnov (KS) Testing}{29}{section.4.2}%
+\contentsline {section}{\numberline {4.1}Kolmogorov–Smirnov (KS) Testing}{28}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Assumptions}{31}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Derivation of Line-of-Sight Magnetic Fields}{32}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Mathematical methods to evaluate HVC Magnetic Fields}{33}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}KS-EDF Method}{35}{subsection.4.4.1}%

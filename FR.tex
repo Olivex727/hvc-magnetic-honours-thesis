@@ -22,7 +22,7 @@ Thus, with the increased RM grid density afforded by the POSSUM survey, and futu
 
 The immediate alternative is annulus subtraction. This is a method employed across all fields of astronomy, including radio astronomy, being most applicable to single-object analysis. The method generally involves selecting a series of RM sampling points surrounding any given central RM grid point, averaging the selected RMs, and subtracting the average from the central RM grid point.
 
-There are two sub-methods to consider when performing annulus subtraction: fixed-size annulus subtraction and fixed-sampling annulus subtraction. Fixed-size annulus subtraction involves defining an annulus with a constant inner and outer radius and averaging the RMs exclusively within this radial range. Fixed-sampling annulus subtraction involves defining an inner radius and then selecting a fixed amount of RM grid points that are closest to the central point, but still outside the inner radius. Assuming a constant grid density everywhere in the field, a relationship between the two methods can be quantified, as in the following equation:
+There are two sub-methods to consider when performing annulus subtraction: fixed-size annulus subtraction and fixed-sampling annulus subtraction. Fixed-size annulus subtraction involves defining an annulus with a constant inner and outer radius and averaging the RMs exclusively within this radial range. Fixed-sampling annulus subtraction involves defining an inner radius and then selecting a fixed amount of RM grid points that are closest to the central point, but still outside the inner radius. Assuming a constant grid density everywhere in the field, a relationship between the two methods can be quantified, as in equation \ref{eq:annulus}.
 
 \begin{equation}
     \begin{split}
@@ -87,7 +87,7 @@ This does not disqualify the NUFFT as an analysis technique. Instead, it means t
 \subsection{Bandpass Filtering}
 \label{ssec:bandpass}
 
-A simpler method is to directly alter the Hutschenreuter map itself using normal FFTs. First, a 2-D FFT was applied to the Hutschenreuter map. A crosshatch-shaped bandpass was created. This crosshatch imitates a bandpass commonly applied to 1-dimensional signals, where regions of a particular angular area are eliminated by removing all frequencies corresponding to that angular area in the k-space. The equation below quantifies the relationship between frequency and angular area:
+A simpler method is to directly alter the Hutschenreuter map itself using normal FFTs. First, a 2-D FFT was applied to the Hutschenreuter map. A crosshatch-shaped bandpass was created. This crosshatch imitates a bandpass commonly applied to 1-dimensional signals, where regions of a particular angular area are eliminated by removing all frequencies corresponding to that angular area in the k-space. Equation \ref{eq:freq_to_angle} quantifies the relationship between frequency and angular area.
 
 
 \begin{equation}
@@ -112,7 +112,7 @@ The crosshatch is shaped such that, when multiplied by the original k-space, obj
 However, bandpassing introduces ripples into the Hutschenreuter map. This effect is expected but undesirable. There are two methods to remove this: either to apply the crosshatch at a certain 'opacity' i.e. the crosshatch is not eliminating all the k-space in its region, but instead is reducing those frequencies by a percentage; or using a more complex window than a Top Hat, such as a Tukey window or Gaussian window. The effects of the former are seen in figure \ref{fig:ripples}. The latter was not investigated due to time constraints.
 
 
-When applying FTs to any interpolated image, it is important to maintain the corresponding uncertainty map's accuracy. This is where one can take advantage of linearity. The following formula below determines how uncertainties can be calculated:
+When applying FTs to any interpolated image, it is important to maintain the corresponding uncertainty map's accuracy. This is where one can take advantage of linearity. Equation \ref{eq:ft_unc} determines how uncertainties can be calculated.
 
 
 \begin{equation}

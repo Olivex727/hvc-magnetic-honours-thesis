@@ -3,32 +3,6 @@
 
 In constructing an algorithm to detect the signature of, and to further calculate the strength magnetic draping in HVCs, as in section \ref{sec:outline}, it is important to pay attention to the validity of the methods being employed, as there has been no well-established precedent for doing so on large samples of HVCs.
 
-\section{Assumptions}
-\label{sec:assumptions}
-
-Due to the significant limitations in available data, the use of assumptions, both physical and observational, is necessary to lay the groundwork for increasingly robust analysis. Without assumptions, it becomes difficult to construct methods for the detection and estimation of magnetic fields. Hence, the four primary assumptions below allow for formation of a working method, with the explicit description meant to point to how the method to be improved.
-
-
-The first major assumption is that the ionisation fraction of the Galactic halo is approximately constant, i.e. gas in the halo is well-mixed. This does not account for major sources of heterogeneity caused by HVCs (a desired outcome) or other ionised regions such as the Magellanic Clouds (an undesired outcome).
-
-
-Simulation data can be used to analyse the problematic nature of assuming a constant ionisation fraction \citep{ID23}. However, it is difficult to apply simulation data to observational data due to the amount of variables that need to be controlled for. Similar to the method employed in \cite{ID23}, it will be assumed that the ionisation fraction is high and constant.
-
-
-The second major assumption is that the weighted average of the HI column density on a HVC is linearly proportional to, and biased towards the peak column density in the centre of the HVC. This is an approximation that aims to simplify calculations to the analysis of a single data point provided in the Moss catalogue. A more complex estimation of average HI column density requires a significantly more in-depth analysis. HI column density is certainly not uniform within clouds, as mentioned in \cite{ID69}. It also neccessitates some level of correlation between line-of-sight magnetic fields and their uncertainties (a consequence of Poisson noise).
-
-
-Both above assumptions sacrifice accuracy for simplicity, and is allowable primarily due to the method of calculation explained by \cite{ID27} and in section \ref{sec:los_dev}. In this report, the simplicity does not disqualify the results of the investigation, but it does remove its ability to be definitive. The result of applying both assumptions is that the line-of-sight magnetic field strength is linearly proportional to the faraday depth with a scaling constant unique to each HVC – as demonstrated in later section \ref{sec:los_dev}.
-
-
-The third core assumption is an observational one instead of a physical one. It is that HVCs can be represented by a circular region in the sky. Allowing for methods to distinguish between the surrounding backgrounds and HVC RM grids. As seen from the HI plots in figure \ref{fig:all_hvcs}, this assumption appears to only be correct in particular cases. But do note that the HI background discriminates for high-VLSR HI emission. The HI background is a visual tool, and it cannot be used as a one-to-one tracer of ionised gas.
-
-
-All three assumptions additionally meet the desired goal of creating method that can adapted and refined for future use. As discussed in sections \ref{ssec:B2} and \ref{cha:conclusion}, these three assumptions can be dropped in the presence of more detailed data or more rigorous methodologies manipulated from the one described in this paper.
-
-
-Lastly, a very typical assumption made is that the RM contribution along a line of sight is added along said line of sight. This is not necessarily correct; however, it is a fair assumption that most past literature has made to deconstruct equation \ref{eq:rm_integral} \citep{ID27, ID3, ID26}. This makes the fourth assumption.
-
 \begin{figure}
     \includegraphics[width=12.9cm]{"Selected_HVCs_new.png"}
     \centering
@@ -46,7 +20,10 @@ Lastly, a very typical assumption made is that the RM contribution along a line 
 \section{Kolmogorov–Smirnov (KS) Testing}
 \label{sec:KStest}
 
-Before estimating the strength of the magnetic draping signature on HVCs, it is important to first confirm that there is a detectable magnetic field to analyse. To do this, the KS test was employed. The set of RM grid points for each HVC collated in section \ref{ssec:hvc_snapshot} include any grid point within $2\delta x$ degrees of the HVC centre, where $\delta x$ is the HVC angular diameter, the average value between the Moss catalogue's 'dx' and 'dy' values (i.e. its cartesian dimensions), shown in appendix table \ref{tab:moss_hvcs} and in figure \ref{fig:all_hvcs}. Employing assumption three, two separate populations can be formed by delineating RMs inside and outside a distance $\delta x$ from the HVC centre. All sampling points within the defined circle makes the “HVC RMs” population, and the ones outside the circle makes the “Background RMs” population.
+Before estimating the strength of the magnetic draping signature on HVCs, it is important to first confirm that there is a detectable magnetic field to analyse. To do this, the KS test was employed. The set of RM grid points for each HVC collated in section \ref{ssec:hvc_snapshot} include any grid point within $2\delta x$ degrees of the HVC centre, where $\delta x$ is the HVC angular diameter, the average value between the Moss catalogue's 'dx' and 'dy' values (i.e. its cartesian dimensions), shown in appendix table \ref{tab:moss_hvcs} and in figure \ref{fig:all_hvcs}. Two separate populations can be formed by delineating RMs inside and outside a distance $\delta x$ from the HVC centre. All sampling points within the defined circle makes the “HVC RMs” population, and the ones outside the circle makes the “Background RMs” population.
+
+
+An assumption is made here that HVCs can be represented by a circular region in the sky. Allowing for methods to distinguish between the surrounding backgrounds and HVC RM grids. As seen from the HI plots in figure \ref{fig:all_hvcs}, this assumption appears to only be correct in particular cases. But do note that the HI background discriminates for high-VLSR HI emission. The HI background is a visual tool, and it cannot be used as a one-to-one tracer of ionised gas.
 
 
 A two-sample, two-tailed, KS test was performed comparing both the background and HVC RM distributions. A critical p-value of 0.001 was assumed to determine if a significant magnetic field was detected. This would correspond to 99.9\% significance of difference. Table \ref{tab:KStest} shows the KS test results applied to each HVC. Out of the 13 HVCs tested, 10 HVCs (77\%) had a significant difference between both populations in the corrected RM case.
@@ -73,11 +50,31 @@ There appears to be a moderate correlation between the KS statistic and the abso
     \label{tab:KStest}
 \end{table}
 
+\section{Assumptions}
+\label{sec:assumptions}
+
+Due to the significant limitations in available data, the use of assumptions, is necessary to lay the groundwork for increasingly robust analysis. Without assumptions, it becomes difficult to construct methods for the estimation of magnetic fields. Hence, the four primary assumptions below allow for formation of a working method, with the explicit description meant to point to how the method to be improved.
+
+
+The first major assumption is that the ionisation fraction of the Galactic halo is approximately constant, i.e. gas in the halo is well-mixed. This does not account for major sources of heterogeneity caused by HVCs (a desired outcome) or other ionised regions such as the Magellanic Clouds (an undesired outcome).
+
+
+Simulation data can be used to analyse the problematic nature of assuming a constant ionisation fraction \citep{ID23}. However, it is difficult to apply simulation data to observational data due to the amount of variables that need to be controlled for. Similar to the method employed in \cite{ID23}, it will be assumed that the ionisation fraction is high and constant.
+
+
+The second major assumption is that the weighted average of the HI column density on a HVC is linearly proportional to, and biased towards the peak column density in the centre of the HVC. This is an approximation that aims to simplify calculations to the analysis of a single data point provided in the Moss catalogue. A more complex estimation of average HI column density requires a significantly more in-depth analysis. HI column density is certainly not uniform within clouds, as mentioned in \cite{ID69}. It also neccessitates some level of correlation between line-of-sight magnetic fields and their uncertainties (a consequence of Poisson noise).
+
+
+Both above assumptions sacrifice accuracy for simplicity, and is allowable primarily due to the method of calculation explained by \cite{ID27} and in section \ref{sec:los_dev}. In this report, the simplicity does not disqualify the results of the investigation, but it does remove its ability to be definitive. The result of applying both assumptions is that the line-of-sight magnetic field strength is linearly proportional to the faraday depth with a scaling constant unique to each HVC – as demonstrated in later section \ref{sec:los_dev}.
+
+
+The third assumption was the same one employed in section \ref{sec:KStest} - that HVCs appear as approximately circular in the field of view. All three additionally meet the desired goal of creating method that can adapted and refined for future use. As discussed in sections \ref{ssec:B2} and \ref{cha:conclusion}, all threeassumptions can be dropped in the presence of more detailed data or more rigorous methodologies manipulated from the one described in this paper. Lastly, a very typical assumption made is that the RM contribution along a line of sight is added along said line of sight. This is not necessarily correct; however, it is a fair assumption that most past literature has made to deconstruct equation \ref{eq:rm_integral} \citep{ID27, ID3, ID26}. This makes the fourth assumption.
+
 
 \section{Derivation of Line-of-Sight Magnetic Fields}
 \label{sec:los_dev}
 
-As from equation \ref{eq:rm_integral}, there is a relationship between the line-of-sight magnetic field and the faraday depth. By removing foreground contributions to the faraday depth, one can isolate the specific contribution of the line-of-sight magnetic field made by the HVC. At the same time, the fourth assumption can be used to solve the integral in equation \ref{eq:rm_integral}, resulting as follows \citep{ID26}:
+As from equation \ref{eq:rm_integral}, there is a relationship between the line-of-sight magnetic field and the faraday depth. By removing foreground contributions to the faraday depth, one can isolate the specific contribution of the line-of-sight magnetic field made by the HVC. At the same time, the fourth assumption can be used to solve the integral in equation \ref{eq:rm_integral}, resulting in equation \ref{eq:B_intermediate} \citep{ID26}.
 
 
 \begin{equation}
@@ -86,7 +83,7 @@ As from equation \ref{eq:rm_integral}, there is a relationship between the line-
 \end{equation}
 
 
-Where $\left<B_{\parallel}\right>$ is the average line-of-sight magnetic field in \textmu G, $\Phi_{\mathrm{cor}}$ is the corrected faraday depth in $\mathrm{rad m}^{-2}$, $n_e$ is the electron density in $\mathrm{cm}^{-3}$, and $L_{H^+}$ is the HVC path length in pc. From this equation, \cite{ID27} derives a simplified equation that eliminates the need to calculate the electron density and path length:
+Where $\left<B_{\parallel}\right>$ is the average line-of-sight magnetic field in \textmu G, $\Phi_{\mathrm{cor}}$ is the corrected faraday depth in $\mathrm{rad m}^{-2}$, $n_e$ is the electron density in $\mathrm{cm}^{-3}$, and $L_{H^+}$ is the HVC path length in pc. From this equation, \cite{ID27} derives a simplified equation that eliminates the need to calculate the electron density and path length, as seen in equation \ref{eq:the_equation}.
 
 
 \begin{equation}
@@ -163,7 +160,7 @@ The second step is not always valid, as RM values can vary due to turbulence, cr
 A more legitimate method involves the reverse-propagation of uncertainties. An assumption can be made that for some HVCs, there is an inherent variation in the magnetic field as one looks at different locations in the defined morphological circle, appearing as the afformentioned 'coffee stain' shape. This inherent variance is denoted as $\sigma_{\mathrm{true}}^2$.
 
 
-Additionally, each RM measurement comes with a measurement uncertainty, denoted as $\sigma_{\mathrm{meas.}}$. Propagating these two uncertainties would give what should be the observed variance, $\sigma_{\mathrm{obs}}^2$:
+Additionally, each RM measurement comes with a measurement uncertainty, denoted as $\sigma_{\mathrm{meas.}}$. Propagating these two uncertainties would give what should be the observed variance, $\sigma_{\mathrm{obs}}^2$, as shown in equation \ref{eq:var_sub_1}.
 
 
 \begin{equation}
@@ -172,7 +169,7 @@ Additionally, each RM measurement comes with a measurement uncertainty, denoted 
 \end{equation}
 
 
-The observed uncertainty can be calculated by taking the statistical standard deviation of the population, and the measurement uncertainty can be averaged to give a whole-population measurement uncertainty approximation. This allows for equation \ref{eq:var_sub_1} can be reversed to derive the 'true' variance in the RM population:
+The observed uncertainty can be calculated by taking the statistical standard deviation of the population, and the measurement uncertainty can be averaged to give a whole-population measurement uncertainty approximation. This allows for equation \ref{eq:var_sub_1} to be reversed to derive the 'true' variance in the RM population from equation \ref{eq:var_sub_2}.
 
 
 \begin{equation}
