@@ -1,7 +1,7 @@
 \chapter{Analysis and Results}
 \label{cha:derivation}
 
-In constructing an algorithm to detect the signature of, and to further calculate the strength magnetic draping in HVCs, as in section \ref{sec:outline}, it is important to pay attention to the validity of the methods being employed, as there has been no well-established precedent for doing so on large samples of HVCs.
+In constructing an algorithm to detect the signature of, and to further estimate the strength of magnetic draping in HVCs, as in section \ref{sec:outline}, it is important to pay attention to the validity of the methods being employed, as there has been no well-established precedent for doing so on large samples of HVCs.
 
 \begin{figure}
     \includegraphics[width=12.9cm]{"Selected_HVCs_new.png"}
@@ -53,7 +53,7 @@ There appears to be a moderate correlation between the KS statistic and the abso
 \section{Assumptions}
 \label{sec:assumptions}
 
-Due to the significant limitations in available data, the use of assumptions, is necessary to lay the groundwork for increasingly robust analysis. Without assumptions, it becomes difficult to construct methods for the estimation of magnetic fields. Hence, the four primary assumptions below allow for formation of a working method, with the explicit description meant to point to how the method to be improved.
+Due to the significant limitations in available data, the use of assumptions is necessary to lay the groundwork for increasingly robust analysis. Without assumptions, it becomes difficult to construct methods for the estimation of magnetic fields. Hence, the four primary assumptions below allow for the formation of a working method, with the explicit description meant to point to how the method can be improved.
 
 
 The first major assumption is that the ionisation fraction of the Galactic halo is approximately constant, i.e. gas in the halo is well-mixed. This does not account for major sources of heterogeneity caused by HVCs (a desired outcome) or other ionised regions such as the Magellanic Clouds (an undesired outcome).
@@ -65,10 +65,10 @@ Simulation data can be used to analyse the problematic nature of assuming a cons
 The second major assumption is that the weighted average of the HI column density on a HVC is linearly proportional to, and biased towards the peak column density in the centre of the HVC. This is an approximation that aims to simplify calculations to the analysis of a single data point provided in the Moss catalogue. A more complex estimation of average HI column density requires a significantly more in-depth analysis. HI column density is certainly not uniform within clouds, as mentioned in \cite{ID69}. It also neccessitates some level of correlation between line-of-sight magnetic fields and their uncertainties (a consequence of Poisson noise).
 
 
-Both above assumptions sacrifice accuracy for simplicity, and is allowable primarily due to the method of calculation explained by \cite{ID27} and in section \ref{sec:los_dev}. In this report, the simplicity does not disqualify the results of the investigation, but it does remove its ability to be definitive. The result of applying both assumptions is that the line-of-sight magnetic field strength is linearly proportional to the faraday depth with a scaling constant unique to each HVC – as demonstrated in later section \ref{sec:los_dev}.
+Both above assumptions sacrifice accuracy for simplicity, and is allowable primarily due to the method of calculation explained by \cite{ID27} and in section \ref{sec:los_dev}. In this report, the simplicity does not disqualify the results of the investigation, but it does remove its ability to be definitive. The result of applying both assumptions is that the line-of-sight magnetic field strength is linearly proportional to the faraday depth with a scaling constant unique to each HVC – as demonstrated in section \ref{sec:los_dev}.
 
 
-The third assumption was the same one employed in section \ref{sec:KStest} - that HVCs appear as approximately circular in the field of view. All three additionally meet the desired goal of creating method that can adapted and refined for future use. As discussed in sections \ref{ssec:B2} and \ref{cha:conclusion}, all threeassumptions can be dropped in the presence of more detailed data or more rigorous methodologies manipulated from the one described in this paper. Lastly, a very typical assumption made is that the RM contribution along a line of sight is added along said line of sight. This is not necessarily correct; however, it is a fair assumption that most past literature has made to deconstruct equation \ref{eq:rm_integral} \citep{ID27, ID3, ID26}. This makes the fourth assumption.
+The third assumption was the same one employed in section \ref{sec:KStest} - that HVCs appear as approximately circular in the field of view. All three additionally meet the desired goal of creating method that can adapted and refined for future use. As discussed in sections \ref{ssec:B2} and \ref{cha:conclusion}, all three assumptions can be dropped in the presence of more detailed data or more rigorous methodologies manipulated from the one described in this paper. Lastly, a very typical assumption made is that the RM contribution along a line of sight is added along said line of sight. This is not necessarily correct; however, it is a fair assumption that most past literature has made to deconstruct equation \ref{eq:rm_integral} \citep{ID27, ID3, ID26}. This makes the fourth assumption.
 
 
 \section{Derivation of Line-of-Sight Magnetic Fields}
@@ -78,16 +78,16 @@ As from equation \ref{eq:rm_integral}, there is a relationship between the line-
 
 
 \begin{equation}
-    \frac{\left<B_{\parallel}\right>}{\mu\mathrm{G}}=\frac{\left<\Phi_{\mathrm{cor}}\right>}{0.81\left<n_e\right>L_{H^+}}
+    \frac{\left<B_{\parallel}\right>}{\mu\mathrm{G}}=\frac{\left<RM_{\mathrm{cor}}\right>}{0.81\left<n_e\right>L_{H^+}}
 \label{eq:B_intermediate}
 \end{equation}
 
 
-Where $\left<B_{\parallel}\right>$ is the average line-of-sight magnetic field in \textmu G, $\Phi_{\mathrm{cor}}$ is the corrected faraday depth in $\mathrm{rad m}^{-2}$, $n_e$ is the electron density in $\mathrm{cm}^{-3}$, and $L_{H^+}$ is the HVC path length in pc. From this equation, \cite{ID27} derives a simplified equation that eliminates the need to calculate the electron density and path length, as seen in equation \ref{eq:the_equation}.
+Where $\left<B_{\parallel}\right>$ is the average line-of-sight magnetic field in \textmu G, $RM_{\mathrm{cor}}$ is the corrected RM in $\mathrm{rad m}^{-2}$, $n_e$ is the electron density in $\mathrm{cm}^{-3}$, and $L_{H^+}$ is the HVC ionised path length in pc. From this equation, \cite{ID27} derives a simplified equation that eliminates the need to calculate the electron density and ionised path length, as seen in equation \ref{eq:the_equation}.
 
 
 \begin{equation}
-    \frac{B_{\parallel}}{\mu\mathrm{G}}=3.80\times10^{18}\frac{\Phi_{\mathrm{cor}}}{X\left<N_{HI}\right>}
+    \frac{B_{\parallel}}{\mu\mathrm{G}}=3.80\times10^{18}\frac{RM_{\mathrm{cor}}}{X\left<N_{HI}\right>}
 \label{eq:the_equation}
 \end{equation}
 
@@ -95,12 +95,13 @@ Where $\left<B_{\parallel}\right>$ is the average line-of-sight magnetic field i
 Where $X$ is the unitless ionisation fraction, and $\left<N_{HI}\right>$ is the weighted average HI column density over the region being analysed, measured in $\mathrm{cm}^{-2}$. This equation can only be derived under the first assumption. Additionally, the use of the average HI column density is intrinsically tied to the second assumption.
 
 
-Applying both assumptions one and two and utilizing this equation demonstrates that the line-of-sight magnetic field is linearly proportional to the faraday depth. Thus, an RM denoting the singular faraday depth associated with any given HVC, and any given background surrounding the HVC. These two RM values can be subtracted from each other and converted into a magnetic field via multiplication of a constant factor to create what is refered to as the 'master RM'.
+Applying both assumptions one and two and utilizing equation \ref{eq:the_equation} demonstrates that the line-of-sight magnetic field is linearly proportional to the faraday depth. Thus, an RM denoting the singular faraday depth associated with any given HVC, and any given background surrounding the HVC. These two RM values can be subtracted from each other and converted into a magnetic field via multiplication of a constant factor to create what is refered to as the 'master RM'.
 
 
-Despite the detailed analysis conducted in section \ref{cha:FR}, it was decided that the non-altered interpolated sky map be used to correct RM contributions. This is due to most already-existing literature relying on interpolations. From figure \ref{fig:anisotropy}, which displays histograms of the corrected and uncorrected line-of-sight magnetic field points surrounding HVCs, it is demonstrated that the Hutschenreuter map can remove the anisotropy of the ISM by turning an uncorrected bimodal symmetric distribution into a normal distribution centred at zero. However, it also is apparent that the correction can introduce a significantly higher variance in the data, shown in the t-distribution form of the corrected RMs in figure \ref{fig:anisotropy}.
+Despite the detailed analysis conducted in section \ref{cha:FR}, it was decided that the non-altered Hutschenreuter map be used to correct RM contributions. This is due to most already-existing literature relying on interpolations. From figure \ref{fig:anisotropy}, which displays histograms of the corrected and uncorrected line-of-sight magnetic field points surrounding HVCs, it is demonstrated that the Hutschenreuter map can remove the anisotropy of the ISM by turning an uncorrected bimodal symmetric distribution into a t-distribution centred at zero.
 
-Figure \ref{fig:all_hvcs}, presents HI images of all 13 HVCs, the overlapping RM grids, and the cropped HI fields. The filtered Moss catalogue, including all 13 HVCs is displayed in appendix \ref{sec:appendixB}. It is apparent that once the foreground is removed, ridge-like structures appear in the data which may correspond to turbulent mixing of gas in the halo \citep{ID69, ID30}.
+
+Figure \ref{fig:all_hvcs}, presents HI images of all 13 HVCs and the overlapping RM grids. The filtered Moss catalogue, including all 13 HVCs is displayed in appendix \ref{sec:appendixB}. It is apparent that once the foreground is removed, ridge-like structures appear in the data which may correspond to the turbulent mixing of gas in the halo \citep{ID69, ID30}.
 
 \begin{figure}
     \includegraphics[width=10cm]{"anisotropy.png"}
@@ -117,7 +118,7 @@ Figure \ref{fig:all_hvcs}, presents HI images of all 13 HVCs, the overlapping RM
 \section{Mathematical Methods to Evaluate HVC Magnetic Fields}
 \label{sec:evaluation}
 
-It is highly important to seperate the techniques performed in this section as opposed to the detection method outlined in section \ref{sec:KStest}. A faliure of the methods described here to significantly determine the strength of the magnetic fields does not imply a faliure in detection of a magnetic draping signature. This is further elaborated in the discussion section \ref{ssec:B3}. This is important to point out given the size of the uncertainties in table \ref{tab:Bdev} being large enough to reasonably have a magnetic field value of zero.
+It is highly important to seperate the techniques performed in this section, as opposed, to the detection method outlined in section \ref{sec:KStest}. A faliure of the methods described here to significantly determine the strength of the magnetic fields do not imply a faliure in detection of a magnetic draping signature. This is further elaborated in the discussion section \ref{ssec:B3}. This is important to point out given the size of the uncertainties in table \ref{tab:Bdev} being large enough to reasonably have a magnetic field value of zero.
 
 
 For the HVCs which did have detectable magnetic fields, the next step is to estimate the strength of the magnetic field draping over each HVC. Previous analyses of the Smith Cloud, such as in \cite{ID5, ID26}, utilises a weighted average of RMs to obtain the 'Master RM'. This may not be transferable to a generalised algorithm. While the background RM population will generally follow the expected normal distribution, the in-HVC population distributions can vary depending on the orientation of the HVC with respect to the observer. For more face-on HVCs, RMs may form a ring of RM values ranging from positive to negative around the ring, resulting in a zero weighted average. These can also be refered to as 'coffee stain' RM fields.
@@ -135,7 +136,7 @@ Despite the potential shortfalls of the weighted average, it is a method that is
 \subsection{KS-EDF Method}
 \label{ssec:KS_EDF}
 
-The first proposed method relies on both the results of the KS test and the Empirical Distribution Functions (EDFs) of the in-HVC and out-HVC populations required to evaluate the KS statistic. The x-axis location of the KS statistic is where the distribution of the two populations differs the greatest. And thus, it is not unreasonable to state that the magnetic field strength corresponds to this location in some manner. This is shown in figure \ref{fig:KSdiff}, where the red line denotes the KS statistic's length and x-axis position.
+The first proposed method relies on both the results of the KS test and the Empirical Distribution Functions (EDFs) of the in-HVC and out-HVC populations required to evaluate the KS statistic. The x-axis location of the KS statistic is where the distribution of the two populations differ the greatest. And thus, it is not unreasonable to state that the magnetic field strength corresponds to this location in some manner. This is shown in figure \ref{fig:KSdiff}, where the red line denotes the KS statistic's length and x-axis position.
 
 
 \begin{figure}
@@ -157,7 +158,7 @@ The second step is not always valid, as RM values can vary due to turbulence, cr
 \subsection{Variance Subtraction}
 \label{ssec:sigma_sub}
 
-A more legitimate method involves the reverse-propagation of uncertainties. An assumption can be made that for some HVCs, there is an inherent variation in the magnetic field as one looks at different locations in the defined morphological circle, appearing as the afformentioned 'coffee stain' shape. This inherent variance is denoted as $\sigma_{\mathrm{true}}^2$.
+Another method involves the reverse-propagation of uncertainties. An assumption can be made that for some HVCs, there is an inherent variation in the magnetic field as one looks at different locations in the defined morphological circle, appearing as the afformentioned 'coffee stain' shape. This inherent variance is denoted as $\sigma_{\mathrm{true}}^2$.
 
 
 Additionally, each RM measurement comes with a measurement uncertainty, denoted as $\sigma_{\mathrm{meas.}}$. Propagating these two uncertainties would give what should be the observed variance, $\sigma_{\mathrm{obs}}^2$, as shown in equation \ref{eq:var_sub_1}.
@@ -169,7 +170,7 @@ Additionally, each RM measurement comes with a measurement uncertainty, denoted 
 \end{equation}
 
 
-The observed uncertainty can be calculated by taking the statistical standard deviation of the population, and the measurement uncertainty can be averaged to give a whole-population measurement uncertainty approximation. This allows for equation \ref{eq:var_sub_1} to be reversed to derive the 'true' variance in the RM population from equation \ref{eq:var_sub_2}.
+The observed uncertainty can be calculated by taking the statistical standard deviation of the population. The measurement uncertainty can be averaged to give a whole-population measurement uncertainty approximation. This allows for equation \ref{eq:var_sub_1} to be reversed to derive the 'true' variance in the RM population - see equation \ref{eq:var_sub_2}.
 
 
 \begin{equation}
@@ -178,16 +179,16 @@ The observed uncertainty can be calculated by taking the statistical standard de
 \end{equation}
 
 
-By definition of standard deviation, the corresponding true variance can be approximated as average separation between RMs in the population, thus quantifying the inherent variation in the HVC magnetic field, i.e. the magnetic field strength.
+By definition of standard deviation, the corresponding true variance can be approximated as the average separation between RMs in the population, thus quantifying the inherent variation in the HVC magnetic field, i.e. the magnetic field strength.
 
 
 The same can be done to the background population, instead to detect the potential interferences of the ridge-like structures of the halo magnetic field. This can be used to subtract out the background interferences that were included in the derivation of the true in-HVC variance.
 
 
-A clear potential source of error in this method comes in the fact that the standard deviation is positive, affecting the validity in two separate ways: (i) cases where the average measurement uncertainty is larger than the statistical standard deviation, resulting in a complex uncertainty; (ii) cases where the line-of-sight magnetic field strength \textit{should} be negative but is calculated as positive (before the true background variance is subtracted) i.e. the field vectors point away from the telescope. Case (i) does not invalidate the method outright but does mean that 'bad data' might have to be thrown out. This happened in only one case as seen in section \ref{sec:results}. Case (ii) is irrelevant in the conclusion, as the parity of the magnetic field is not a factor being analysed. However, the if the main concern is if the background and HVC true variances differ in sign. This is not of concern because if there is a sign difference, the background ridge-like structures would cancel-out the presence of HVC magnetic fields, resulting in every invalidating occurrence of case (ii) necessarily leading to case (i).
+A clear potential source of error in this method comes in the fact that the standard deviation is positive, affecting the validity in two separate ways: (i) cases where the average measurement uncertainty is larger than the statistical standard deviation, resulting in a non-real uncertainty; (ii) cases where the line-of-sight magnetic field strength \textit{should} be negative but is calculated as positive (before the true background variance is subtracted) i.e. the field vectors point away from the telescope. Case (i) does not invalidate the method outright but does mean that 'bad data' had to be thrown out. This happened in only one case as seen in section \ref{sec:results}. Case (ii) is irrelevant in the conclusion, as the parity of the magnetic field is not a factor being analysed. However, if the main concern is if the background and HVC true variances differ in sign. This is not of concern because if there is a sign difference, the background ridge-like structures would cancel-out the presence of HVC magnetic fields, resulting in every invalidating occurrence of case (ii) necessarily leading to case (i).
 
 
-To reiterate, the caveats and assumptions described in this derivation may appear as mathematically or intuitively valid, however it is worthwhile to test things via statistical analysis and modelling (see chapter \ref{cha:conclusion}).
+To reiterate, the caveats and assumptions described in this derivation may appear as mathematically or intuitively valid, however it is worthwhile to test things via statistical analysis and modelling (see section \ref{ssec:B3}).
 
 %
 %\section{Toy Model Analysis}
@@ -253,12 +254,12 @@ From figure \ref{fig:BBox}, the magnetic field strengths are overall higher comp
 \subsection{Uncertainties}
 \label{ssec:results_uncertainties}
 
-With each method comes a unique derivation of uncertainties. The uncertainty in the weighted mean is given as trivial – calculated separately for the HVC and background populations, and then propagated. When calculating RM uncertainties, an intrinsic uncertainty of 7 $\mathrm{rad m}^{-2}$ must be added. This value comes from \cite{ID21}, being the extragalactic radio source scatter post-correction.
+With each method comes a unique derivation of uncertainties. The uncertainty in the weighted mean is given as trivial – calculated separately for the HVC and background populations, and then propagated. When calculating RM uncertainties, an intrinsic uncertainty of 7 $\mathrm{rad m}^{-2}$ must be added. This value comes from \cite{ID21}, being the extragalactic radio source scatter, post-correction.
 
 
 The uncertainty in the KS-EDF statistic reflects the inherent variability in the method and is calculated by the Euclidean addition of the average measurement uncertainty of both the HVC and background populations. This corresponds to the propagation of RM uncertainties shown in figure \ref{fig:KSdiff}, where the black line considered to vary as the EDF varies in shape from resampling. The uncertainty in the variance subtraction method was estimated via bootstrap resampling with replacement. The number of samples generated per population is equal to the size of the population being analysed. Once the HVC and background population uncertainties were evaluated, the two uncertainties were propagated to produce the listed result.
 
-Note that when uncertainties are greater than the magnetic field values, as seen in table \ref{tab:Bdev}, it does not mean the detection is invalid, but that the stated method cannot confidently estimate the field strength. This comes back to the understanding that the assumptions greatly decreases precision, but that these values can be improved.
+Note that when uncertainties are greater than the magnetic field values, as seen in table \ref{tab:Bdev}, it does not mean the detection is invalid, but that the stated method cannot confidently estimate the field strength. This comes back to the understanding that the assumptions greatly decrease precision, but that these values can be improved.
 
 \subsection{Statistical Comparison of Methods}
 \label{ssec:results_stats}
@@ -281,7 +282,7 @@ Two statistical tests were used to compare the three methods' derived magnetic f
     \label{tab:tukey_hsd}
 \end{table}
 
-The weighted ANOVA test results were also fed into a Tukey multiple comparisons of means test. The results of this test are shown in table \ref{tab:tukey_hsd}. Note that here, the p-value is a measure of the likelihood that the two data sets are different. It is clear that an alternative hypothesis, that two given distributions are different, is not met to 95\% confidence in all cases except when comparing the weighted mean and KS-EDF method. However it is clear that the KS-EDF method does not match well with the other two cases in-general. To better quantify the agreement between the weighted mean and variance subtraction methods, a reduced chi-squared statistic was calculated using independent propagation of uncertainties. The resulting reduced chi-squared statistic was 1.088 - which is very close to the ideal value of unity.
+The weighted ANOVA test results were also fed into a Tukey multiple comparisons of means test. The results of this test are shown in table \ref{tab:tukey_hsd}. Note that here, the p-value is a measure of the likelihood that the two data sets are different. It is clear that an alternative hypothesis, that two given distributions are different, is not met to 95\% confidence in all cases except when comparing the weighted mean and KS-EDF method. However it is clear that the KS-EDF method does not match well with the other two cases in-general. To better quantify the agreement between the weighted mean and variance subtraction methods, a reduced chi-squared statistic was calculated using the independent propagation of uncertainties. The resulting reduced chi-squared statistic was 1.088 - which is very close to an ideal value of unity.
 
 
 The reason for the weighted ANOVA test as a whole giving a weak significance of similarity compared to only one of three values in the Tukey test giving strong evidence of similarity, is due to the ability of the weighted ANOVA test to 'bridge the gaps' created by two data points with no overlapping uncertainties and a third data point in the centre. This is why a three-way comparison is needed. The primary three sources for the weighted ANOVA and Tukey test is provided in the papers by \cite{ID76, ID77, ID78}.
