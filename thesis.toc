@@ -1,3 +1,4 @@
+\contentsline {chapter}{Statement of Originality}{ii}{Doc-Start}%
 \contentsline {chapter}{Acknowledgments}{iii}{chapter*.1}%
 \contentsline {chapter}{Abstract}{iv}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
@@ -45,7 +46,7 @@
 \contentsline {subsection}{\numberline {5.2.4}Validity of Derivation Methods}{47}{subsection.5.2.4}%
 \contentsline {subsection}{\numberline {5.2.5}Implications of the Results}{49}{subsection.5.2.5}%
 \contentsline {chapter}{\numberline {6}Conclusions}{50}{chapter.6}%
-\contentsline {chapter}{Bibliography}{57}{chapter*.6}%
+\contentsline {chapter}{Bibliography}{51}{chapter.6}%
 \contentsline {chapter}{Appendix}{58}{appendix*.7}%
 \contentsline {section}{\numberline {A}Developed Code and Data}{58}{section.Alph0.1}%
 \contentsline {section}{\numberline {B}All HVCs}{58}{section.Alph0.2}%
