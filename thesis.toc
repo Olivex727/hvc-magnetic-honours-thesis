@@ -1,6 +1,6 @@
 \contentsline {chapter}{Statement of Originality}{ii}{Doc-Start}%
-\contentsline {chapter}{Acknowledgments}{iii}{chapter*.1}%
-\contentsline {chapter}{Abstract}{iv}{chapter*.2}%
+\contentsline {chapter}{Acknowledgments}{iv}{chapter*.1}%
+\contentsline {chapter}{Abstract}{v}{chapter*.2}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}High Velocity Clouds}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Magnetic Fields}{2}{section.1.2}%
