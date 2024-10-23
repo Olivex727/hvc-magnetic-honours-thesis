@@ -27,7 +27,7 @@ POSSUM data is mostly recorded using the ASKAP radio frequency band 1 at 880-108
 \section{Ancillary Data}
 \label{sec:data}
 
-\subsection{The Galactic Faraday rotation Sky 2020}
+\subsection{The Galactic Faraday Rotation Sky 2020}
 \label{ssec:legacy}
 
 The process of estimating RM foreground contributions typically requires the use of of an interpolation between RM grid point measurements. More modern research has been done in interpolating the POSSUM data set, for example the recent paper by \cite{ID58}. However, due to POSSUM's lack of complete sky coverage, it was determined as better to use a whole-sky RM interpolation of legacy data - as a complete interpolation is needed for image processing analysis and the need to rely on more well-used data. The most recent RM sky interpolation came from \cite{ID44, ID45}, which combined all previous sources of RM grid data with free-free emission from the Planck survey. This RM sky reconstruction will be refered to as the “Hutschenreuter map”. Most notably, the Hutschenreuter map has a large 'blind spot' near the terrestrial southern pole, with the use of free-free emission to constrain the data better \citep{ID44, ID45}. This does not disqualify the merits of using the Hutschenreuter map, but should encourage further research into improvements on existing interpolations of the RM sky.
@@ -57,10 +57,10 @@ All data sources collected were first converted to a FITS file under the cartesi
     \label{fig:h1_ha}
 \end{figure}
 
-\section{Selection of HVCs from the Galactic All Sky Survey}
+\section{Selection of HVCs from the Galactic All Sky Survey (GASS)}
 \label{sec:hvc_sel}
 
-HVC-specific data was obtained from \cite{ID3} (hereafter referred to as the “Moss catalogue”) – a catalogue of all HVCs found using the Galactic All Sky Survey (GASS). The Moss catalogue is a primary source of data, for the location and size analysis of HVCs.
+HVC-specific data was obtained from \cite{ID3} (hereafter referred to as the “Moss catalogue”) – a catalogue of all HVCs found using GASS. The Moss catalogue is a primary source of data, for the location and size analysis of HVCs.
 
 
 The Moss catalogue includes a total of 1693 HVCs, of which most are not viable candidates for analysis. There are several reasons why a particular HVC may introduce significant analysis errors. The first consideration is size. Exceptions to halo HVC sizes cannot be included in HVC analysis as they may not be representative of a typical HVC. For example, the Smith Cloud, due to its size, has an abnormally large corresponding magnetic field. Thus, HVCs that were not in an apparent area range of $(1,\pi)$ degrees squared were masked out. The lower limit exists to guarantee that there are enough RMs covering the cloud itself. This reduces the sample to 151 HVCs.
