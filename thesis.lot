@@ -1,12 +1,12 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces (Top) Student's t-distribution fit parameters for the residual histograms as displayed in figure \ref {fig:t_dist}. (Middle) Results of the $\chi ^2$ test comparing residual histograms with the t-distrubution. (Bottom) $R^2$ statistics comparing the Hutschenreuter map with the other methods detailed in this section.}}{27}{table.3.1}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces (Top) Student's t-distribution fit parameters for the residual histograms as displayed in figure \ref {fig:t_dist}. (Middle) Results of the $\chi ^2$ test comparing residual histograms with the t-distrubution. (Bottom) $R^2$ statistics comparing the Hutschenreuter map with the other methods detailed in this section.}}{28}{table.3.1}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces A table describing the KS test results for each HVC.}}{31}{table.4.1}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces A table describing the magnetic field derivations for each HVC. HVCs from the sample of 13 that had no significant KS test detection, or an invalid variance subtraction result are removed.}}{37}{table.4.2}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces A table describing the Tukey Multiple Comparison of Means test results for the HVCs with magnetic field detection.}}{39}{table.4.3}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces A table describing the KS test results for each HVC.}}{32}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces A table describing the magnetic field derivations for each HVC. HVCs from the sample of 13 that had no significant KS test detection, or an invalid variance subtraction result are removed.}}{38}{table.4.2}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces A table describing the Tukey Multiple Comparison of Means test results for the HVCs with magnetic field detection.}}{40}{table.4.3}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A}{\ignorespaces Numerical values for all 13 HVCs being analysed in the report. Retrieved from \cite {ID3}.}}{58}{table.Alph0.1}%
+\contentsline {table}{\numberline {A}{\ignorespaces Numerical values for all 13 HVCs being analysed in the report. Retrieved from \cite {ID3}.}}{59}{table.Alph0.1}%

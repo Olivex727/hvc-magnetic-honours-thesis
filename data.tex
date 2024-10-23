@@ -44,15 +44,18 @@ The HI sky was taken from the HI4PI 21 cm survey, with modifications done by \ci
 The H-alpha sky was taken from \cite{ID43}, which was a collage of three smaller H-alpha surveys. Unfortunately, this map is also limited by the same problems as the Hutschenreuter map, with a notable lack of coverage near the terrestrial south pole. It was decided that the H-alpha map would be included in the process of collation for the purposes of future research potential, for example, improving interpolation models like in \cite{ID45, ID44}.
 
 
+The flux distributions of both HI and H-alpha are shown in figure \ref{fig:h1_ha}. Both distributions appear to follow a poisson distribtion, with the HI data being affected by the central limit theorem.
+
+
 %Both maps, the Hutschenreuter map, and their respective error maps are displayed in figure \ref{fig:maps}. The only exception being the HI error, which is only altered by a scalar. 
 All data sources collected were first converted to a FITS file under the cartesian projection. The location of individual point-values will not be affected by a cartesian projection, however it can introduce distorions at a high Galactic lattitude. These distortions in data do need to be accounted for.
 
-%\begin{figure}
-%    \includegraphics[width=\textwidth]{"Cartesian_Plots.png"}
-%    \centering
-%    \caption{Cartesian plots of peripheral data maps (left): the high-velocity HI sky from the \cite{ID6} modification of the HI4PI survey (top); the H-alpha sky from \cite{ID43} (middle); and the Hutschenreuter map from \cite{ID44, ID45} (bottom). Uncertainty maps for H-alpha and the Hutschenreuter map are displayed respectively (right). The HI uncertainty is not displayed due to it simply being a scalar multiple of the HI map.}
-%    \label{fig:maps}
-%\end{figure}
+\begin{figure}
+    \includegraphics[width=\textwidth]{"RM_associated_Histograms.png"}
+    \centering
+    \caption{Histograms representing the intensity of observed H-alpha (Left) and HI (Right) observations from \cite{ID42} and \cite{ID6} respectively. The HI histogram specifically removes zero-flux observations.}
+    \label{fig:h1_ha}
+\end{figure}
 
 \section{Selection of HVCs from the Galactic All Sky Survey}
 \label{sec:hvc_sel}
@@ -75,7 +78,7 @@ Cartesian projections can distort data at high Galactic latitudes, resulting in 
 Lastly, it was clear that HVC G282.3-38.3+117 had no detectable HI emission according to the provided HI data. It was removed on the basis that it could not be analysed properly. This reduced the final sample to 13 HVCs.
 
 \begin{figure}
-    \includegraphics[width=\textwidth]{"RM_whole_scatter.png"}
+    \includegraphics[width=15cm]{"RM_whole_scatter.png"}
     \centering
     \caption{(Left) A graph of all $\sim$180000 RMs plotted against their corresponding Galactic lattitude; (Right) The corresponding graph of all Hutschenreuter map faraday depths matched to the POSSUM RMs. Both graphs represent a significant level of scatter present in RMs collected near the Galactic midplane.}
     \label{fig:rm_scatter}

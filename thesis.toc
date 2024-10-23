@@ -6,49 +6,49 @@
 \contentsline {subsection}{\numberline {1.2.1}Draping}{3}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Faraday Rotation}{4}{subsection.1.2.2}%
 \contentsline {subsection}{\numberline {1.2.3}Temperature, Chemical Properites, and Emission}{6}{subsection.1.2.3}%
-\contentsline {section}{\numberline {1.3}Smith Cloud}{6}{section.1.3}%
+\contentsline {section}{\numberline {1.3}Smith Cloud}{8}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Report Outline and Objectives}{9}{section.1.4}%
-\contentsline {chapter}{\numberline {2}Data}{10}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Faraday Rotation Measures}{10}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Ancillary Data}{11}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}The Galactic Faraday rotation Sky 2020}{11}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}HI and H-alpha Emission Data}{12}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Selection of HVCs from the Galactic All Sky Survey}{12}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Data Collation}{13}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}HVC Image Overlays}{14}{subsection.2.4.1}%
-\contentsline {chapter}{\numberline {3}Foreground Subtraction}{15}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Foreground Reconstruction via Interpolation}{15}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Annulus Subtraction}{16}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Fast Fourier Transforms (FFTs)}{17}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Non-Uniform Fast Fourier Transforms (NUFFTs)}{18}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Bandpass Filtering}{19}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Kernel Filtering}{21}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Characterising Methods to Improve Interpolations}{21}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Statistical Comparison of Foreground Removal Methods}{26}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Other Methods}{27}{section.3.6}%
-\contentsline {chapter}{\numberline {4}Analysis and Results}{28}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Kolmogorov–Smirnov (KS) Testing}{28}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Assumptions}{31}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Derivation of Line-of-Sight Magnetic Fields}{32}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Mathematical methods to evaluate HVC Magnetic Fields}{33}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}KS-EDF Method}{35}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Uncertainy Subtraction}{36}{subsection.4.4.2}%
-\contentsline {section}{\numberline {4.5}Magnetic Field Results}{37}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Uncertainties}{38}{subsection.4.5.1}%
-\contentsline {subsection}{\numberline {4.5.2}Statistical Comparison of Methods}{39}{subsection.4.5.2}%
-\contentsline {chapter}{\numberline {5}Discussion}{40}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Foreground Removal}{40}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Magnetic Field Derivation}{42}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Limitations of Collected Data}{42}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Neccesity of Assumptions}{44}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Validity of Detection Methods}{45}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Validity of Derivation Methods}{46}{subsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.2.5}Implications of the Results}{48}{subsection.5.2.5}%
-\contentsline {chapter}{\numberline {6}Conclusions}{49}{chapter.6}%
-\contentsline {chapter}{Bibliography}{56}{chapter*.6}%
-\contentsline {chapter}{Appendix}{57}{appendix*.7}%
-\contentsline {section}{\numberline {A}Developed code and data}{57}{section.Alph0.1}%
-\contentsline {section}{\numberline {B}All HVCs}{57}{section.Alph0.2}%
-\contentsline {section}{\numberline {C}Planck Mission Cosmic Microwave Background}{57}{section.Alph0.3}%
-\contentsline {section}{\numberline {D}PyNUFFT Python Module}{57}{section.Alph0.4}%
-\contentsline {section}{\numberline {E}Statistical ANOVA Tests}{59}{section.Alph0.5}%
+\contentsline {chapter}{\numberline {2}Data}{11}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Faraday Rotation Measures}{11}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Ancillary Data}{12}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}The Galactic Faraday rotation Sky 2020}{12}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}HI and H-alpha Emission Data}{13}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Selection of HVCs from the Galactic All Sky Survey}{13}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Data Collation}{14}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}HVC Image Overlays}{15}{subsection.2.4.1}%
+\contentsline {chapter}{\numberline {3}Foreground Subtraction}{16}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Foreground Reconstruction via Interpolation}{16}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Annulus Subtraction}{17}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Fast Fourier Transforms (FFTs)}{18}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Non-Uniform Fast Fourier Transforms (NUFFTs)}{19}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Bandpass Filtering}{20}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Kernel Filtering}{22}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Characterising Methods to Improve Interpolations}{22}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Statistical Comparison of Foreground Removal Methods}{27}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Other Methods}{28}{section.3.6}%
+\contentsline {chapter}{\numberline {4}Analysis and Results}{29}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Kolmogorov–Smirnov (KS) Testing}{29}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Assumptions}{32}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Derivation of Line-of-Sight Magnetic Fields}{33}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Mathematical methods to evaluate HVC Magnetic Fields}{34}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}KS-EDF Method}{36}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Uncertainy Subtraction}{37}{subsection.4.4.2}%
+\contentsline {section}{\numberline {4.5}Magnetic Field Results}{38}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Uncertainties}{39}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Statistical Comparison of Methods}{40}{subsection.4.5.2}%
+\contentsline {chapter}{\numberline {5}Discussion}{41}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Foreground Removal}{41}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Magnetic Field Derivation}{43}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Limitations of Collected Data}{43}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Neccesity of Assumptions}{45}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Validity of Detection Methods}{46}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Validity of Derivation Methods}{47}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Implications of the Results}{49}{subsection.5.2.5}%
+\contentsline {chapter}{\numberline {6}Conclusions}{50}{chapter.6}%
+\contentsline {chapter}{Bibliography}{57}{chapter*.6}%
+\contentsline {chapter}{Appendix}{58}{appendix*.7}%
+\contentsline {section}{\numberline {A}Developed code and data}{58}{section.Alph0.1}%
+\contentsline {section}{\numberline {B}All HVCs}{58}{section.Alph0.2}%
+\contentsline {section}{\numberline {C}Planck Mission Cosmic Microwave Background}{58}{section.Alph0.3}%
+\contentsline {section}{\numberline {D}PyNUFFT Python Module}{58}{section.Alph0.4}%
+\contentsline {section}{\numberline {E}Statistical ANOVA Tests}{60}{section.Alph0.5}%
