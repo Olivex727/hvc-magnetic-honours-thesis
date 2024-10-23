@@ -16,16 +16,16 @@ Database file #5: obstech.bib
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 You've used 60 entries,
             3107 wiz_defined-function locations,
-            1050 strings with 18021 characters,
-and the built_in function-call counts, 45809 in all, are:
-= -- 3212
+            1045 strings with 17772 characters,
+and the built_in function-call counts, 45743 in all, are:
+= -- 3200
 > -- 2952
 < -- 25
 + -- 1122
 - -- 1026
-* -- 4073
-:= -- 7189
-add.period$ -- 236
+* -- 4061
+:= -- 7177
+add.period$ -- 230
 call.type$ -- 60
 change.case$ -- 589
 chr.to.int$ -- 60
@@ -33,13 +33,13 @@ cite$ -- 60
 duplicate$ -- 3044
 empty$ -- 2964
 format.name$ -- 1206
-if$ -- 8696
+if$ -- 8684
 int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 746
-newline$ -- 364
+newline$ -- 358
 num.names$ -- 240
-pop$ -- 1362
+pop$ -- 1368
 preamble$ -- 1
 purify$ -- 582
 quote$ -- 0
@@ -54,4 +54,4 @@ type$ -- 528
 warning$ -- 0
 while$ -- 241
 width$ -- 0
-write$ -- 893
+write$ -- 881

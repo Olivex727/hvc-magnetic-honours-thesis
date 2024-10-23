@@ -10,58 +10,58 @@
 \bibitem[{Anderson et~al.(2024)Anderson, McClure-Griffiths, Rudnick, Gaensler,
   O'Sullivan, Bradbury, Akahori, Baidoo, Bruggen, Carretti, Duchesne, Heald,
   Jung, Kaczmarek, Leahy, Loi, Ma, Osinga, Seta, Stuardi, Thomson, Eck,
-  Vernstrom, and West}]{ID73}
+  Vernstrom, \& West}]{ID73}
 \textsc{Anderson, C.~S., McClure-Griffiths, N.~M., Rudnick, L., Gaensler,
   B.~M., O'Sullivan, S.~P., Bradbury, S., Akahori, T., Baidoo, L., Bruggen, M.,
   Carretti, E., Duchesne, S., Heald, G., Jung, S.~L., Kaczmarek, J., Leahy, D.,
   Loi, F., Ma, Y.~K., Osinga, E., Seta, A., Stuardi, C., Thomson, A. J.~M.,
-  Eck, C.~V., Vernstrom, T., and West, J.}, (2024).
+  Eck, C.~V., Vernstrom, T., \& West, J.}, (2024).
 \newblock Probing the Magnetised Gas Distribution in Galaxy Groups and the
   Cosmic Web with POSSUM Faraday Rotation Measures.
 \newblock \emph{Monthly Notices of the Royal Astronomical Society}, 533(4),
   4068--4080.
 
-\bibitem[{Arias-Castro and Donoho(2009)}]{ID40}
-\textsc{Arias-Castro, E. and Donoho, D.~L.}, (2009).
+\bibitem[{Arias-Castro \& Donoho(2009)}]{ID40}
+\textsc{Arias-Castro, E. \& Donoho, D.~L.}, (2009).
 \newblock Does median filtering truly preserve edges better than linear
   filtering?
 \newblock \emph{The Annals of Statistics}, 37(3), 1172--1206.
 \newblock \doi{10.1214/08-AOS604}.
 
-\bibitem[{Bagchi and Mitra(1996)}]{ID55}
-\textsc{Bagchi, S. and Mitra, S.}, (1996).
+\bibitem[{Bagchi \& Mitra(1996)}]{ID55}
+\textsc{Bagchi, S. \& Mitra, S.}, (1996).
 \newblock The nonuniform discrete Fourier transform and its applications in
   filter design. II. 2-D.
 \newblock \emph{IEEE Transactions on Circuits and Systems II: Analog and
   Digital Signal Processing}, 43(6), 434--444.
 \newblock \doi{10.1109/82.502316}.
 
-\bibitem[{Beck et~al.(2012)Beck, Lesch, Dolag, Kotarba, Geng, and
+\bibitem[{Beck et~al.(2012)Beck, Lesch, Dolag, Kotarba, Geng, \&
   Stasyszyn}]{ID42}
-\textsc{Beck, A.~M., Lesch, H., Dolag, K., Kotarba, H., Geng, A., and
-  Stasyszyn, F.~A.}, (2012).
+\textsc{Beck, A.~M., Lesch, H., Dolag, K., Kotarba, H., Geng, A., \& Stasyszyn,
+  F.~A.}, (2012).
 \newblock Origin of strong magnetic fields in Milky Way-like galactic haloes.
 \newblock \emph{Monthly Notices of the Royal Astronomical Society}, 422(3),
   2152–2163.
 \newblock \doi{10.1111/j.1365-2966.2012.20759.x}.
 
 \bibitem[{Betti et~al.(2019)Betti, Hill, Mao, Gaensler, Lockman,
-  McClure-Griffiths, and Benjamin}]{ID5}
+  McClure-Griffiths, \& Benjamin}]{ID5}
 \textsc{Betti, S.~K., Hill, A.~S., Mao, S.~A., Gaensler, B.~M., Lockman, F.~J.,
-  McClure-Griffiths, N.~M., and Benjamin, R.~A.}, (2019).
+  McClure-Griffiths, N.~M., \& Benjamin, R.~A.}, (2019).
 \newblock Constraining the Magnetic Field of the Smith High-velocity Cloud
   Using Faraday Rotation.
 \newblock \emph{The Astrophysial Journal}, 871(2), 215.
 \newblock \doi{10.3847/1538-4357/aaf886}.
 
-\bibitem[{Bland-Hawthorn and Maloney(1999)}]{ID9}
-\textsc{Bland-Hawthorn, J. and Maloney, P.~R.}, (1999).
+\bibitem[{Bland-Hawthorn \& Maloney(1999)}]{ID9}
+\textsc{Bland-Hawthorn, J. \& Maloney, P.~R.}, (1999).
 \newblock The Galactic Halo Ionizing Field and H alpha Distances to HVCs.
 \newblock \emph{arXiv}.
 \newblock \doi{10.48550/arXiv.astro-ph/9812297}.
 
-\bibitem[{Brentjens and de~Bruyn(2005)}]{ID14}
-\textsc{Brentjens, M.~A. and de~Bruyn, A.~G.}, (2005).
+\bibitem[{Brentjens \& de~Bruyn(2005)}]{ID14}
+\textsc{Brentjens, M.~A. \& de~Bruyn, A.~G.}, (2005).
 \newblock Faraday rotation measure synthesis.
 \newblock \emph{Astronomy {\&} Astrophysics}, 441(3), 1217--1228.
 \newblock \doi{10.1051/0004-6361:20052990}.
@@ -72,14 +72,14 @@
   {Vono, Maxime}, {Bardeau, Sébastien}, {Chainais, Pierre}, {Goicoechea,
   Javier R.}, {Hughes, Annie}, {Kainulainen, Jouni}, {Languignon, David}, {Le
   Bourlot, Jacques}, {Levrier, François}, {Liszt, Harvey}, {Öberg, Karin},
-  {Peretto, Nicolas}, {Roueff, Antoine}, and {Sievers, Albrecht}}]{ID67}
+  {Peretto, Nicolas}, {Roueff, Antoine}, \& {Sievers, Albrecht}}]{ID67}
 \textsc{{Bron, Emeric}, {Roueff, Evelyne}, {Gerin, Maryvonne}, {Pety,
   Jérôme}, {Gratier, Pierre}, {Le Petit, Franck}, {Guzman, Viviana}, {Orkisz,
   Jan H.}, {de Souza Magalhaes, Victor}, {Gaudel, Mathilde}, {Vono, Maxime},
   {Bardeau, Sébastien}, {Chainais, Pierre}, {Goicoechea, Javier R.}, {Hughes,
   Annie}, {Kainulainen, Jouni}, {Languignon, David}, {Le Bourlot, Jacques},
   {Levrier, François}, {Liszt, Harvey}, {Öberg, Karin}, {Peretto, Nicolas},
-  {Roueff, Antoine}, and {Sievers, Albrecht}}, (2021).
+  {Roueff, Antoine}, \& {Sievers, Albrecht}}, (2021).
 \newblock Tracers of the ionization fraction in dense and translucent gas - I.
   Automated exploitation of massive astrochemical model grids.
 \newblock \emph{Astronomy {\&} Astrophysics}, 645, A28.
@@ -91,8 +91,8 @@
 \newblock Dover Books on Physics Series. Dover Publications.
 \newblock ISBN 9780486640716.
 
-\bibitem[{Dursi and Pfrommer(2008)}]{ID10}
-\textsc{Dursi, L.~J. and Pfrommer, C.}, (2008).
+\bibitem[{Dursi \& Pfrommer(2008)}]{ID10}
+\textsc{Dursi, L.~J. \& Pfrommer, C.}, (2008).
 \newblock Draping of Cluster Magnetic Fields over Bullets and
   Bubbles—Morphology and Dynamic Effects.
 \newblock \emph{The Astrophysial Journal}, 677(2), 993.
@@ -115,7 +115,7 @@
   O'Sullivan, Raja, Sun, Vernstrom, Baidoo, Carretti, Taylor, Willis, Osinga,
   Livingston, An, Bracco, Brüggen, Eswaraiah, Enßlin, Upasana, Ideguchi,
   Jung, Kaczmarek, Kothes, Lazarević, Leahy, Loi, Pandhi, Price, Shen, Seta,
-  Sobey, Stuardi, and Velović}]{ID71}
+  Sobey, Stuardi, \& Velović}]{ID71}
 \textsc{Gaensler, B.~M., Heald, G.~H., McClure-Griffiths, N.~M., Anderson,
   C.~S., Eck, C. L.~V., West, J.~L., Thomson, A. J.~M., Leahy, J.~P., Rudnick,
   L., Ma, Y.~K., Akahori, T., Gürkan, G., Landecker, T.~L., Mao, S.~A.,
@@ -124,36 +124,35 @@
   A., Brüggen, M., Eswaraiah, C., Enßlin, T., Upasana, G., Ideguchi, S.,
   Jung, S.~L., Kaczmarek, J.~F., Kothes, R., Lazarević, S., Leahy, D., Loi,
   F., Pandhi, A., Price, J.~M., Shen, A.~X., Seta, A., Sobey, C., Stuardi, C.,
-  and Velović, V.}, (2024).
+  \& Velović, V.}, (2024).
 \newblock The Polarisation Sky Survey of the Universe's Magnetism (POSSUM). I.
   Science Goals and Survey Description.
 \newblock In preperation.
 
-\bibitem[{Gaensler et~al.(2010)Gaensler, Landecker, and Taylor}]{ID52}
-\textsc{Gaensler, B.~M., Landecker, T.~L., and Taylor, A.~R.}, (2010).
+\bibitem[{Gaensler et~al.(2010)Gaensler, Landecker, \& Taylor}]{ID52}
+\textsc{Gaensler, B.~M., Landecker, T.~L., \& Taylor, A.~R.}, (2010).
 \newblock Survey Science with ASKAP: Polarisation Sky Survey of the Universes's
   Magnetism (POSSUM).
 \newblock In \emph{Bulletin of the American Astronomical Society}.
 
-\bibitem[{Greengard and Lee(2004)}]{ID57}
-\textsc{Greengard, L. and Lee, J.-Y.}, (2004).
+\bibitem[{Greengard \& Lee(2004)}]{ID57}
+\textsc{Greengard, L. \& Lee, J.-Y.}, (2004).
 \newblock Accelerating the Nonuniform Fast Fourier Transform.
 \newblock \emph{Society for Industrial and Applied Mathematics Reviews}, 46(3),
   443--454.
 \newblock \doi{10.1137/S003614450343200X}.
-\newblock \urlprefix\url{https://doi.org/10.1137/S003614450343200X}.
 
-\bibitem[{Grønnow et~al.(2018)Grønnow, Tepper-García, and
+\bibitem[{Grønnow et~al.(2018)Grønnow, Tepper-García, \&
   Bland-Hawthorn}]{ID24}
-\textsc{Grønnow, A., Tepper-García, T., and Bland-Hawthorn, J.}, (2018).
+\textsc{Grønnow, A., Tepper-García, T., \& Bland-Hawthorn, J.}, (2018).
 \newblock Magnetic Fields in the Galactic Halo Restrict Fountain-driven
   Recycling and Accretion.
 \newblock \emph{The Astrophysial Journal}, 865(1), 64.
 \newblock \doi{10.3847/1538-4357/aada0e}.
 
-\bibitem[{Grønnow et~al.(2022)Grønnow, Tepper-García, Bland-Hawthorn, and
+\bibitem[{Grønnow et~al.(2022)Grønnow, Tepper-García, Bland-Hawthorn, \&
   Fraternali}]{ID33}
-\textsc{Grønnow, A., Tepper-García, T., Bland-Hawthorn, J., and Fraternali,
+\textsc{Grønnow, A., Tepper-García, T., Bland-Hawthorn, J., \& Fraternali,
   F.}, (2022).
 \newblock The role of the halo magnetic field on accretion through
   high-velocity clouds.
@@ -161,73 +160,70 @@
   5756–5770.
 \newblock \doi{10.1093/mnras/stab3452}.
 
-\bibitem[{Grønnow et~al.(2017)Grønnow, Tepper-García, Bland-Hawthorn, and
+\bibitem[{Grønnow et~al.(2017)Grønnow, Tepper-García, Bland-Hawthorn, \&
   McClure-Griffiths}]{ID23}
-\textsc{Grønnow, A., Tepper-García, T., Bland-Hawthorn, J., and
+\textsc{Grønnow, A., Tepper-García, T., Bland-Hawthorn, J., \&
   McClure-Griffiths, N.~M.}, (2017).
 \newblock Magnetized High Velocity Clouds in the Galactic Halo: A New Distance
   Constraint.
 \newblock \emph{The Astrophysial Journal}, 845(1), 69.
 \newblock \doi{10.3847/1538-4357/aa7ed2}.
 
-\bibitem[{Han and Qiao(1994)}]{ID16}
-\textsc{Han, J.~L. and Qiao, G.~J.}, (1994).
+\bibitem[{Han \& Qiao(1994)}]{ID16}
+\textsc{Han, J.~L. \& Qiao, G.~J.}, (1994).
 \newblock The magnetic field in the disk of our Galaxy.
 \newblock \emph{Astronomy {\&} Astrophysics}, 288, 759--772.
-\newblock
-  \urlprefix\url{https://ui.adsabs.harvard.edu/abs/1994AnA...288..759H}.
 
-\bibitem[{Hayakawa and Fukui(2024)}]{ID46}
-\textsc{Hayakawa, T. and Fukui, Y.}, (2024).
+\bibitem[{Hayakawa \& Fukui(2024)}]{ID46}
+\textsc{Hayakawa, T. \& Fukui, Y.}, (2024).
 \newblock Dust-to-neutral gas ratio of the intermediate- and high-velocity H I
   clouds derived based on the sub-mm dust emission for the whole sky.
 \newblock \emph{Monthly Notices of the Royal Astronomical Society}, 529(1),
   1--31.
 \newblock \doi{10.1093/mnras/stae302}.
 
-\bibitem[{Heitsch et~al.(2021)Heitsch, Marchal, Miville-Deschênes, Shull, and
+\bibitem[{Heitsch et~al.(2021)Heitsch, Marchal, Miville-Deschênes, Shull, \&
   Fox}]{ID69}
-\textsc{Heitsch, F., Marchal, A., Miville-Deschênes, M.-A., Shull, J.~M., and
+\textsc{Heitsch, F., Marchal, A., Miville-Deschênes, M.-A., Shull, J.~M., \&
   Fox, A.~J.}, (2021).
 \newblock {Mass, morphing, metallicities: the evolution of infalling high
   velocity clouds}.
 \newblock \emph{Monthly Notices of the Royal Astronomical Society}, 509(3),
   4515--4531.
 \newblock \doi{10.1093/mnras/stab3266}.
-\newblock \urlprefix\url{https://doi.org/10.1093/mnras/stab3266}.
 
-\bibitem[{Heitsch and Putman(2009)}]{ID25}
-\textsc{Heitsch, F. and Putman, M.~E.}, (2009).
+\bibitem[{Heitsch \& Putman(2009)}]{ID25}
+\textsc{Heitsch, F. \& Putman, M.~E.}, (2009).
 \newblock The Fate of High-Velocity Clouds: Warm or Cold Cosmic Rain?
 \newblock \emph{The Astrophysial Journal}, 698(2), 1485.
 \newblock \doi{10.1088/0004-637X/698/2/1485}.
 
-\bibitem[{Hill et~al.(2009)Hill, Haffner, and Reynolds}]{ID49}
-\textsc{Hill, A.~S., Haffner, L.~M., and Reynolds, R.~J.}, (2009).
+\bibitem[{Hill et~al.(2009)Hill, Haffner, \& Reynolds}]{ID49}
+\textsc{Hill, A.~S., Haffner, L.~M., \& Reynolds, R.~J.}, (2009).
 \newblock Ionized Gas in the Smith Cloud.
 \newblock \emph{The Astrophysial Journal}, 703(2), 1832.
 \newblock \doi{10.1088/0004-637X/703/2/1832}.
 
-\bibitem[{Hill et~al.(2013)Hill, Mao, Benjamin, Lockman, and
+\bibitem[{Hill et~al.(2013)Hill, Mao, Benjamin, Lockman, \&
   McClure-Griffiths}]{ID26}
-\textsc{Hill, A.~S., Mao, S.~A., Benjamin, R.~A., Lockman, F.~J., and
+\textsc{Hill, A.~S., Mao, S.~A., Benjamin, R.~A., Lockman, F.~J., \&
   McClure-Griffiths, N.~M.}, (2013).
 \newblock Magnetized Gas in the Smith High Velocity Cloud.
 \newblock \emph{The Astrophysial Journal}, 777(1), 55.
 \newblock \doi{10.1088/0004-637X/777/1/55}.
 
 \bibitem[{Hotan et~al.(2021)Hotan, Bunton, Chippendale, Whiting, Tuthill, Moss,
-  McConnell, Amy, Huynh, Allison, and et~al.}]{ID61}
+  McConnell, Amy, Huynh, Allison, \& et~al.}]{ID61}
 \textsc{Hotan, A.~W., Bunton, J.~D., Chippendale, A.~P., Whiting, M., Tuthill,
-  J., Moss, V.~A., McConnell, D., Amy, S.~W., Huynh, M.~T., Allison, J.~R., and
+  J., Moss, V.~A., McConnell, D., Amy, S.~W., Huynh, M.~T., Allison, J.~R., \&
   et~al.}, (2021).
 \newblock Australian square kilometre array pathfinder: I. system description.
 \newblock \emph{Publications of the Astronomical Society of Australia}, 38,
   e009.
 \newblock \doi{10.1017/pasa.2021.1}.
 
-\bibitem[{Huang et~al.(1979)Huang, T., Yang, G., Tang, and G.}]{ID39}
-\textsc{Huang, T., Yang, G., Tang, and G.}, (1979).
+\bibitem[{Huang et~al.(1979)Huang, T., Yang, G., Tang, \& G.}]{ID39}
+\textsc{Huang, T., Yang, G., Tang, \& G.}, (1979).
 \newblock A Fast Two-Dimensional Median Filtering Algorithm.
 \newblock \emph{IEEE Transactions on Acoustics, Speech, and Signal Processing},
   27(1), 13--18.
@@ -237,7 +233,7 @@
   Brown, Brüggen, Carretti, Clarke, Clegg, Costa, Croft, Eck, Gaensler,
   de~Gasperin, Haverkorn, Heald, Hull, *, Inoue, Johnston-Hollitt, Kaczmarek,
   Law, Ma, MacMahon, Mao, Riseley, Roy, Shanahan, Shimwell, Stil, Sobey,
-  O’Sullivan, Tasse, Vacca, Vernstrom, Williams, Wright, and
+  O’Sullivan, Tasse, Vacca, Vernstrom, Williams, Wright, \&
   En{\ss}lin}]{ID45}
 \textsc{Hutschenreuter, S., Anderson, C.~S., Betti, S., Bower, G.~C., Brown,
   J.-A., Brüggen, M., Carretti, E., Clarke, T., Clegg, A., Costa, A., Croft,
@@ -245,45 +241,44 @@
   Hull, C. L.~H., *, Inoue, M., Johnston-Hollitt, M., Kaczmarek, J., Law, C.,
   Ma, Y.~K., MacMahon, D., Mao, S.~A., Riseley, C., Roy, S., Shanahan, R.,
   Shimwell, T., Stil, J., Sobey, C., O’Sullivan, S.~P., Tasse, C., Vacca, V.,
-  Vernstrom, T., Williams, P. K.~G., Wright, M., and En{\ss}lin, T.~A.},
-  (2022).
+  Vernstrom, T., Williams, P. K.~G., Wright, M., \& En{\ss}lin, T.~A.}, (2022).
 \newblock The Galactic Faraday rotation sky 2020.
 \newblock \emph{Astronomy {\&} Astrophysics}, 657(A43).
 \newblock \doi{10.1051/0004-6361/202140486}.
 
-\bibitem[{Hutschenreuter and En{\ss}lin(2020)}]{ID44}
-\textsc{Hutschenreuter, S. and En{\ss}lin, T.~A.}, (2020).
+\bibitem[{Hutschenreuter \& En{\ss}lin(2020)}]{ID44}
+\textsc{Hutschenreuter, S. \& En{\ss}lin, T.~A.}, (2020).
 \newblock The Galactic Faraday depth sky revisited.
 \newblock \emph{Astronomy {\&} Astrophysics}, 633(A150).
 \newblock \doi{10.1051/0004-6361/201935479}.
 
-\bibitem[{Jones et~al.(1996)Jones, Ryu, and and}]{ID11}
-\textsc{Jones, T.~W., Ryu, D., and and, I. L.~T.}, (1996).
+\bibitem[{Jones et~al.(1996)Jones, Ryu, \& and}]{ID11}
+\textsc{Jones, T.~W., Ryu, D., \& and, I. L.~T.}, (1996).
 \newblock The Magnetohydrodynamics of Supersonic Gas Clouds: MHD Cosmic Bullets
   and Wind-swept Clumps.
 \newblock \emph{The Astrophysial Journal}, 473(1), 365.
 \newblock \doi{10.1086/178151}.
 
-\bibitem[{Jung et~al.(2022)Jung, Grønnow, and McClure-Griffiths}]{ID34}
-\textsc{Jung, S.~L., Grønnow, A., and McClure-Griffiths, N.~M.}, (2022).
+\bibitem[{Jung et~al.(2022)Jung, Grønnow, \& McClure-Griffiths}]{ID34}
+\textsc{Jung, S.~L., Grønnow, A., \& McClure-Griffiths, N.~M.}, (2022).
 \newblock Magnetic field draping around clumpy high-velocity clouds in galactic
   halo.
 \newblock \emph{Monthly Notices of the Royal Astronomical Society}, 522(3),
   4161–4180.
 \newblock \doi{10.1093/mnras/stad1236}.
 
-\bibitem[{Jung et~al.(2021)Jung, McClure-Griffiths, and Hill}]{ID36}
-\textsc{Jung, S.~L., McClure-Griffiths, N.~M., and Hill, A.~S.}, (2021).
+\bibitem[{Jung et~al.(2021)Jung, McClure-Griffiths, \& Hill}]{ID36}
+\textsc{Jung, S.~L., McClure-Griffiths, N.~M., \& Hill, A.~S.}, (2021).
 \newblock Distant probes of rotation measure structure: where is the Faraday
   rotation towards the Magellanic Leading Arm?
 \newblock \emph{Monthly Notices of the Royal Astronomical Society}, 508(3),
   3921–3935.
 \newblock \doi{10.1093/mnras/stab2773}.
 
-\bibitem[{Jung et~al.(2023)Jung, McClure-Griffiths, Pakmor, Ma, Hill, Eck, and
+\bibitem[{Jung et~al.(2023)Jung, McClure-Griffiths, Pakmor, Ma, Hill, Eck, \&
   Anderson}]{ID4}
 \textsc{Jung, S.~L., McClure-Griffiths, N.~M., Pakmor, R., Ma, Y.~K., Hill,
-  A.~S., Eck, C. L.~V., and Anderson, C.~S.}, (2023).
+  A.~S., Eck, C. L.~V., \& Anderson, C.~S.}, (2023).
 \newblock Sampling the Faraday rotation sky of TNG50: Imprint of the magnetised
   circumgalactic medium around Milky Way-like galaxies.
 \newblock \emph{Monthly Notices of the Royal Astronomical Society}, 526(1),
@@ -292,11 +287,11 @@
 
 \bibitem[{Jung et~al.(2024)Jung, Seta, Price, McClure-Griffiths, Livingston,
   Gaensler, Ma, Tahani, Anderson, Federrath, Van Eck, Leahy, O'Sullivan, West,
-  Heald, and Akahori}]{ID75}
+  Heald, \& Akahori}]{ID75}
 \textsc{Jung, S.~L., Seta, A., Price, J.~M., McClure-Griffiths, N.~M.,
   Livingston, J.~D., Gaensler, B.~M., Ma, Y.~K., Tahani, M., Anderson, C.~S.,
   Federrath, C., Van Eck, C.~L., Leahy, D., O'Sullivan, S.~P., West, J.,
-  Heald, G., and Akahori, T.}, (2024).
+  Heald, G., \& Akahori, T.}, (2024).
 \newblock Magnetized HI superbubbles in the Small Magellanic Cloud revealed by
   the POSSUM pilot survey.
 \newblock \emph{Monthly Notices of the Royal Astronomical Society}, 534(3),
@@ -304,9 +299,9 @@
 \newblock \doi{10.1093/mnras/stae2245}.
 
 \bibitem[{Kaczmarek et~al.(2017)Kaczmarek, Purcell, Gaensler,
-  McClure-Griffiths, and Stevens}]{ID27}
+  McClure-Griffiths, \& Stevens}]{ID27}
 \textsc{Kaczmarek, J.~F., Purcell, C.~R., Gaensler, B.~M., McClure-Griffiths,
-  N.~M., and Stevens, J.}, (2017).
+  N.~M., \& Stevens, J.}, (2017).
 \newblock Detection of a Coherent Magnetic Field in the Magellanic Bridge
   through Faraday Rotation.
 \newblock \emph{Monthly Notices of the Royal Astronomical Society}, 467(2),
@@ -320,22 +315,22 @@
 \newblock \emph{Publications of the Astronomical Society of Japan}, 4, 131.
 
 \bibitem[{Khadir et~al.(2024)Khadir, Pandhi, Hutschenreuter, Gaensler,
-  Vanderwoude, West, and O'Sullivan}]{ID58}
+  Vanderwoude, West, \& O'Sullivan}]{ID58}
 \textsc{Khadir, A., Pandhi, A., Hutschenreuter, S., Gaensler, B.~M.,
-  Vanderwoude, S., West, J.~L., and O'Sullivan, S.~P.}, (2024).
+  Vanderwoude, S., West, J.~L., \& O'Sullivan, S.~P.}, (2024).
 \newblock Interpolation techniques for reconstructing Galactic Faraday
   rotation.
 \newblock Submitted to {ApJ}.
 
-\bibitem[{Konz et~al.(2002)Konz, Brüns, and Birk}]{ID13}
-\textsc{Konz, C., Brüns, C., and Birk, G.~T.}, (2002).
+\bibitem[{Konz et~al.(2002)Konz, Brüns, \& Birk}]{ID13}
+\textsc{Konz, C., Brüns, C., \& Birk, G.~T.}, (2002).
 \newblock Dynamical evolution of high velocity clouds in the intergalactic
   medium.
 \newblock \emph{Astronomy {\&} Astrophysics}, 391(2), 713--723.
 \newblock \doi{10.1051/0004-6361:20020863}.
 
-\bibitem[{Kutner et~al.(2005)Kutner, Nachtsheim, Neter, and Li}]{ID76}
-\textsc{Kutner, M.~H., Nachtsheim, C.~J., Neter, J., and Li, W.}, (2005).
+\bibitem[{Kutner et~al.(2005)Kutner, Nachtsheim, Neter, \& Li}]{ID76}
+\textsc{Kutner, M.~H., Nachtsheim, C.~J., Neter, J., \& Li, W.}, (2005).
 \newblock \emph{Applied Linear Statistical Models}.
 \newblock McGraw-Hill/Irwin, 5th edition.
 
@@ -352,60 +347,58 @@
 \newblock Springer.
 \newblock ISBN 978-1-4020-6932-1.
 
-\bibitem[{Lockman et~al.(2008)Lockman, Benjamin, Heroux, and Langston}]{ID28}
-\textsc{Lockman, F.~J., Benjamin, R.~A., Heroux, A.~J., and Langston, G.~I.},
+\bibitem[{Lockman et~al.(2008)Lockman, Benjamin, Heroux, \& Langston}]{ID28}
+\textsc{Lockman, F.~J., Benjamin, R.~A., Heroux, A.~J., \& Langston, G.~I.},
   (2008).
 \newblock The Smith Cloud: A High-Velocity Cloud Colliding with the Milky Way.
 \newblock \emph{The Astrophysial Journal}, 679(1), L21.
 \newblock \doi{10.1086/588838}.
 
-\bibitem[{Loi et~al.(2019)Loi, Murgia, Govoni, Vacca, Prandoni, Bonafede, and
+\bibitem[{Loi et~al.(2019)Loi, Murgia, Govoni, Vacca, Prandoni, Bonafede, \&
   Feretti}]{ID59}
 \textsc{Loi, F., Murgia, M., Govoni, F., Vacca, V., Prandoni, I., Bonafede, A.,
-  and Feretti, L.}, (2019).
+  \& Feretti, L.}, (2019).
 \newblock {Simulations of the polarized radio sky and predictions on the
   confusion limit in polarization for future radio surveys}.
 \newblock \emph{Monthly Notices of the Royal Astronomical Society}, 485(4),
   5285--5293.
 \newblock \doi{10.1093/mnras/stz350}.
-\newblock \urlprefix\url{https://doi.org/10.1093/mnras/stz350}.
 
-\bibitem[{Lucchini et~al.(2024)Lucchini, Han, Hernquist, and Conroy}]{ID74}
-\textsc{Lucchini, S., Han, J.~J., Hernquist, L., and Conroy, C.}, (2024).
+\bibitem[{Lucchini et~al.(2024)Lucchini, Han, Hernquist, \& Conroy}]{ID74}
+\textsc{Lucchini, S., Han, J.~J., Hernquist, L., \& Conroy, C.}, (2024).
 \newblock On the Origin of High-velocity Clouds in the Galaxy.
 \newblock \emph{The Astrophysial Journal}, 974(1), 105.
 \newblock \doi{10.3847/1538-4357/ad6dde}.
 
-\bibitem[{Macquart et~al.(2012)Macquart, Ekers, Feain, and
+\bibitem[{Macquart et~al.(2012)Macquart, Ekers, Feain, \&
   Johnston-Hollitt}]{ID60}
-\textsc{Macquart, J.-P., Ekers, R.~D., Feain, I., and Johnston-Hollitt, M.},
+\textsc{Macquart, J.-P., Ekers, R.~D., Feain, I., \& Johnston-Hollitt, M.},
   (2012).
 \newblock ON THE RELIABILITY OF POLARIZATION ESTIMATION USING ROTATION MEASURE
   SYNTHESIS.
 \newblock \emph{The Astrophysical Journal}, 750(2), 139.
 \newblock \doi{10.1088/0004-637X/750/2/139}.
-\newblock \urlprefix\url{https://dx.doi.org/10.1088/0004-637X/750/2/139}.
 
-\bibitem[{Madsen et~al.(2006)Madsen, Reynolds, and Haffner}]{ID48}
-\textsc{Madsen, G.~J., Reynolds, R.~J., and Haffner, L.~M.}, (2006).
+\bibitem[{Madsen et~al.(2006)Madsen, Reynolds, \& Haffner}]{ID48}
+\textsc{Madsen, G.~J., Reynolds, R.~J., \& Haffner, L.~M.}, (2006).
 \newblock A Multiwavelength Optical Emission Line Survey of Warm Ionized Gas in
   the Galaxy.
 \newblock \emph{The Astrophysial Journal}, 652(1), 401.
 \newblock \doi{10.1086/508441}.
 
 \bibitem[{Mao et~al.(2010)Mao, Gaensler, Haverkorn, Zweibel, Madsen,
-  McClure-Griffiths, Shukurov, and Kronberg}]{ID30}
+  McClure-Griffiths, Shukurov, \& Kronberg}]{ID30}
 \textsc{Mao, S.~A., Gaensler, B.~M., Haverkorn, M., Zweibel, E.~G., Madsen,
-  G.~J., McClure-Griffiths, N.~M., Shukurov, A., and Kronberg, P.~P.}, (2010).
+  G.~J., McClure-Griffiths, N.~M., Shukurov, A., \& Kronberg, P.~P.}, (2010).
 \newblock A Survey of Extragalactic Faraday Rotation at High Galactic Latitude:
   The Vertical Magnetic Field of the Milky Way Toward the Galactic Poles.
 \newblock \emph{The Astrophysial Journal}, 714(2), 1170.
 \newblock \doi{10.1088/0004-637X/714/2/1170}.
 
 \bibitem[{McClure-Griffiths et~al.(2010)McClure-Griffiths, Madsen, Gaensler,
-  McConnell, and Schnitzeler}]{ID2}
+  McConnell, \& Schnitzeler}]{ID2}
 \textsc{McClure-Griffiths, N.~M., Madsen, G.~J., Gaensler, B.~M., McConnell,
-  D., and Schnitzeler, D. H. F.~M.}, (2010).
+  D., \& Schnitzeler, D. H. F.~M.}, (2010).
 \newblock Measurement of a magnetic field in a leading arm high-velocity cloud.
 \newblock \emph{The Astrophysial Journal}, 725(1), 275.
 \newblock \doi{10.1088/0004-637X/725/1/275}.
@@ -416,9 +409,9 @@
 \newblock Wiley, 10th edition.
 
 \bibitem[{Moss et~al.(2013)Moss, McClure-Griffiths, Murphy, Pisano, Kummerfeld,
-  and Curran}]{ID3}
+  \& Curran}]{ID3}
 \textsc{Moss, V.~A., McClure-Griffiths, N.~M., Murphy, T., Pisano, D.~J.,
-  Kummerfeld, J.~K., and Curran, J.~R.}, (2013).
+  Kummerfeld, J.~K., \& Curran, J.~R.}, (2013).
 \newblock High-Velocity Clouds in the galactic all sky survey. I. Catalog.
 \newblock \emph{The Astrophysial Journal}, 209(1), 12.
 \newblock \doi{10.1088/0067-0049/209/1/12}.
@@ -429,8 +422,8 @@
   Effect on Facial Detection}.
 \newblock Honour's thesis, University of Arkansas.
 
-\bibitem[{Putman et~al.(2012)Putman, Peek, and Joung}]{ID19}
-\textsc{Putman, M., Peek, J., and Joung, M.}, (2012).
+\bibitem[{Putman et~al.(2012)Putman, Peek, \& Joung}]{ID19}
+\textsc{Putman, M., Peek, J., \& Joung, M.}, (2012).
 \newblock Gaseous Galaxy Halos.
 \newblock \emph{Annual Reviews of Astronomy {\&} Astrophysics}, 50, 491--529.
 \newblock \doi{10.1146/annurev-astro-081811-125612}.
@@ -442,28 +435,27 @@
   409(1), L99--L103.
 \newblock \doi{10.48550/arXiv.1011.0737}.
 
-\bibitem[{Tahani et~al.(2024)Tahani, Ngo, Glover, Clairmont, Zarazua, and
+\bibitem[{Tahani et~al.(2024)Tahani, Ngo, Glover, Clairmont, Zarazua, \&
   Plume}]{ID70}
-\textsc{Tahani, M., Ngo, J.~M., Glover, J., Clairmont, R., Zarazua, G.~M., and
+\textsc{Tahani, M., Ngo, J.~M., Glover, J., Clairmont, R., Zarazua, G.~M., \&
   Plume, R.}, (2024).
 \newblock MC-BLOS: Determination of the Line-of-Sight Component of Magnetic
   Fields Associated with Molecular Clouds.
 \newblock Submitted to ApJ.
 
-\bibitem[{Taylor et~al.(2009)Taylor, Stil, and Sunstrum}]{ID18}
-\textsc{Taylor, A.~R., Stil, J.~M., and Sunstrum, C.}, (2009).
+\bibitem[{Taylor et~al.(2009)Taylor, Stil, \& Sunstrum}]{ID18}
+\textsc{Taylor, A.~R., Stil, J.~M., \& Sunstrum, C.}, (2009).
 \newblock A Rotation Measure Image of the Sky.
 \newblock \emph{The Astrophysial Journal}, 702(2), 1230.
 \newblock \doi{10.1088/0004-637X/702/2/1230}.
 
-\bibitem[{Tepper-García and Bland-Hawthorn(2017)}]{ID64}
-\textsc{Tepper-García, T. and Bland-Hawthorn, J.}, (2017).
+\bibitem[{Tepper-García \& Bland-Hawthorn(2017)}]{ID64}
+\textsc{Tepper-García, T. \& Bland-Hawthorn, J.}, (2017).
 \newblock {The Smith Cloud: surviving a high-speed transit of the Galactic
   disc}.
 \newblock \emph{Monthly Notices of the Royal Astronomical Society}, 473(4),
   5514--5531.
 \newblock \doi{10.1093/mnras/stx2680}.
-\newblock \urlprefix\url{https://doi.org/10.1093/mnras/stx2680}.
 
 \bibitem[{Tukey(1949)}]{ID77}
 \textsc{Tukey, J.~W.}, (1949).
@@ -472,11 +464,11 @@
 
 \bibitem[{Vanderwoude et~al.(2024)Vanderwoude, West, Gaensler, Rudnick, VanEck,
   Thomson, Andernach, Anderson, Carretti, Heald, Leahy, McClure-Griffiths,
-  O'Sullivan, Tahani, and Willis}]{ID1}
+  O'Sullivan, Tahani, \& Willis}]{ID1}
 \textsc{Vanderwoude, S., West, J.~L., Gaensler, B.~M., Rudnick, L., VanEck,
   C.~L., Thomson, A. J.~M., Andernach, H., Anderson, C.~S., Carretti, E.,
   Heald, G.~H., Leahy, J.~P., McClure-Griffiths, N.~M., O'Sullivan, S.~P.,
-  Tahani, M., and Willis, A.~G.}, (2024).
+  Tahani, M., \& Willis, A.~G.}, (2024).
 \newblock Prototype Faraday Rotation Measure Catalogs from the Polarisation Sky
   Survey of the Universe's Magnetism (POSSUM) Pilot Observations.
 \newblock \emph{The Astrophysial Journal}, 167(5).
@@ -488,8 +480,8 @@
 \newblock \emph{Symposium - International Astronomical Union}, 144, 27--40.
 \newblock \doi{10.1017/S0074180900088884}.
 
-\bibitem[{Wakker and van Woerden(1997)}]{ID8}
-\textsc{Wakker, B.~P. and van Woerden, H.}, (1997).
+\bibitem[{Wakker \& van Woerden(1997)}]{ID8}
+\textsc{Wakker, B.~P. \& van Woerden, H.}, (1997).
 \newblock High-Velocity Clouds.
 \newblock \emph{Annual Reviews of Astronomy {\&} Astrophysics}, 35, 217--266.
 \newblock \doi{10.1146/annurev.astro.35.1.217}.
