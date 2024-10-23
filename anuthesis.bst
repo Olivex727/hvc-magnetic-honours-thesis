@@ -509,11 +509,12 @@ FUNCTION {format.note}
 }
 
 FUNCTION {format.title}
-{ title
-  duplicate$ empty$ 'skip$
-    { "t" change.case$ }
-  if$
-  "title" bibinfo.check
+{ 
+% title empty$
+%    { "" }
+%    { title "t" change.case$ }
+%  if$
+title
 }
 FUNCTION {format.full.names}
 {'s :=
