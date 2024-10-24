@@ -16,7 +16,7 @@ Database file #5: obstech.bib
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
 You've used 60 entries,
             3107 wiz_defined-function locations,
-            1045 strings with 17772 characters,
+            1045 strings with 17824 characters,
 and the built_in function-call counts, 45743 in all, are:
 = -- 3200
 > -- 2952
