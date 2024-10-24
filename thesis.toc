@@ -23,10 +23,10 @@
 \contentsline {section}{\numberline {3.3}Fast Fourier Transforms (FFTs)}{18}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Non-Uniform Fast Fourier Transforms (NUFFTs)}{19}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Bandpass Filtering}{20}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Kernel Filtering}{22}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Characterising Methods to Improve Interpolations}{22}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Statistical Comparison of Foreground Removal Methods}{27}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Other Methods}{28}{section.3.6}%
+\contentsline {subsection}{\numberline {3.3.3}Kernel Filtering}{21}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Characterising Methods to Improve Interpolations}{23}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Statistical Comparison of Foreground Removal Methods}{25}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Other Methods}{27}{section.3.6}%
 \contentsline {chapter}{\numberline {4}Analysis and Results}{29}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Kolmogorov–Smirnov (KS) Testing}{29}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Assumptions}{32}{section.4.2}%
